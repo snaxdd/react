@@ -1,0 +1,16 @@
+.buy-button {
+  max-width: 228px;
+  width: 100%;
+  background-color: rgba(241, 85, 38, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  border-radius: 8px;
+  //--.buy-button_text
+  &_text {
+    color: $red;
+    font-family: 'Intro-Regular';
+    font-size: 16px;
+  }
+}

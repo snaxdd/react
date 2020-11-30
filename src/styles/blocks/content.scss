@@ -1,0 +1,30 @@
+.content {
+  padding: 40px;
+  //--.content-container
+  &_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  //--.content-videos
+  &-videos {
+    width: 100%;
+    max-width: 429px;
+    display: flex;
+    justify-content: space-between;
+    //.content-videos_item
+    &_item {
+      width: 127px;
+      height: 88px;
+      background-color: black;
+      border-radius: 8px;
+    }
+  }
+  //--.content-description
+  &-description {
+    font-family: 'Intro-Book';
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    max-width: 660px;
+  }
+}

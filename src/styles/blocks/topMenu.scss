@@ -1,0 +1,35 @@
+.top-menu {
+  font-family: 'Intro-Book';
+  font-size: 14px;
+  //--.top-menu_icon
+  &_icon {
+    position: absolute;
+  }
+  //--.top-menu_list
+  &_list {
+    list-style: none;
+    display: flex;
+  }
+  //--.top-menu_item
+  &_item {
+    //--.top-menu_item-link
+    &-link {
+      color: #666666;
+    }
+    &:nth-child(1) {
+      margin-right: 74px;
+    }
+    &:nth-child(2) {
+      margin-right: 40px;
+      position: relative;
+    }
+    &:nth-child(3) {
+      margin-right: 53px;
+      position: relative;
+    }
+    &:nth-child(4) {
+      margin-right: 53px;
+      position: relative;
+    }    
+  }
+}

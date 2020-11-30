@@ -1,0 +1,25 @@
+.burger-menu {
+  background-color: #1E2833;
+  display: flex;
+  height: 48px;
+  width: 100%;
+  max-width: 140px;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  //--.burger-menu_icon
+  &_icon {
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+  }
+  //--.burger-menu_text
+  &_text {
+    color: white;
+    font-size: 16px;
+    font-family: 'Intro-Regular';
+    display: flex;
+    align-items: center;
+  }
+}
+

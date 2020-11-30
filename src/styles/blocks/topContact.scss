@@ -1,0 +1,31 @@
+.top-contacts {
+  //--.top-contacts_list
+  &_list {
+    display: flex;
+  }
+  //--.top-contacts_phone
+  &_phone {
+    font-family: 'Intro-Bold';
+    margin-right: 46px;
+    //--.top-contacts_phone-link
+    &-link {
+      color: $dark;
+    }
+  }
+  //--.top-contacts_callback
+  &_callback {
+    font-size: 14px;
+    font-family: 'Intro-Book';
+    border-bottom: 1px dashed #666666;
+    position: relative;
+    //--.top-contacts_callback-link
+    &-link {
+      color: #666666;
+    }
+  }
+  //--.top-contacts_icon
+  &_icon {
+    position: absolute;
+    left: -22px;
+  }
+}

@@ -1,0 +1,22 @@
+@import './style.scss';
+@import './variables.scss';
+@import './fonts.scss';
+
+@import './blocks/header.scss';
+@import './blocks/logo.scss';
+@import './blocks/topMenu.scss';
+@import './blocks/topContact.scss';
+@import './blocks/burger.scss';
+@import './blocks/searchInput.scss';
+@import './blocks/userIcons.scss';
+@import './blocks/breadcrumbs.scss';
+@import './blocks/topSlider.scss';
+@import './blocks/nutritionalValue.scss';
+@import './blocks/content.scss';
+@import './blocks/buyButton.scss';
+
+body {
+  background-color: $pageBg;
+  padding: 0 15px 0 15px;
+  height: 5000px;
+}

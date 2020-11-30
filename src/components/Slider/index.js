@@ -1,0 +1,47 @@
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation } from 'swiper';
+import 'swiper/swiper.scss';
+import { SliderItem } from './SliderItem';
+import { ReactComponent as SliderArrowNext } from '../../assets/icons/Slider/next-arrow.svg';
+import { ReactComponent as SliderArrowPrev } from '../../assets/icons/Slider/prev-arrow.svg';
+
+SwiperCore.use([
+  Navigation
+]);
+
+export class Slider extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return(
+      <div className="slider">
+        <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation={{nextEl: '.slider_button-next',
+          prevEl: '.slider_button-prev'}}
+        >
+        {
+          this.props.sliderData.map(item => {
+            return(
+              <SwiperSlide key={ item.id }>
+                <SliderItem slideData={ item }/>
+              </SwiperSlide>
+            );
+          })
+        }  
+        </Swiper>
+        <div className="slider_button slider_button-next">
+          <SliderArrowNext />
+        </div> 
+        <div className="slider_button slider_button-prev">
+          <SliderArrowPrev />
+        </div> 
+      </div>
+    );
+  };
+};
+

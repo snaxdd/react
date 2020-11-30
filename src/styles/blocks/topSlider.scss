@@ -1,0 +1,126 @@
+.slider {
+  position: relative;
+  //--.slider-button
+  &_button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    z-index: 5;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+    &-next {
+      position: absolute;
+      right: -20px;
+      top: 160px;
+    }
+    &-prev {
+      position: absolute;
+      top: 160px;
+      left: -20px;
+    }
+  }
+  //--.slider-top
+  &-top {
+    height: 376px;
+  }
+  //--.slider_title
+  &_title {
+    color: white;
+    font-family: 'Intro-Bold';
+    font-size: 48px;
+    position: absolute;
+    bottom: 75px;
+    width: 100%;
+    text-align: center; 
+    z-index: 5;
+  }
+  //--.slider_image
+  &_image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    //--.slider_image-container
+    &-container {
+      position: relative;
+      height: 100%;
+      &::after {
+        left: 0;
+        top: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 110%);
+      }
+    }
+  }
+  //--.slider_item
+  &_item {
+    height: 376px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  //--.slider_props
+  &_props {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 31px;
+    z-index: 5;
+    //--.slider_props-group
+    &-group {
+      display: flex;
+    }
+    //--.slider_props-item
+    &-item {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-family: 'Intro-Book';
+      font-size: 14px;
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    //--.slider_props-icon
+    &-icon {
+      margin-right: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    } 
+  }
+  //.slider_user-actions
+  &_user-actions {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    display: flex;
+    max-width: 192px;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 5;
+    &-icon {
+      width: 48px;
+      height: 48px;
+      background-color: $dark;
+      border-radius: 100%;
+    }
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
