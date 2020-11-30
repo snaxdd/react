@@ -6,7 +6,7 @@ import { ContentVideos } from "../../components/ContentVideos/index";
 import { ContentDescription } from '../../components/ContentDescription/index';
 
 import Image from '../../assets/images/image.jpg';
-import { BuyButton } from '../../components/BuyButton';
+//import { BuyButton } from '../../components/BuyButton';
 
 export class Recipe extends React.Component {
   constructor(props) {
