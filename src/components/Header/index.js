@@ -13,16 +13,16 @@ export class Header extends React.Component {
   
   render() {
     return(
-      <header className="header">
-        <div className="header-top">
-          <div className="container header-top_container">
+      <header className='header'>
+        <div className='header-top'>
+          <div className='container header-top_container'>
             <TopMenu menu={this.props.data.menu} />
             <TopContact phoneNumber={this.props.data.phoneNumber} />
           </div>
         </div>
-        <div className="header-bottom">
-          <div className="container header-bottom_container">
-            <div className="logo header_logo">
+        <div className='header-bottom'>
+          <div className='container header-bottom_container'>
+            <div className='logo header_logo'>
               <Logo />
             </div>
             <Burger />

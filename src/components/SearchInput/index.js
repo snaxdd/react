@@ -8,11 +8,11 @@ export class SearchInput extends React.Component {
 
   render() {
     return (
-      <div className="search-input header_search-input">
-        <div className="search-input_icon">
+      <div className='search-input header_search-input'>
+        <div className='search-input_icon'>
           <SearchIcon />
         </div>
-        <input className="search-input_textfield" type="text" placeholder="Название рыбы или морепродукта"/>
+        <input className='search-input_textfield' type='text' placeholder='Название рыбы или морепродукта'/>
       </div>
     );
   };

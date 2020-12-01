@@ -1,12 +1,11 @@
 import React from 'react';
-import { Header } from '../../components/Header/index';
-import { Breadcrumbs } from '../../components/Breadcrumbs/index';
-import { Slider } from '../../components/Slider/index';
-import { ContentVideos } from "../../components/ContentVideos/index";
-import { ContentDescription } from '../../components/ContentDescription/index';
-
-import Image from '../../assets/images/image.jpg';
-//import { BuyButton } from '../../components/BuyButton';
+import { Header } from './../../components/Header/index';
+import { Breadcrumbs } from './../../components/Breadcrumbs/index';
+import { Slider } from './../../components/Slider/index';
+import { ContentVideos } from './../../components/ContentVideos/index';
+import { ContentDescription } from './../../components/ContentDescription/index';
+import { NutritionalValue } from '../../components/NutritionalValue/index';
+import Image from './../../assets/images/image.jpg';
 
 export class Recipe extends React.Component {
   constructor(props) {
@@ -15,29 +14,31 @@ export class Recipe extends React.Component {
   
   render() {
     return(
-      <div className="app">
+      <div className='app'>
         <Header data={pageData.header} />
-        <main className="main">
+        <main className='main'>
   
-          <div className="breadcrumbs">
-            <div className="container breadcrumbs_container">
+          <div className='breadcrumbs'>
+            <div className='container breadcrumbs_container'>
               <Breadcrumbs breadcrumbs={pageData.breadcrumbs} />
             </div>
           </div>
   
-          <div className="slider-top">
-            <div className="container slider-top_container">
+          <div className='slider-top'>
+            <div className='container slider-top_container'>
               <Slider sliderData={pageData.topSlider}/>
             </div>
           </div>
 
-          <div className="content">
-            <div className="container content_container">
-              <ContentVideos data={pageData.content.contentVideos}/>
-              <ContentDescription />
-            </div>
-            <div className="container">
-              
+          <div className='content'>
+            <div className='container content_container'>
+              <div className="content-left-wrap">
+                <ContentVideos data={pageData.content.contentVideos}/>
+              </div>
+              <div className="content-right-wrap">
+                <ContentDescription />
+                <NutritionalValue />
+              </div>
             </div>
           </div>
         </main>

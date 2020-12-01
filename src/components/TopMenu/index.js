@@ -8,8 +8,8 @@ export class TopMenu extends React.Component {
 
   render() {
     return(
-      <nav className="top-menu">
-        <ul className="top-menu_list">
+      <nav className='top-menu'>
+        <ul className='top-menu_list'>
           { this.props.menu.map(item => <MenuItem text={item} key={ item + Math.random() }/>) }
         </ul>
       </nav>

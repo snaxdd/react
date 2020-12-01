@@ -17,7 +17,7 @@ export class Slider extends React.Component {
 
   render() {
     return(
-      <div className="slider">
+      <div className='slider'>
         <Swiper
         spaceBetween={50}
         slidesPerView={1}
@@ -34,10 +34,10 @@ export class Slider extends React.Component {
           })
         }  
         </Swiper>
-        <div className="slider_button slider_button-next">
+        <div className='slider_button slider_button-next'>
           <SliderArrowNext />
         </div> 
-        <div className="slider_button slider_button-prev">
+        <div className='slider_button slider_button-prev'>
           <SliderArrowPrev />
         </div> 
       </div>

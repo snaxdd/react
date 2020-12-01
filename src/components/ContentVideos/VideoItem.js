@@ -7,7 +7,7 @@ export class VideoItem extends React.Component {
 
   render() {
     return(
-      <div className="content-videos_item">
+      <div className='content-videos_item'>
         
       </div>
     );

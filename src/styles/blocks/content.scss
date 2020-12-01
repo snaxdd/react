@@ -3,7 +3,6 @@
   //--.content-container
   &_container {
     display: flex;
-    justify-content: space-between;
   }
   //--.content-videos
   &-videos {
@@ -26,5 +25,15 @@
     line-height: 32px;
     color: #333333;
     max-width: 660px;
+  }
+  //--.content-left-wrap
+  &-left-wrap {
+    max-width: 430px;
+    width: 100%;
+    margin-right: 70px;
+  }
+  //--.content_content-description
+  &_content-description {
+    margin-bottom: 38px;
   }
 }

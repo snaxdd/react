@@ -8,9 +8,9 @@ export class BuyButton extends React.Component {
 
   render() {
     return(
-      <a href="#" className="buy-button">
+      <a href='#' className='buy-button'>
         <CartIcon />
-        <span className="buy-button_text">
+        <span className='buy-button_text'>
           Купить
         </span>
       </a>

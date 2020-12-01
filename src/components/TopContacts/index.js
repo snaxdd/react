@@ -8,18 +8,18 @@ export class TopContact extends React.Component {
 
   render() {
     return(
-      <div className="top-contacts">
-        <ul className="top-contacts_list">
-          <li className="top-contacts_phone">
-            <a href="tel:123" className="top-contacts_phone-link">
+      <div className='top-contacts'>
+        <ul className='top-contacts_list'>
+          <li className='top-contacts_phone'>
+            <a href='tel:123' className='top-contacts_phone-link'>
               {this.props.phoneNumber}
             </a>
           </li>
-          <li className="top-contacts_callback">
-            <div className="top-contacts_icon">
+          <li className='top-contacts_callback'>
+            <div className='top-contacts_icon'>
               <CallbackIcon />
             </div>
-            <a href="#" className="top-contacts_callback-link">
+            <a href='#' className='top-contacts_callback-link'>
               Обратный звонок
             </a>
           </li>
