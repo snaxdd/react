@@ -11,9 +11,9 @@ export class NutritionalValue extends React.Component {
 
   render() {
     return(
-      <div className='nutritional-value'>
+      <div className='nutritional-value recipe_nutritional-value'>
         <div className='nutritional-value_item'>
-          <Meat />
+          <Meat className='nutritional-value_icon' />
           <span className="nutritional-value_title">
             белки
           </span>

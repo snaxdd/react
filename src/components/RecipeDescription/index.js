@@ -1,13 +1,13 @@
 import React from 'react';
 
-export class ContentDescription extends React.Component {
+export class RecipeDescription extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
     return(
-      <div className='content-description content_content-description'>
+      <div className='recipe-description recipe_recipe-description'>
         Популярность красной рыбы, и в частности лосося, 
         растет с каждым днем. 
         Из-за своего восхитительного вкуса и богатого витаминного 

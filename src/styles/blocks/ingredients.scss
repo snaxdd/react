@@ -1,0 +1,43 @@
+.ingredients-table {
+  max-width: 428px;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Intro-Light';
+  font-size: 16px;
+  //--.ingredients-table_row
+  &_row {
+    height: 56px;
+    border-bottom: 1px solid $greyBlue;
+  }
+  //--.ingredients-table_title
+  &_title {
+    font-family: 'Intro-Book';
+    font-size: 24px;
+    padding-bottom: 24px;
+  }
+  //--.ingredients-table_product-count
+  &_product-count {
+    font-family: 'Intro-Regular';
+    font-size: 16px;
+    color: 333333;
+    text-align: right;
+  }
+  //--.ingredients-table_recipe-title
+  &_recipe-title {
+    vertical-align: center;
+  }
+  //--.ingredients-table_recipe-weight
+  &_recipe-weight {
+    font-family: 'Intro-Regular';
+    font-size: 16px;
+    color: 333333;
+  }
+  //--.ingredients-table_recipe-img
+  &_recipe-img {
+    
+  }
+  //--.ingredients-table_head
+  &_head {
+    
+  }
+}

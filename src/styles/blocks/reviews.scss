@@ -1,0 +1,67 @@
+.reviews {
+  &_section-heading {
+    margin-bottom: 16px;
+  }
+  //--.reviews_header
+  &_header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 0 16px;
+    width: 100%;
+    min-height: 88px;
+    background-color: #fff;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid rgba(203, 218, 236, 0.56);
+    //--.reviews_header-button
+    &-button {
+      margin-right: 60px;
+    }
+    //--.reviews_header-rate
+    &-rate {
+      display: flex;
+      align-items: center;
+      //--.reviews_header-rate-text
+      &-text {
+        font-family: 'Intro-Regular';
+        font-size: 16px;
+        line-height: 24px;
+        margin-right: 17px;
+      }
+    }
+    //--.reviews_header-comments-number
+    &-comments-number {
+      line-height: 24px;
+      font-family: 'Intro-Book';
+      font-size: 14px;
+      color: #999999;
+    }
+    //--.reviews_header-star
+    &-star {
+      margin-right: 4px;
+      fill: $greyBlue;
+      //--.reviews_header-star-wrap
+      &-wrap {
+        margin-right: 5px;
+      }
+      &--active {
+        fill: $orange;
+      }
+    }
+    //--.reviews_header-sorting
+    &-sorting {
+      display: flex;
+      align-items: center;
+      padding-right: 15px;
+      //--.reviews_header-sorting_text
+      &_text {
+        font-family: 'Intro-Light';
+        font-size: 16px;
+        line-height: 24px;
+        color: $dark;
+        margin-right: 43px;
+      }
+    }
+  }
+}
