@@ -7,8 +7,11 @@ export class Review extends React.Component {
 
   render() {
     return(
-      <div className="reviews_comment">
-        
+      <div className="user-review">
+        <img src="" alt="" className="user-review_avatar"/>
+        <div className="user-review_wrap">
+          
+        </div>
       </div>
     );
   };
