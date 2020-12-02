@@ -10,6 +10,8 @@ import { RecipeSteps } from '../../components/RecipeSteps/index';
 import { Reviews } from './Reviews/index';
 import { SimilarRecipes } from './SimilarRecipes/index';
 import Image from './../../assets/images/image.jpg';
+import { CallbackDiscount } from '../../components/callbackDiscount';
+import { Footer } from '../../components/Footer/index';
 
 export class Recipe extends React.Component {
   constructor(props) {
@@ -66,14 +68,22 @@ export class Recipe extends React.Component {
             </div>
           </section>
 
-          <section className="callback-discount">
-            <div className="callback-discount-wrap">
-              <div className="callback-discount_title">
-                Попробуй со скидкой
-              </div>
+          <CallbackDiscount />
+
+          <div className="delivery-notice">
+            <div className="container">
+              <p className="delivery-notice_text">
+              Все наши курьеры доставляют заказы в медицинских масках, одноразовых перчатках, а также регулярно обрабатывают руки и автомобили. Доставка день-в-день осуществляется по Москве и Химкам при оформлении заказа до 14:00 и при условии свободных мест на доставку. Ваш заказ не покидает холодильника даже в пути! Мы доставляем только специальным транспортом, который оборудован рефрижераторами и поддерживает специальную температуру в кузове.
+              </p>
+
+              <a href="#" className="delivery-notice_read-more">
+                Читать больше
+              </a>
             </div>
-          </section>
+          </div>
         </main>
+
+        <Footer />
       </div>
     );
   };
@@ -198,6 +208,15 @@ const pageData = {
       },
       {
         id: 3,
+        name: 'Андрей Рыбаков',
+        rate: 5,
+        comment: `Отличная модель в таком ценовом диапазоне! 
+        Заряд держит отлично, при интенсивной нагрузке. 
+        Игры поддерживает просто на высоте, не вылетает. Огромный по величине экран. `,
+        date: new Date().toLocaleDateString()
+      },
+      {
+        id: 4,
         name: 'Андрей Рыбаков',
         rate: 5,
         comment: `Отличная модель в таком ценовом диапазоне! 

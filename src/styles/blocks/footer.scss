@@ -1,0 +1,88 @@
+.footer {
+  padding-top: 40px;
+  min-height: 400px;
+  background-color: $dark;
+  background-image: url('../../assets/patterns/fish_pattern_footer.png');
+
+  //--.footer-logo-socials-wrap
+  &-logo-socials-wrap {
+    width: 100%;
+    max-width: 234px;
+    align-self: flex-start;
+    min-height: 202px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 66px;
+  }
+
+  //--.footer-top
+  &-top {
+    display: flex;
+  }
+
+  //--.footer-menu
+  &-menu {
+    padding-top: 14px;
+    margin-right: 100px;
+
+    //--.footer-menu_footer-heading
+    &_footer-heading {
+      margin-bottom: 24px;
+    }
+
+    //--.footer-menu_link
+    &_link {
+      font-family: 'Intro-Light';
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    //--.footer-menu_list
+    &_list {
+      max-width: 400px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    //--.footer-menu_item
+    &_item {
+      flex-basis: 200px;
+      margin-bottom: 16px;
+    }
+  }
+
+  //--.footer-heading
+  &-heading {
+    font-family: 'Intro-Regular';
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  //--.footer-contacts
+  &-contacts {
+    padding-top: 14px;
+
+    //--.footer-contacts_link
+    &_link {
+      font-family: 'Intro-Light';
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    //--.footer-contacts_phone
+    &_phone {
+      font-family: 'Intro-Regular';
+      font-size: 18px;
+      line-height: 24px;
+      color: white;
+    }
+  }
+}

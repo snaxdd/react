@@ -1,0 +1,16 @@
+.delivery-notice {
+  //--.delivery-notice_text
+  &_text {
+    font-family: 'Intro-Light';
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+  }
+  //--.delivery-notice_read-more
+  &_read-more {
+    font-family: 'Intro-Book';
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+  }
+}
