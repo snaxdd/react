@@ -18,10 +18,12 @@
 @import './blocks/container.scss';
 @import './blocks/ingredients.scss';
 @import './blocks/reviews.scss';
-@import './blocks/sectionHeading.scss';
+@import './blocks/section.scss';
+@import './blocks/userReview.scss';
+@import './blocks/similarRecipes.scss';
+@import './blocks/callbackDiscount.scss';
 
 body {
   background-color: $pageBg;
-  padding: 0 15px 0 15px;
   height: 5000px;
 }

@@ -1,0 +1,76 @@
+.user-review {
+  background-color: #fff;
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 23px 16px 15px 16px;
+  border-bottom: 1px solid rgba(203, 218, 236, 0.56);
+  &--last {
+    border-bottom: 0;
+    border-radius: 0 0 8px 8px;
+  }
+  //--.user-review_rate
+  &_rate {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+  }
+  //--.user-review_stars-wrap
+  &_stars-wrap {
+    margin-right: 5px;
+  }
+  //--.user-review_rate-count
+  &_rate-count {
+    font-family: 'Intro-Book';
+    font-size: 14px;
+    color: #999999;
+  }
+  //--.user-review_star
+  &_star {
+    margin-right: 4px;
+    fill: $greyBlue;
+    width: 13px;
+    &--active {
+      fill: $orange;
+    }
+  }
+  //--.user-review_avatar
+  &_avatar {
+    margin-right: 16px;
+  }
+  //--.user-review_user-name
+  &_user-name {
+    font-family: 'Intro-Regular';
+    font-size: 18px;
+    line-height: 24px;
+    color: $dark;
+    margin-right: 15px;
+  }
+  //--.user-review_header
+  &_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+  }
+  //--.user-review_publish-date
+  &_publish-date {
+    font-family: 'Intro-Light';
+    font-size: 14px;
+    line-height: 20px;
+    color: #999999;
+  }
+  //--.user-review_comment
+  &_comment {
+    font-family: 'Intro-Light';
+    font-size: 16px;
+    line-height: 24px;
+  }
+  //--.user-review_answer-button
+  &_answer-button {
+    color: $red;
+    font-family: 'Intro-Light';
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 1px dashed $red;
+  }
+}

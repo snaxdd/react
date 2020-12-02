@@ -33,19 +33,19 @@ export class SliderItem extends React.Component {
           <ul className='slider_props-group'>
             <li className='slider_props-item'>
               <div className='slider_props-icon'>
-                <Complexity />
+                <Complexity className='slider_props-icon-complexity'/>
               </div>
               { this.props.slideData.properties.complexity }
             </li>
             <li className='slider_props-item'>
               <div className='slider_props-icon'>
-                <Timer />
+                <Timer className='slider_props-icon-svg'/>
               </div>
               { this.props.slideData.properties.timer }
             </li>
             <li className='slider_props-item'>
               <div className='slider_props-icon'>
-                <Calories />
+                <Calories className='slider_props-icon-calories'/>
               </div>
               { this.props.slideData.properties.kkal }
             </li>

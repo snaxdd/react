@@ -19,12 +19,12 @@ export class ReviewHeader extends React.Component {
             {Array(5).fill(0).map((item, index) => {
               if (index < this.props.overallRate) {
                 return <Star 
-                  className='reviews_header-star reviews_header-star--active'
+                  className='reviews-star reviews-star--active'
                   key={Math.random()}
                 />;
               }
               return <Star 
-                className='reviews_header-star'
+                className='reviews-star'
                 key={Math.random()}
               />;
             })}

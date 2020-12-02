@@ -7,7 +7,8 @@ import { RecipeDescription } from '../../components/RecipeDescription/index';
 import { NutritionalValue } from '../../components/NutritionalValue/index';
 import { Ingredients } from '../../components/Ingredients/index';
 import { RecipeSteps } from '../../components/RecipeSteps/index';
-import { Reviews } from '../../Pages/Recipe/Reviews/index';
+import { Reviews } from './Reviews/index';
+import { SimilarRecipes } from './SimilarRecipes/index';
 import Image from './../../assets/images/image.jpg';
 
 export class Recipe extends React.Component {
@@ -53,6 +54,23 @@ export class Recipe extends React.Component {
                 Отзывы о рецепте
               </h2>
               <Reviews reviewsData={pageData.reviews}/>
+            </div>
+          </section>
+
+          <section className="similar-recipes">
+            <div className="container">
+              <h2 className="section-heading similar-recipes_section-heading">
+                Похожие рецепты
+              </h2>
+              <SimilarRecipes recipesData={pageData.similarRecipes}/>
+            </div>
+          </section>
+
+          <section className="callback-discount">
+            <div className="callback-discount-wrap">
+              <div className="callback-discount_title">
+                Попробуй со скидкой
+              </div>
             </div>
           </section>
         </main>
@@ -188,5 +206,62 @@ const pageData = {
         date: new Date().toLocaleDateString()
       }
     ]
-  }
+  },
+  similarRecipes: [
+    {
+      id: 1,
+      title: 'Мидии на створке',
+      text: `Особенно вкусны мидии 
+      с середины июня до февраля, 
+      так как в мае они недостаточнно жирны.`,
+      rate: 5,
+      reviewsCount: 10,
+      cookingTime: '30-40 мин',
+      calories: '384 ккал'
+    },
+    {
+      id: 2,
+      title: 'Мидии на створке',
+      text: `Особенно вкусны мидии 
+      с середины июня до февраля, 
+      так как в мае они недостаточнно жирны.`,
+      rate: 5,
+      reviewsCount: 6,
+      cookingTime: '30-55 мин',
+      calories: '235 ккал'
+    },
+    {
+      id: 3,
+      title: 'Мидии на створке',
+      text: `Особенно вкусны мидии 
+      с середины июня до февраля, 
+      так как в мае они недостаточнно жирны.`,
+      rate: 5,
+      reviewsCount: 7,
+      cookingTime: '30-66 мин',
+      calories: '325 ккал'
+    },
+    {
+      id: 4,
+      title: 'Мидии на створке',
+      text: `Особенно вкусны мидии 
+      с середины июня до февраля, 
+      так как в мае они недостаточнно жирны.`,
+      rate: 5,
+      reviewsCount: 2,
+      cookingTime: '30-427 мин',
+      calories: '123 ккал'
+    },
+    {
+      id: 5,
+      title: 'Мидии на створке',
+      text: `Особенно вкусны мидии 
+      с середины июня до февраля, 
+      так как в мае они недостаточнно жирны.`,
+      rate: 5,
+      reviewsCount: 4,
+      cookingTime: '12-30 мин',
+      calories: '323 ккал'
+    },
+  ]
 }
