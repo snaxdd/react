@@ -4,6 +4,13 @@
   //--.top-menu_icon
   &_icon {
     position: absolute;
+    &--left {
+      left: -26%;
+    }
+    &--right {
+      right: -19%;
+      top: -12%;
+    }
   }
   //--.top-menu_list
   &_list {
@@ -12,6 +19,7 @@
   }
   //--.top-menu_item
   &_item {
+    position: relative;
     //--.top-menu_item-link
     &-link {
       color: #666666;

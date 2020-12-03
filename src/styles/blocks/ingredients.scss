@@ -1,43 +1,50 @@
-.ingredients-table {
-  max-width: 428px;
-  width: 100%;
-  border-collapse: collapse;
-  font-family: 'Intro-Light';
-  font-size: 16px;
-  //--.ingredients-table_row
-  &_row {
-    height: 56px;
-    border-bottom: 1px solid $greyBlue;
-  }
-  //--.ingredients-table_title
+.ingredients {
   &_title {
-    font-family: 'Intro-Book';
-    font-size: 24px;
-    padding-bottom: 24px;
-  }
-  //--.ingredients-table_product-count
-  &_product-count {
-    font-family: 'Intro-Regular';
+    font-family: 'Intro-Light';
     font-size: 16px;
-    color: 333333;
-    text-align: right;
+    line-height: 40px;
+    color: #333333;
   }
-  //--.ingredients-table_recipe-title
-  &_recipe-title {
-    vertical-align: center;
-  }
-  //--.ingredients-table_recipe-weight
+
   &_recipe-weight {
     font-family: 'Intro-Regular';
     font-size: 16px;
-    color: 333333;
+    line-height: 40px;
+    color: #333333;
   }
-  //--.ingredients-table_recipe-img
-  &_recipe-img {
-    
+
+  &_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  //--.ingredients-table_head
-  &_head {
-    
+
+  &_buy-button {
+    max-width: 100px;
+  }
+
+  &_row {
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(189, 213, 242, 0.56);
+  }
+
+  &_product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-name {
+      font-family: 'Intro-Light';
+      font-size: 16px;
+      line-height: 40px;
+      color: #333333;
+    }
+
+    &-count {
+      font-family: 'Intro-Regular';
+      font-size: 16px;
+      line-height: 40px;
+      color: #333333;
+    }
   }
 }

@@ -17,7 +17,7 @@ export class SimilarRecipes extends React.Component {
     return(
       <div className="similar-recipes-carousel">
         <Swiper
-        spaceBetween={50}
+        spaceBetween={40}
         slidesPerView={4}
         navigation={{nextEl: '.similar-recipes-carousel_next',
           prevEl: '.similar-recipes-carousel_prev'}}

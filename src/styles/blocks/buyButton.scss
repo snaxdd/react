@@ -7,10 +7,23 @@
   align-items: center;
   min-height: 40px;
   border-radius: 8px;
+  transition: 0.1s;
+  &_icon {
+    fill: $red;
+  }
   //--.buy-button_text
   &_text {
     color: $red;
     font-family: 'Intro-Regular';
     font-size: 16px;
+  }
+  &:hover {
+    background-color: $red;
+    &, .buy-button_text {
+      color: white;
+    }
+    &, .buy-button_icon {
+      fill: white;
+    }
   }
 }

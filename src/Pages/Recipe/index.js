@@ -12,6 +12,8 @@ import { SimilarRecipes } from './SimilarRecipes/index';
 import Image from './../../assets/images/image.jpg';
 import { CallbackDiscount } from '../../components/callbackDiscount';
 import { Footer } from '../../components/Footer/index';
+import { ReactComponent as Delivery } from '../../assets/icons/Delivery.svg';
+import { ReactComponent as MenuArrowDown } from '../../assets/icons/Menu-arrow-down.svg';
 
 export class Recipe extends React.Component {
   constructor(props) {
@@ -40,7 +42,7 @@ export class Recipe extends React.Component {
             <div className='container recipe_container'>
               <div className="recipe-left-wrap">
                 <RecipeVideos data={pageData.content.contentVideos}/>
-                <Ingredients />
+                <Ingredients data={pageData.ingredients}/>
               </div>
               <div className="recipe-right-wrap">
                 <RecipeDescription />
@@ -96,13 +98,71 @@ const pageData = {
   ],
   header: {
     menu: [
-      'Кто мы', 
-      'Доставка и оплата', 
-      'Наши магазины', 
-      'Покупателям', 
-      'Новости'
+      {
+        text: 'Кто мы',
+        iconLeft: '',
+        iconRight: ''
+      },
+      {
+        text: 'Доставка и оплата',
+        iconLeft: <Delivery />,
+        iconRight: ''
+      },
+      {
+        text: 'Наши магазины',
+        iconLeft: '',
+        iconRight: <MenuArrowDown />
+      },
+      {
+        text: 'Покупателям',
+        iconLeft: '',
+        iconRight: <MenuArrowDown />
+      },
+      {
+        text: 'Новости',
+        iconLeft: '',
+        iconRight: ''
+      }
     ],
     phoneNumber: '+7 (495) 445-05-50'
+  },
+  ingredients : {
+    title: 'Филе семги без кожи',
+    recipeWeight: '150 г',
+    ingredients: [
+      {
+        name: 'Руккола',
+        count: '30 г'
+      },
+      {
+        name: 'Авокадо',
+        count: '0.5 шт'
+      },
+      {
+        name: 'Перец черный молотый',
+        count: 'По вкусу'
+      },
+      {
+        name: 'Соль',
+        count: 'По вкусу'
+      },
+      {
+        name: 'Яйцо куриное',
+        count: '2 шт.'
+      },
+      {
+        name: 'Песто',
+        count: '1 ст. л'
+      },
+      {
+        name: 'Хлеб зерновой',
+        count: '2 ломтика'
+      },
+      {
+        name: 'Сыр Arla Natura Сливочный Лёгкий',
+        count: '1 ломтик'
+      }
+    ]
   },
   topSlider: [
     {

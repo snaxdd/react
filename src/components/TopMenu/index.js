@@ -10,7 +10,16 @@ export class TopMenu extends React.Component {
     return(
       <nav className='top-menu'>
         <ul className='top-menu_list'>
-          { this.props.menu.map(item => <MenuItem text={item} key={ item + Math.random() }/>) }
+          {this.props.menu.map(item => {
+            return(
+              <MenuItem 
+                text={item.text} 
+                iconLeft={item.iconLeft}
+                iconRight={item.iconRight}
+                key={ item + Math.random() }
+              />
+            );
+          })}
         </ul>
       </nav>
     );

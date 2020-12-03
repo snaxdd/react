@@ -8,10 +8,12 @@ export class BuyButton extends React.Component {
 
   render() {
     return(
-      <a href='#' className='buy-button'>
-        <CartIcon />
+      <a href='#' className={`buy-button ${this.props.class ? this.props.class : ''}`}>
+        <CartIcon 
+          className="buy-button_icon"
+        />
         <span className='buy-button_text'>
-          Купить
+          {this.props.text}
         </span>
       </a>
     );
