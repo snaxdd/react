@@ -10,7 +10,7 @@ import { RecipeSteps } from '../../components/RecipeSteps/index';
 import { Reviews } from './Reviews/index';
 import { SimilarRecipes } from './SimilarRecipes/index';
 import Image from './../../assets/images/image.jpg';
-import { CallbackDiscount } from '../../components/callbackDiscount';
+import { CallbackDiscount } from '../../components/CallbackDiscount/index';
 import { Footer } from '../../components/Footer/index';
 import { ReactComponent as Delivery } from '../../assets/icons/Delivery.svg';
 import { ReactComponent as MenuArrowDown } from '../../assets/icons/Menu-arrow-down.svg';
