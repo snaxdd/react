@@ -4,6 +4,11 @@
   background-color: $dark;
   background-image: url('../../assets/patterns/fish_pattern_footer.png');
 
+  //--.footer-callback-btn
+  &-callback-btn {
+    padding: 10px 39px;
+  }
+
   //--.footer-logo-socials-wrap
   &-logo-socials-wrap {
     width: 100%;
@@ -16,9 +21,18 @@
     margin-right: 66px;
   }
 
+  //--.footer-copyright
+  &-copyright {
+    font-family: 'Intro-Book';
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.64);
+  }
+
   //--.footer-top
   &-top {
     display: flex;
+    margin-bottom: 25px;
   }
 
   //--.footer-menu
@@ -69,6 +83,25 @@
   &-contacts {
     padding-top: 14px;
 
+    //--.footer-contacts_item
+    &_item {
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    //--.footer-contacts_list
+    &_list {
+      margin-bottom: 32px;
+    }
+
+    //--.footer-contacts_footer-heading
+    &_footer-heading {
+      margin-bottom: 24px;
+    }
+
     //--.footer-contacts_link
     &_link {
       font-family: 'Intro-Light';
@@ -83,6 +116,90 @@
       font-size: 18px;
       line-height: 24px;
       color: white;
+    }
+
+    //--.footer-contacts_item-icon
+    &_item-icon {
+      fill: white;
+      margin-right: 18px;
+
+      &--email {
+        fill: none;
+        stroke: white;
+      }
+    }
+  }
+
+  //--.footer-bottom
+  &-bottom {
+    display: flex;
+    min-height: 80px;
+
+    &-left {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-basis: 50%;
+
+      &::after {
+        content: '';
+        background: rgba(203, 218, 236, 0.08);
+        width: 96.55%;
+        height: 1px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &-right {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-basis: 50%;
+
+      &::after {
+        content: '';
+        background: rgba(203, 218, 236, 0.08);
+        width: 96.55%;
+        height: 1px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &-docs {
+      display: flex;
+
+      &_link {
+        font-family: 'Intro-Book';
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.64);
+      }
+
+      &_item {
+        &:nth-child(1) {
+          margin-right: 86px;
+        }
+      }
+    }
+
+    &-pyrobyte-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      right: -45px;
+      top: -7px;
+      &_text {
+        font-family: 'Intro-Book';
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.32);
+      }
     }
   }
 }

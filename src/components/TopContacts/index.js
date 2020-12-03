@@ -16,9 +16,7 @@ export class TopContact extends React.Component {
             </a>
           </li>
           <li className='top-contacts_callback'>
-            <div className='top-contacts_icon'>
-              <CallbackIcon />
-            </div>
+            <CallbackIcon className="top-contacts_icon"/>
             <a href='#' className='top-contacts_callback-link'>
               Обратный звонок
             </a>
