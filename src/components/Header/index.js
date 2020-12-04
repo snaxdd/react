@@ -1,6 +1,7 @@
 import React from 'react';
 import { TopMenu } from './TopMenu/index';
 import { BottomMenu } from './BottomMenu/index';
+import { HeaderMobile } from './Mobile/index';
 
 export class Header extends React.Component {
   constructor(props) {
@@ -15,6 +16,9 @@ export class Header extends React.Component {
         </div>
         <div className='header_bottom'>
           <BottomMenu />
+        </div>
+        <div className="header_mobile">
+          <HeaderMobile />
         </div>
       </header>
     );

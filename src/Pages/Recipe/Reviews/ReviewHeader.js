@@ -28,10 +28,10 @@ export class ReviewHeader extends React.Component {
                 key={Math.random()}
               />;
             })}
-          </div>
-          <span className="reviews_header-comments-number">
+            <span className="reviews_header-comments-number" >
             {this.props.commentsNumber}
-          </span>
+            </span>
+          </div>
         </div>
 
         <Button 
@@ -40,10 +40,12 @@ export class ReviewHeader extends React.Component {
         />
 
         <div className="reviews_header-sorting">
-          <span className="reviews_header-sorting_text">
+          <span className="reviews_header-sorting-text">
             Самые полезные
           </span>
-          <IconArrowDown />
+          <IconArrowDown 
+            className="reviews_header-sorting-icon"
+          />
         </div>
       </div>
     );

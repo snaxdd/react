@@ -5,6 +5,7 @@
   &_container {
     display: flex;
     padding-top: 40px;
+    flex-wrap: wrap;
   }
 
   //--.recipe-videos
@@ -13,6 +14,10 @@
     max-width: 429px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 425px) {
+      display: none;
+    }
 
     //.recipe-videos_item
     &_item {
@@ -52,6 +57,10 @@
     max-width: 660px;
     // POS
     margin-bottom: 38px;
+
+    @media screen and (max-width: 425px) {
+      font-size: 18px;
+    }
   }
 
   //--.recipe-left-wrap
@@ -59,6 +68,15 @@
     max-width: 430px;
     width: 100%;
     margin-right: 70px;
+    
+    @media screen and (max-width: 425px) {
+      margin-right: 0;
+    }
+  }
+
+  &_right {
+    width: 100%;
+    max-width: 660px;
   }
 
   //--.recipe_recipe-videos

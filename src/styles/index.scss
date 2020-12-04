@@ -6,7 +6,7 @@
 @import './blocks/Logo.scss';
 @import './blocks/Burger.scss';
 @import './blocks/Breadcrumbs.scss';
-@import './blocks/TopSlider.scss';
+@import './blocks/Slider.scss';
 @import './blocks/NutritionalValue.scss';
 @import './blocks/Recipe.scss';
 @import './blocks/BuyButton.scss';
@@ -20,8 +20,8 @@
 @import './blocks/DeliveryNotice.scss';
 @import './blocks/Footer.scss';
 @import './blocks/Socials.scss';
+@import './blocks/Swiper.scss';
 
 body {
   background-color: $pageBg;
-  //height: 5000px;
 }

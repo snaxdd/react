@@ -19,6 +19,11 @@ export class Slider extends React.Component {
     return(
       <div className='slider'>
         <Swiper
+        breakpoints={{
+          425: {
+            spaceBetween: 20
+          }
+        }}
         spaceBetween={50}
         slidesPerView={1}
         navigation={{nextEl: '.slider_button-next',

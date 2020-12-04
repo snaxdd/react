@@ -8,7 +8,9 @@ export class NutritionalValueItem extends React.Component {
   render() {
     return(
       <div className='nutritional-value_item'>
-        {this.props.image}
+        <div className="nutritional-value_icon">
+          {this.props.image}
+        </div>
         <span className="nutritional-value_title">
           {this.props.title}
         </span>

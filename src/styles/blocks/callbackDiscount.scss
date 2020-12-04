@@ -9,6 +9,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
+    @media screen and (max-width: 425px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
   //--.callback-discount-wrap
   &_wrap {
@@ -24,6 +33,12 @@
     font-size: 24px;
     line-height: 32px;
     color: white;
+
+    @media screen and (max-width: 425px) {
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 13px;
+    }
   }
   //--.callback-discount_form
   &_form {
