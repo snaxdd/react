@@ -8,13 +8,13 @@ export class MenuItem extends React.Component {
   setIcon() {
     if (this.props.iconLeft) {
       return(
-        <div className="top-menu_icon top-menu_icon--left">
+        <div className="header_menu-icon header_menu-icon--left">
           {this.props.iconLeft}
         </div>
       );
     } else if (this.props.iconRight) {
       return(
-        <div className="top-menu_icon top-menu_icon--right">
+        <div className="header_menu-icon header_menu-icon--right">
           {this.props.iconRight}
         </div>
       );
@@ -25,11 +25,11 @@ export class MenuItem extends React.Component {
 
   render() {
     return (
-      <li className='top-menu_item'>
+      <li className='header_menu-item'>
         {this.setIcon()}
         <a 
           href='#' 
-          className='top-menu_item-link'
+          className='header_menu-link'
         >{ this.props.text }</a>
       </li>
     );

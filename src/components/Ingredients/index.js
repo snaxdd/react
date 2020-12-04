@@ -1,5 +1,5 @@
 import React from 'react';
-import TitleImg from '../../assets/images/Ingredients/title-img.png';
+import ImageTitle from '../../assets/images/Ingredients/title-img.png';
 import { BuyButton } from '../BuyButton/index';
 import { Ingredient } from '../Ingredients/Ingredient';
 
@@ -11,10 +11,13 @@ export class Ingredients extends React.Component {
   render() {
     return(
       <div className='ingredients'>
+        <span className="ingredients_heading">
+          Ингредиенты
+        </span>
         <div className="ingredients_row">
           <div className="ingredients_header">
             <img 
-              src={ TitleImg } 
+              src={ ImageTitle } 
               alt="fish" 
               className="ingredients_header-img"
             />

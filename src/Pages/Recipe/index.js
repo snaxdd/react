@@ -3,17 +3,22 @@ import { Header } from './../../components/Header/index';
 import { Breadcrumbs } from './../../components/Breadcrumbs/index';
 import { Slider } from './../../components/Slider/index';
 import { RecipeVideos } from './../../components/RecipeVideos/index';
-import { RecipeDescription } from '../../components/RecipeDescription/index';
+import { RecipeDescription } from './RecipeDescription';
 import { NutritionalValue } from '../../components/NutritionalValue/index';
 import { Ingredients } from '../../components/Ingredients/index';
 import { RecipeSteps } from '../../components/RecipeSteps/index';
 import { Reviews } from './Reviews/index';
 import { SimilarRecipes } from './SimilarRecipes/index';
 import Image from './../../assets/images/image.jpg';
-import { CallbackDiscount } from '../../components/CallbackDiscount/index';
+import { CallbackDiscount } from '../../components/CallbackDiscount';
 import { Footer } from '../../components/Footer/index';
-import { ReactComponent as Delivery } from '../../assets/icons/Delivery.svg';
-import { ReactComponent as MenuArrowDown } from '../../assets/icons/Menu-arrow-down.svg';
+import { ReactComponent as IconDelivery } from '../../assets/icons/Delivery.svg';
+import { ReactComponent as IconMenuArrowDown } from '../../assets/icons/Menu-arrow-down.svg';
+//Nutritional Value Icons
+import { ReactComponent as IconMeat } from './../../assets/icons/NutritionalValue/Meat.svg';
+import { ReactComponent as IconPizza } from './../../assets/icons/NutritionalValue/Pizza.svg';
+import { ReactComponent as IconRice } from './../../assets/icons/NutritionalValue/Rice.svg';
+import { ReactComponent as IconCalories } from './../../assets/icons/NutritionalValue/Calories.svg';
 
 export class Recipe extends React.Component {
   constructor(props) {
@@ -40,13 +45,13 @@ export class Recipe extends React.Component {
             </div>
 
             <div className='container recipe_container'>
-              <div className="recipe-left-wrap">
+              <div className="recipe_left">
                 <RecipeVideos data={pageData.content.contentVideos}/>
                 <Ingredients data={pageData.ingredients}/>
               </div>
-              <div className="recipe-right-wrap">
+              <div className="recipe_right">
                 <RecipeDescription />
-                <NutritionalValue />
+                <NutritionalValue data={pageData.nutritionalValue}/>
                 <RecipeSteps recipeSteps={pageData.recipeSteps}/>
               </div>
             </div>
@@ -54,7 +59,7 @@ export class Recipe extends React.Component {
 
           <section className="reviews">
             <div className="container">
-              <h2 className="section-heading reviews_section-heading">
+              <h2 className="section_heading">
                 Отзывы о рецепте
               </h2>
               <Reviews reviewsData={pageData.reviews}/>
@@ -63,7 +68,7 @@ export class Recipe extends React.Component {
 
           <section className="similar-recipes">
             <div className="container">
-              <h2 className="section-heading similar-recipes_section-heading">
+              <h2 className="section_heading">
                 Похожие рецепты
               </h2>
               <SimilarRecipes recipesData={pageData.similarRecipes}/>
@@ -85,7 +90,7 @@ export class Recipe extends React.Component {
           </div>
         </main>
 
-        <Footer />
+        <Footer data={pageData.footer}/>
       </div>
     );
   };
@@ -105,18 +110,18 @@ const pageData = {
       },
       {
         text: 'Доставка и оплата',
-        iconLeft: <Delivery />,
+        iconLeft: <IconDelivery />,
         iconRight: ''
       },
       {
         text: 'Наши магазины',
         iconLeft: '',
-        iconRight: <MenuArrowDown />
+        iconRight: <IconMenuArrowDown />  
       },
       {
         text: 'Покупателям',
         iconLeft: '',
-        iconRight: <MenuArrowDown />
+        iconRight: <IconMenuArrowDown />
       },
       {
         text: 'Новости',
@@ -341,6 +346,80 @@ const pageData = {
       reviewsCount: 4,
       cookingTime: '12-30 мин',
       calories: '323 ккал'
+    },
+  ],
+  footer: {
+    menu: [
+      {
+        id: 1,
+        text: 'Весь ассортимент',
+        href: '#'
+      },
+      {
+        id: 2,
+        text: 'Наши магазины',
+        href: '#'
+      },
+      {
+        id: 3,
+        text: 'О нас',
+        href: '#'
+      },
+      {
+        id: 4,
+        text: 'Программа лояльности',
+        href: '#'
+      },
+      {
+        id: 5,
+        text: 'Оплата',
+        href: '#'
+      },
+      {
+        id: 6,
+        text: 'Гарантии и возврат',
+        href: '#'
+      },
+      {
+        id: 7,
+        text: 'Условия доставки',
+        href: '#'
+      },
+      {
+        id: 8,
+        text: 'Отзывы',
+        href: '#'
+      },
+    ]
+  },
+  nutritionalValue: [
+    {
+      id: 1,
+      image: <IconMeat />,
+      title: 'белки',
+      weight: '120',
+      weightUnit: 'грамм'
+    },
+    {
+      id: 2,
+      image: <IconPizza />,
+      title: 'жиры',
+      weight: '12',
+      weightUnit: 'грамм'
+    },
+    {
+      id: 3,
+      image: <IconRice />,
+      title: 'углеводы',
+      weight: '230',
+      weightUnit: 'грамм'
+    },
+    {
+      id: 4,
+      image: <IconCalories />,
+      title: 'калорийность',
+      weight: '387',
+      weightUnit: 'ккал'
     },
   ]
 }

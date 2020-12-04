@@ -1,6 +1,6 @@
 import React from 'react';
-import { ReactComponent as Star } from './../../../assets/icons/Reviews/star.svg';
-import { ReactComponent as ArrowDown } from './../../../assets/icons/Reviews/arrow-down.svg';
+import { ReactComponent as IconStar } from './../../../assets/icons/Reviews/star.svg';
+import { ReactComponent as IconArrowDown } from './../../../assets/icons/Reviews/arrow-down.svg';
 import { Button } from '../../../components/Button/index';
 
 export class ReviewHeader extends React.Component {
@@ -18,12 +18,12 @@ export class ReviewHeader extends React.Component {
           <div className="reviews_header-star-wrap">
             {Array(5).fill(0).map((item, index) => {
               if (index < this.props.overallRate) {
-                return <Star 
+                return <IconStar 
                   className='reviews-star reviews-star--active'
                   key={Math.random()}
                 />;
               }
-              return <Star 
+              return <IconStar 
                 className='reviews-star'
                 key={Math.random()}
               />;
@@ -43,7 +43,7 @@ export class ReviewHeader extends React.Component {
           <span className="reviews_header-sorting_text">
             Самые полезные
           </span>
-          <ArrowDown />
+          <IconArrowDown />
         </div>
       </div>
     );

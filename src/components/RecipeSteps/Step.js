@@ -7,11 +7,11 @@ export class Step extends React.Component {
 
   render() {
     return(
-      <div className="recipe-steps_step">
-        <h3 className={`recipe-steps_title ${this.props.classTitle}`}>
+      <div className="recipe_step">
+        <h3 className={`recipe_step-title ${this.props.classTitle}`}>
           {this.props.title}
         </h3>
-        <p className={`recipe-steps_text ${this.props.classText}`}>
+        <p className={`recipe_step-text ${this.props.classText}`}>
           {this.props.text}
         </p>
       </div>

@@ -1,7 +1,7 @@
 .callback-discount {
   padding-top: 64px;
   padding-bottom: 24px;
-  &-container {
+  &_container {
     max-width: 840px;
     width: 100%;
     min-height: 80px;
@@ -11,7 +11,7 @@
     align-items: center;
   }
   //--.callback-discount-wrap
-  &-wrap {
+  &_wrap {
     background-image: url('../../assets/patterns/fish_pattern.png'), radial-gradient(71.29% 202.7% at 71.29% 56.86%, #FCAA17 0%, #F15526 100%);
     min-height: 80px;
     background-repeat: repeat;

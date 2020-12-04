@@ -1,10 +1,11 @@
 import React from 'react';
 import { Logo } from '../Logo/index';
 import { Socials } from '../Socials/index';
-import { ReactComponent as Callback } from '../../assets/icons/Callback.svg';
-import { ReactComponent as Mail } from '../../assets/icons/mail.svg';
-import { ReactComponent as Pyrobyte } from '../../assets/icons/pyrobyte.svg';
+import { ReactComponent as IconCallback } from '../../assets/icons/Callback.svg';
+import { ReactComponent as IconMail } from '../../assets/icons/mail.svg';
+import { ReactComponent as IconPyrobyte } from '../../assets/icons/pyrobyte.svg';
 import { Button } from '../Button/index';
+import { MenuItem } from './MenuItem';
 
 export class Footer extends React.Component {
   constructor(props) {
@@ -15,91 +16,76 @@ export class Footer extends React.Component {
     return(
       <footer className="footer">
         <div className="container">
-          <div className="footer-top">
+          <div className="footer_top">
 
-            <div className="footer-logo-socials-wrap">
+            <div className="footer_socials-wrap">
               <Logo/>
 
               <Socials />
             </div>
 
-            <div className="footer-menu">
-              <span className="footer-menu_footer-heading footer-heading">
+            <div className="footer_menu">
+              <span className="footer_menu-heading footer_heading">
                 Интернет-магазин fish2o
               </span>
 
-              <ul className="footer-menu_list">
-                <li className="footer-menu_item">
-                  <a href="#" className="footer-menu_link">Весь ассортимент</a>
-                </li>
-                <li className="footer-menu_item">
-                  <a href="#" className="footer-menu_link">Наши магазины</a>
-                </li>
-                <li className="footer-menu_item">
-                  <a href="#" className="footer-menu_link">О нас</a>
-                </li>
-                <li className="footer-menu_item">
-                  <a href="#" className="footer-menu_link">Программа лояльности</a>
-                </li>
-                <li className="footer-menu_item">
-                  <a href="#" className="footer-menu_link">Оплата</a>
-                </li>
-                <li className="footer-menu_item">
-                  <a href="#" className="footer-menu_link">Гарантии и возврат</a>
-                </li>
-                <li className="footer-menu_item">
-                  <a href="#" className="footer-menu_link">Условия доставки</a>
-                </li>
-                <li className="footer-menu_item">
-                  <a href="#" className="footer-menu_link">Отзывы</a>
-                </li>
+              <ul className="footer_menu-list">
+                {this.props.data.menu.map(item => {
+                  return(
+                    <MenuItem 
+                      key={item.id} 
+                      href={item.href}
+                      text={item.text}
+                    />
+                  );
+                })}
               </ul>
             </div>
 
-            <div className="footer-contacts">
-              <span className="footer-heading footer-contacts_footer-heading">
+            <div className="footer_contacts">
+              <span className="footer_heading footer_contacts-heading">
                 Свяжитесь с нами
               </span>
 
-              <ul className="footer-contacts_list">
-                <li className="footer-contacts_item">
-                  <Callback className="footer-contacts_item-icon"/>
-                  <a href="#" className="footer-contacts_link footer-contacts_phone">+7 (495) 445-05-50</a>
+              <ul className="footer_contacts-list">
+                <li className="footer_contacts-item">
+                  <IconCallback className="footer_contacts-icon"/>
+                  <a href="#" className="footer_contacts-link footer_contacts-phone">+7 (495) 445-05-50</a>
                 </li>
-                <li className="footer-contacts_item">
-                  <Mail className="footer-contacts_item-icon footer-contacts_item-icon--email"/>
-                  <a href="#" className="footer-contacts_link">info@fish2o.ru</a>
+                <li className="footer_contacts-item">
+                  <IconMail className="footer_contacts-icon footer_contacts-icon--email"/>
+                  <a href="#" className="footer_contacts-link">info@fish2o.ru</a>
                 </li>
               </ul>
 
               <Button 
                 text="Обратная связь"
-                className="footer-callback-btn"
+                className="footer_callback-btn"
               />
             </div>
           </div>
 
-          <div className="footer-bottom">
-            <div className="footer-bottom-left">
-              <span className="footer-copyright">
+          <div className="footer_bottom">
+            <div className="footer_bottom-left">
+              <span className="footer_copyright">
                 © 2020 Fish2O. Все права защищены
               </span>
-              <div className="footer-bottom-pyrobyte-logo">
-                <Pyrobyte className="footer-bottom-pyrobyte-logo_img"/>
-                <span className="footer-bottom-pyrobyte-logo_text">
+              <div className="footer_pyrobyte">
+                <IconPyrobyte className="footer_pyrobyte-logo"/>
+                <span className="footer_pyrobyte-text">
                   Дизайн сайта
                 </span>
               </div>
             </div>
-            <div className="footer-bottom-right">
-              <ul className="footer-bottom-docs">
-                <li className="footer-bottom-docs_item">
-                  <a href="#" className="footer-bottom-docs_link">
+            <div className="footer_bottom-right">
+              <ul className="footer_documents">
+                <li className="footer_documents-item">
+                  <a href="#" className="footer_documents-link">
                     Политика конфиденциальности
                   </a>
                 </li>
-                <li className="footer-bottom-docs_item">
-                  <a href="#" className="footer-bottom-docs_link">
+                <li className="footer_documents-item">
+                  <a href="#" className="footer_documents-link">
                     Договор оферты
                   </a>
                 </li>

@@ -1,17 +1,21 @@
 .similar-recipes {
   padding-top: 20px;
   padding-bottom: 25px;
+
   //--.similar-recipes_section-heading
   &_section-heading {
     margin-bottom: 36px;
   }
-  //--.similar-recipes-carousel
-  &-carousel {
+
+  //--.similar-recipes_carousel
+  &_carousel {
     position: relative;
-    //--.similar-recipes-carousel_controls
-    &_controls {
+    padding-top: 20px;
+
+    //--.similar-recipes_carousel-controls
+    &-controls {
       position: absolute;
-      top: -79px;
+      top: -58px;
       right: 0;
       max-width: 80px;
       width: 100%;
@@ -19,8 +23,9 @@
       align-items: center;
       justify-content: space-between;
     }
-    //--.similar-recipes-carousel_prev
-    &_button {
+
+    //--.similar-recipes_carousel-prev
+    &-button {
       width: 32px;
       height: 32px;
       background-color: #fff;
@@ -28,21 +33,24 @@
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04);
       cursor: pointer;
     }
-    //--.similar-recipes-carousel_prev
-    &_prev {
+
+    //--.similar-recipes_carousel-prev
+    &-prev {
       background-image: url('../../assets/icons/Slider/prev-arrow.svg');
       background-repeat: no-repeat;
       background-position: center center;
     }
-    //--.similar-recipes-carousel_next
-    &_next {
+
+    //--.similar-recipes_carousel-next
+    &-next {
       background-image: url('../../assets/icons/Slider/next-arrow.svg');
       background-repeat: no-repeat;
       background-position: center center;
     }
   }
+
   //--.similar-recipes-card
-  &-card {
+  &_card {
     width: 100%;
     max-width: 260px;
     background-color: rgb(255, 255, 255);
@@ -51,85 +59,93 @@
     overflow: hidden;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04);
     box-sizing: border-box;
-    //--.similar-recipes-card_image-wrap
-    &_image-wrap {
+
+    //--.similar-recipes_image-wrap
+    &-image-wrap {
       height: 176px;
     }
-    //--.similar-recipes-card_image
-    &_image {
+
+    //--.similar-recipes_card-image
+    &-image {
       object-fit: cover;
       width: 100%;
       height: 176px;
     }
-    //--.similar-recipes-card_description
-    &_description {
+
+    //--.similar-recipes_card-description
+    &-description {
       padding: 16px 16px 16px 16px;
     }
-    //--.similar-recipes-card_star
-    &_star {
+
+    //--.similar-recipes_card-star
+    &-star {
       width: 13px;
       margin-right: 4px;
       fill: $orange;
+
       &:nth-child(5) {
         margin-right: 8px;
       }
     }
-    //--.similar-recipes-card_rate
-    &_rate {
+
+    //--.similar-recipes_card-rate
+    &-rate {
       display: flex;
       align-items: center;
     }
-    //--.similar-recipes-card_reviews-count
-    &_reviews-count {
+
+    //--.similar-recipes_reviews-count
+    &-reviews-count {
       font-family: 'Intro-Book';
       font-size: 14px;
       line-height: 24px;
       color: #999999;
     }
-    //--.similar-recipes-card_title
-    &_title {
+
+    //--.similar-recipes_card-title
+    &-title {
       color: $dark;
       font-family: 'Intro-Regular';
       font-size: 18px;
       line-height: 24px;
     }
-    //--.similar-recipes-card_text
-    &_text {
+
+    //--.similar-recipes_card-text
+    &-text {
       font-family: 'Intro-Light';
       font-size: 16px;
       line-height: 24px;
       color: #333333;
       margin-bottom: 12px;
     }
-    //--.similar-recipes-card_cooking-props
-    &_cooking-props {
-      font-family: 'Intro-Book';
-      font-size: 14px;
-      line-height: 24px;
-      color: $dark;
+  }
+
+  &_cooking {
+    font-family: 'Intro-Book';
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-wrap {
       display: flex;
       align-items: center;
-      justify-content: space-between;
     }
-    //--.similar-recipes-card_timer-icon
-    &_timer-icon {
+
+    &-timer {
       fill: $dark;
       margin-right: 4px;
     }
-    //--.similar-recipes-card_cooking-time
-    &_cooking-time {
-      display: flex;
-      align-items: center;
-    }
-    //--.similar-recipes-card_calories-icon
-    &_calories-icon {
+  }
+
+  &_calories {
+    display: flex;
+    align-items: center;
+    &-icon {
       stroke: $dark;
       margin-right: 4px;
-    }
-    //--.similar-recipes-card_calories
-    &_calories {
-      display: flex;
-      align-items: center;
     }
   }
 }

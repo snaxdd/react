@@ -8,17 +8,17 @@ export class RecipeSteps extends React.Component {
 
   render() {
     return(
-      <div className="recipe-steps recipe_recipe-steps">
+      <div className="recipe_steps">
         {this.props.recipeSteps.map((item, index, arr) => {
           let titleClass = '',
             textClass = '';
           
           if (index === 0) {
-            titleClass = 'recipe-steps_title--first';
-            textClass = 'recipe-steps_text--first';
+            titleClass = 'recipe_step-title--first';
+            textClass = 'recipe_step-text--first';
           } else if (index === arr.length - 1) {
-            titleClass = 'recipe-steps_title--last';
-            textClass = 'recipe-steps_text--last';
+            titleClass = 'recipe_step-title--last';
+            textClass = 'recipe_step-text--last';
           }
           
           return(

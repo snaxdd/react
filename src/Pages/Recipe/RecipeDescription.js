@@ -7,7 +7,7 @@ export class RecipeDescription extends React.Component {
 
   render() {
     return(
-      <div className='recipe-description recipe_recipe-description'>
+      <div className='recipe_description'>
         Популярность красной рыбы, и в частности лосося, 
         растет с каждым днем. 
         Из-за своего восхитительного вкуса и богатого витаминного 

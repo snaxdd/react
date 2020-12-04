@@ -1,6 +1,6 @@
 import React from 'react';
 import Avatar from './../../../assets/images/Reviews/avatar.png';
-import { ReactComponent as Star } from '../../../assets/icons/Reviews/star.svg';
+import { ReactComponent as IconStar } from '../../../assets/icons/Reviews/star.svg';
 
 export class Review extends React.Component {
   constructor(props) {
@@ -9,49 +9,47 @@ export class Review extends React.Component {
 
   render() {
     return(
-      <div className={`user-review ${this.props.last ? 'user-review--last' : ''}`}>
-        <img src={Avatar} alt="" className="user-review_avatar"/>
-        <section className="user-review_wrap">
+      <div className={`reviews_comment ${this.props.last ? 'reviews_comment--last' : ''}`}>
+        <img src={Avatar} alt="" className="reviews_comment-avatar"/>
+        <div className="reviews_comment-wrap">
           
-          <div className="user-review_header">
-            <h3 className="user-review_user-name">
+          <div className="reviews_comment-header">
+            <h3 className="reviews_comment-user-name">
               {this.props.userName}
             </h3>
-            <div className="user-review_publish-date">
+            <div className="reviews_comment-publish-date">
               {this.props.publishDate}
             </div>
           </div>
 
-          <div className="user-review_rate">
-            <div className="user-review_stars-wrap">
+          <div className="reviews_comment-rate">
+            <div className="reviews_comment-stars-wrap">
               {Array(5).fill(0).map((item, index) => {
                 if (index < this.props.rate) {
-                  return <Star 
-                    className='user-review_star user-review_star--active'
+                  return <IconStar 
+                    className='reviews_comment-user-star reviews_comment-user-star--active'
                     key={Math.random()}
                   />;
                 }
-                return <Star 
-                  className='user-review_star'
+                return <IconStar 
+                  className='reviews_comment-user-star'
                   key={Math.random()}
                 />;
               })}
             </div>
-            <div className="user-review_rate-count">
+            <div className="reviews_comment-rate-count">
               {this.props.rate}
             </div>
           </div>
 
-          <p className="user-review_comment">
+          <p className="reviews_comment-text">
             {this.props.comment} 
           </p>
 
-          <a href="#" className="user-review_answer-button">
-            <span className="user-review_answer-button-text">
-              Ответить
-            </span>
+          <a href="#" className="reviews_comment-answer-button">
+            Ответить
           </a>
-        </section>
+        </div>
       </div>
     );
   };

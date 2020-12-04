@@ -3,8 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import 'swiper/swiper.scss';
 import { SliderItem } from './SliderItem';
-import { ReactComponent as SliderArrowNext } from '../../assets/icons/Slider/next-arrow.svg';
-import { ReactComponent as SliderArrowPrev } from '../../assets/icons/Slider/prev-arrow.svg';
+import { ReactComponent as IconSliderArrowNext } from '../../assets/icons/Slider/next-arrow.svg';
+import { ReactComponent as IconSliderArrowPrev } from '../../assets/icons/Slider/prev-arrow.svg';
 
 SwiperCore.use([
   Navigation
@@ -35,10 +35,10 @@ export class Slider extends React.Component {
         }  
         </Swiper>
         <div className='slider_button slider_button-next'>
-          <SliderArrowNext />
+          <IconSliderArrowNext />
         </div> 
         <div className='slider_button slider_button-prev'>
-          <SliderArrowPrev />
+          <IconSliderArrowPrev />
         </div> 
       </div>
     );

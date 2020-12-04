@@ -1,5 +1,5 @@
 import React from 'react';
-import ImgPlaceholder from '../../assets/images/ContentVideos/placeholder.png';
+import ImagePlaceholder from '../../assets/images/ContentVideos/placeholder.png';
 
 export class VideoItem extends React.Component {
   constructor(props) {
@@ -9,7 +9,7 @@ export class VideoItem extends React.Component {
   render() {
     return(
       <div className='recipe-videos_item'>
-        <img src={ImgPlaceholder} alt=""/>
+        <img src={ImagePlaceholder} alt=""/>
       </div>
     );
   };

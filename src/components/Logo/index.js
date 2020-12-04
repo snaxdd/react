@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactComponent as Logotype } from '../../assets/icons/Logo.svg';
+import { ReactComponent as IconLogotype } from '../../assets/icons/Logo.svg';
 
 export class Logo extends React.Component {
   constructor(props) {
@@ -8,7 +8,7 @@ export class Logo extends React.Component {
 
   render() {
     return (
-      <Logotype />
+      <IconLogotype />
     );
   };
 };

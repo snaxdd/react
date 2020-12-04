@@ -4,13 +4,46 @@
   background-color: $dark;
   background-image: url('../../assets/patterns/fish_pattern_footer.png');
 
-  //--.footer-callback-btn
-  &-callback-btn {
+  &_pyrobyte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: -45px;
+    top: -7px;
+
+    &-text {
+      font-family: 'Intro-Book';
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.32);
+    }
+  }
+
+  &_documents {
+    display: flex;
+
+    &-link {
+      font-family: 'Intro-Book';
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.64);
+    }
+
+    &-item {
+      &:nth-child(1) {
+        margin-right: 86px;
+      }
+    }
+  }
+
+  //--.footer_callback-btn
+  &_callback-btn {
     padding: 10px 39px;
   }
 
-  //--.footer-logo-socials-wrap
-  &-logo-socials-wrap {
+  //--.footer_socials-wrap
+  &_socials-wrap {
     width: 100%;
     max-width: 234px;
     align-self: flex-start;
@@ -22,54 +55,54 @@
   }
 
   //--.footer-copyright
-  &-copyright {
+  &_copyright {
     font-family: 'Intro-Book';
     font-size: 14px;
     line-height: 24px;
     color: rgba(255, 255, 255, 0.64);
   }
 
-  //--.footer-top
-  &-top {
+  //--.footer_top
+  &_top {
     display: flex;
     margin-bottom: 25px;
   }
 
   //--.footer-menu
-  &-menu {
+  &_menu {
     padding-top: 14px;
     margin-right: 100px;
 
-    //--.footer-menu_footer-heading
-    &_footer-heading {
+    //--.footer_menu-heading
+    &-heading {
       margin-bottom: 24px;
     }
 
-    //--.footer-menu_link
-    &_link {
+    //--.footer_menu-link
+    &-link {
       font-family: 'Intro-Light';
       font-size: 16px;
       line-height: 24px;
       color: rgba(255, 255, 255, 0.72);
     }
 
-    //--.footer-menu_list
-    &_list {
+    //--.footer_menu-list
+    &-list {
       max-width: 400px;
       width: 100%;
       display: flex;
       flex-wrap: wrap;
     }
 
-    //--.footer-menu_item
-    &_item {
+    //--.footer_menu-item
+    &-item {
       flex-basis: 200px;
       margin-bottom: 16px;
     }
   }
 
   //--.footer-heading
-  &-heading {
+  &_heading {
     font-family: 'Intro-Regular';
     color: white;
     font-size: 16px;
@@ -79,12 +112,12 @@
     letter-spacing: 0.08em;
   }
 
-  //--.footer-contacts
-  &-contacts {
+  //--.footer_contacts
+  &_contacts {
     padding-top: 14px;
 
-    //--.footer-contacts_item
-    &_item {
+    //--.footer_contacts-item
+    &-item {
       margin-bottom: 25px;
 
       &:last-child {
@@ -92,34 +125,34 @@
       }
     }
 
-    //--.footer-contacts_list
-    &_list {
+    //--.footer_contacts-list
+    &-list {
       margin-bottom: 32px;
     }
 
-    //--.footer-contacts_footer-heading
-    &_footer-heading {
+    //--.footer_contacts-heading
+    &-heading {
       margin-bottom: 24px;
     }
 
-    //--.footer-contacts_link
-    &_link {
+    //--.footer_contacts-link
+    &-link {
       font-family: 'Intro-Light';
       font-size: 16px;
       line-height: 24px;
       color: rgba(255, 255, 255, 0.72);
     }
 
-    //--.footer-contacts_phone
-    &_phone {
+    //--.footer_contacts-phone
+    &-phone {
       font-family: 'Intro-Regular';
       font-size: 18px;
       line-height: 24px;
       color: white;
     }
 
-    //--.footer-contacts_item-icon
-    &_item-icon {
+    //--.footer_contacts-icon
+    &-icon {
       fill: white;
       margin-right: 18px;
 
@@ -130,8 +163,8 @@
     }
   }
 
-  //--.footer-bottom
-  &-bottom {
+  //--.footer_bottom
+  &_bottom {
     display: flex;
     min-height: 80px;
 
@@ -167,38 +200,6 @@
         position: absolute;
         top: 0;
         right: 0;
-      }
-    }
-
-    &-docs {
-      display: flex;
-
-      &_link {
-        font-family: 'Intro-Book';
-        font-size: 14px;
-        line-height: 24px;
-        color: rgba(255, 255, 255, 0.64);
-      }
-
-      &_item {
-        &:nth-child(1) {
-          margin-right: 86px;
-        }
-      }
-    }
-
-    &-pyrobyte-logo {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      right: -45px;
-      top: -7px;
-      &_text {
-        font-family: 'Intro-Book';
-        font-size: 14px;
-        line-height: 24px;
-        color: rgba(255, 255, 255, 0.32);
       }
     }
   }

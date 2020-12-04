@@ -9,7 +9,7 @@ export class Reviews extends React.Component {
 
   render() {
     return(
-      <div className="reviews-wrap">
+      <div className="reviews_wrap">
         <ReviewHeader 
           text={this.props.reviewsData.overallRating.text}
           overallRate={this.props.reviewsData.overallRating.rate}

@@ -1,11 +1,8 @@
 .reviews {
   padding-bottom: 24px;
-  &-wrap {
+  &_wrap {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04);
     border-radius: 8px;
-  }
-  &_section-heading {
-    margin-bottom: 16px;
   }
   //--.reviews-star
   &-star {
@@ -67,6 +64,83 @@
         color: $dark;
         margin-right: 43px;
       }
+    }
+  }
+  &_comment {
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 23px 16px 15px 16px;
+    border-bottom: 1px solid rgba(203, 218, 236, 0.56);
+    
+    &--last {
+      border-bottom: 0;
+      border-radius: 0 0 8px 8px;
+    }
+    
+    &-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2px;
+    }
+
+    &-user-name {
+      font-family: 'Intro-Regular';
+      font-size: 18px;
+      line-height: 24px;
+      color: $dark;
+      margin-right: 15px;
+    }
+
+    &-publish-date {
+      font-family: 'Intro-Light';
+      font-size: 14px;
+      line-height: 20px;
+      color: #999999;
+    }
+
+    &-rate {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3px;
+    }
+
+    &-stars-wrap {
+      margin-right: 5px;
+    }
+
+    &-user-star {
+      margin-right: 4px;
+      fill: $greyBlue;
+      width: 13px;
+      &--active {
+        fill: $orange;
+      }
+    }
+
+    &-rate-count {
+      font-family: 'Intro-Book';
+      font-size: 14px;
+      color: #999999;
+    }
+
+    &-text {
+      font-family: 'Intro-Light';
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &-answer-button {
+      color: $red;
+      font-family: 'Intro-Light';
+      font-size: 16px;
+      line-height: 24px;
+      border-bottom: 1px dashed $red;
+    }
+
+    &-avatar {
+      margin-right: 16px;
     }
   }
 }

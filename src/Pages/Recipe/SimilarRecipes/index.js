@@ -15,12 +15,12 @@ export class SimilarRecipes extends React.Component {
 
   render() {
     return(
-      <div className="similar-recipes-carousel">
+      <div className="similar-recipes_carousel">
         <Swiper
         spaceBetween={40}
         slidesPerView={4}
-        navigation={{nextEl: '.similar-recipes-carousel_next',
-          prevEl: '.similar-recipes-carousel_prev'}}
+        navigation={{nextEl: '.similar-recipes_carousel-next',
+          prevEl: '.similar-recipes_carousel-prev'}}
         >
         {
           this.props.recipesData.map(item => {
@@ -39,9 +39,9 @@ export class SimilarRecipes extends React.Component {
           })
         }  
         </Swiper>
-        <div className="similar-recipes-carousel_controls">
-          <div className="similar-recipes-carousel_button similar-recipes-carousel_prev"></div>
-          <div className="similar-recipes-carousel_button similar-recipes-carousel_next"></div>
+        <div className="similar-recipes_carousel-controls">
+          <div className="similar-recipes_carousel-button similar-recipes_carousel-prev"></div>
+          <div className="similar-recipes_carousel-button similar-recipes_carousel-next"></div>
         </div>
       </div>
     );
