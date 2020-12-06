@@ -8,6 +8,7 @@
   min-height: 40px;
   border-radius: 8px;
   transition: 0.1s;
+  box-sizing: border-box;
   &_icon {
     fill: $red;
   }

@@ -11,6 +11,9 @@
     &--active {
       fill: $orange;
     }
+    &:last-child {
+      margin-right: 15px;
+    }
   }
   //--.reviews_header
   &_header {
@@ -27,6 +30,8 @@
     //--.reviews_header-star-wrap
     &-star-wrap {
       margin-right: 5px;
+      display: flex;
+      align-items: center;
       @media screen and (max-width: 425px) {
         margin: 0;
       } 
@@ -109,6 +114,7 @@
     box-sizing: border-box;
     padding: 23px 16px 15px 16px;
     border-bottom: 1px solid rgba(203, 218, 236, 0.56);
+    letter-spacing: -0.4px;
     
     &--last {
       border-bottom: 0;
@@ -126,7 +132,7 @@
       font-size: 18px;
       line-height: 24px;
       color: $dark;
-      margin-right: 15px;
+      margin-right: 17px;
     }
 
     &-publish-date {
@@ -157,6 +163,7 @@
 
     &-img {
       display: block;
+      padding: 17px 0 16.4px 0;
     }
 
     &-rate-count {
@@ -169,6 +176,7 @@
       font-family: 'Intro-Light';
       font-size: 16px;
       line-height: 24px;
+      letter-spacing: normal;
     }
 
     &-answer-button {
@@ -177,6 +185,7 @@
       font-size: 16px;
       line-height: 24px;
       border-bottom: 1px dashed $red;
+      letter-spacing: normal;
     }
 
     &-avatar {

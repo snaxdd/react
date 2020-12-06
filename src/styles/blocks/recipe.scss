@@ -103,7 +103,8 @@
       color: #1E2833;
       position: relative;
       line-height: 32px;
-
+      letter-spacing: -0.8px;
+      
       &::after {
         content: '';
         left: -56px;
