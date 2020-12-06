@@ -133,9 +133,9 @@
 
     &-icon {
       position: absolute;
-      top: 57%;
+      top: 17px;
       left: 15px;
-      transform: translateY(-50%);
+      fill: #AEC2D9;
     }
 
     &-input {
@@ -183,9 +183,14 @@
       max-width: 125px;
     }
 
+    &-wrap {
+      display: flex;
+      align-items: center;
+    }
+
     @media screen and (max-width: 425px){
       display: flex;
-      min-height: 64px;
+      height: 64px;
       background-color: #fff;
       width: 100%;
       padding: 8px 16px;

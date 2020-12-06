@@ -10,9 +10,8 @@ export class
   render() {
     return (
       <div className='header_search'>
-        <div className='header_search-icon'>
-          <IconSearch />
-        </div>
+        <IconSearch className='header_search-icon'/>
+
         <input 
           className='header_search-input' 
           type='text' 
