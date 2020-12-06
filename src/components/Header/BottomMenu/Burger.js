@@ -5,9 +5,7 @@ export class Burger extends React.Component {
   render() {
     return (
       <div className='burger header_burger'>
-        <div className='burger_icon'>
-          <IconBurger />
-        </div>
+        <IconBurger className="burger_icon"/>
         <span className='burger_text'>
           Каталог
         </span>

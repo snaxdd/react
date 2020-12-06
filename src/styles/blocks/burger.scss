@@ -4,9 +4,11 @@
   height: 48px;
   width: 100%;
   max-width: 140px;
-  justify-content: center;
+  align-items: center;
   border-radius: 8px;
   cursor: pointer;
+  padding-left: 16.5px;
+  box-sizing: border-box;
   //--.burger-menu_icon
   &_icon {
     margin-right: 16px;
