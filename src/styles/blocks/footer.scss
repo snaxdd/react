@@ -166,7 +166,8 @@
   //--.footer_bottom
   &_bottom {
     display: flex;
-    min-height: 80px;
+    min-height: 75px;
+    box-sizing: border-box;
 
     &-left {
       position: relative;

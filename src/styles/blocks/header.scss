@@ -173,27 +173,46 @@
       justify-content: center;
       align-items: center;
     }
+
+    &-profile {
+      fill: $dark;
+    }
   }
 
   &_mobile {
     display: none;
     box-sizing: border-box;
+    height: 64px;
+    background-color: #fff;
+    width: 100%;
+    padding: 8px 16px;
 
     &-logo {
       max-width: 125px;
+      height: 47px;
     }
 
     &-wrap {
       display: flex;
-      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &-icon {
+      fill: $dark;
+    }
+
+    &-icons-wrap {
+      box-sizing: border-box;
+      height: 48px;
+      max-width: 176px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
     }
 
     @media screen and (max-width: 425px){
-      display: flex;
-      height: 64px;
-      background-color: #fff;
-      width: 100%;
-      padding: 8px 16px;
+      display: block;
     }
   }
 }

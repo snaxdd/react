@@ -9,7 +9,7 @@ export class UserIcons extends React.Component {
       <div className='header_user-icons'>
         <div className='header_user-icons-item'>
           <a href='#' className='header_user-icons-link'>
-            <IconProfile />
+            <IconProfile className='header_user-icons-profile'/>
           </a>
         </div>
         <div className='header_user-icons-item'>
