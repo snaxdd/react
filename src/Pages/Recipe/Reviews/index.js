@@ -23,6 +23,7 @@ export class Reviews extends React.Component {
                 userName={item.name}
                 publishDate={item.date}
                 rate={item.rate}
+                image={item.image}
                 comment={item.comment}
                 last={index === arr.length - 1 ? true : false}
               />

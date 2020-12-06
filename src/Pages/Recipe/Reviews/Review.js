@@ -45,6 +45,10 @@ export class Review extends React.Component {
           <p className="reviews_comment-text">
             {this.props.comment} 
           </p>
+          
+          {
+            this.props.image ? <img src={this.props.image} alt="" className="reviews_comment-img"/> : ''
+          }
 
           <a href="#" className="reviews_comment-answer-button">
             Ответить

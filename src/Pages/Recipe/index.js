@@ -9,16 +9,22 @@ import { Ingredients } from '../../components/Ingredients/index';
 import { RecipeSteps } from '../../components/RecipeSteps/index';
 import { Reviews } from './Reviews/index';
 import { SimilarRecipes } from './SimilarRecipes/index';
-import Image from './../../assets/images/image.jpg';
-import { CallbackDiscount } from '../../components/CallbackDiscount';
+import { CallbackDiscount } from '../../components/CallbackDiscount/index';
 import { Footer } from '../../components/Footer/index';
+
+//TopMenu Icons
 import { ReactComponent as IconDelivery } from '../../assets/icons/Delivery.svg';
 import { ReactComponent as IconMenuArrowDown } from '../../assets/icons/Menu-arrow-down.svg';
+
 //Nutritional Value Icons
 import { ReactComponent as IconMeat } from './../../assets/icons/NutritionalValue/Meat.svg';
 import { ReactComponent as IconPizza } from './../../assets/icons/NutritionalValue/Pizza.svg';
 import { ReactComponent as IconRice } from './../../assets/icons/NutritionalValue/Rice.svg';
 import { ReactComponent as IconCalories } from './../../assets/icons/NutritionalValue/Calories.svg';
+
+//Images
+import Image from './../../assets/images/image.jpg';
+import CommentImage from './../../assets/images/Reviews/comment-image.jpg';
 
 export class Recipe extends React.Component {
   constructor(props) {
@@ -269,19 +275,11 @@ const pageData = {
         comment: `Отличная модель в таком ценовом диапазоне! 
         Заряд держит отлично, при интенсивной нагрузке. 
         Игры поддерживает просто на высоте, не вылетает. Огромный по величине экран.`,
-        date: new Date().toLocaleDateString()
+        date: new Date().toLocaleDateString(),
+        image: CommentImage
       },
       {
         id: 3,
-        name: 'Андрей Рыбаков',
-        rate: 5,
-        comment: `Отличная модель в таком ценовом диапазоне! 
-        Заряд держит отлично, при интенсивной нагрузке. 
-        Игры поддерживает просто на высоте, не вылетает. Огромный по величине экран. `,
-        date: new Date().toLocaleDateString()
-      },
-      {
-        id: 4,
         name: 'Андрей Рыбаков',
         rate: 5,
         comment: `Отличная модель в таком ценовом диапазоне! 
