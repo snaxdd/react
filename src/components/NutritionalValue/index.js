@@ -8,7 +8,11 @@ export class NutritionalValue extends React.Component {
 
   render() {
     return(
-      <div className='nutritional-value recipe_nutritional-value'>
+      <div className="nutritional-value_wrap">
+        <h2 className="section_heading nutritional-value_heading">
+          Пищевая ценность
+        </h2>
+        <div className='nutritional-value recipe_nutritional-value'>
         {this.props.data.map(item => {
           return(
             <NutritionalValueItem 
@@ -20,6 +24,7 @@ export class NutritionalValue extends React.Component {
             />
           );
         })}
+      </div>
       </div>
     );
   };

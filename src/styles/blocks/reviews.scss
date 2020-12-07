@@ -1,5 +1,22 @@
 .reviews {
   padding-bottom: 24px;
+  
+  &_heading {
+    &--pc {
+      @media screen and (max-width: 415px) {
+        display: none;
+      }
+    }
+    &--mobile {
+      display: none;
+      @media screen and (max-width: 415px) {
+        display: block;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+  }
+  
   &_wrap {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04);
     border-radius: 8px;
@@ -27,12 +44,34 @@
     background-color: #fff;
     border-radius: 8px 8px 0 0;
     border-bottom: 1px solid rgba(203, 218, 236, 0.56);
+    @media screen and (max-width: 415px) {
+      border-radius: 0;
+      border: none;
+      position: relative;
+      &::after {
+        content: '';
+        width: 91.1%;
+        height: 1px;
+        background-color: rgba(203, 218, 236, 0.56);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &-wrap {
+      @media screen and (max-width: 415px) {
+        background-color: #fff;
+      }
+    }
+
     //--.reviews_header-star-wrap
     &-star-wrap {
       margin-right: 5px;
       display: flex;
       align-items: center;
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 415px) {
         margin: 0;
       } 
     }
@@ -40,7 +79,7 @@
     &-button {
       margin-right: 60px;
 
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 415px) {
         display: none;
       }
     }
@@ -49,7 +88,7 @@
       display: flex;
       align-items: center;
 
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 415px) {
         flex-direction: column;
         align-items: flex-start;
       }
@@ -60,7 +99,7 @@
         line-height: 24px;
         margin-right: 17px;
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 415px) {
           margin-right: 0;
           margin-bottom: 3px;
         }
@@ -79,7 +118,7 @@
       align-items: center;
       position: relative;
       padding-right: 65px;
-      @media screen and (max-width: 425px){
+      @media screen and (max-width: 415px){
         padding-right: 30px;
       }
       //--.reviews_header-sorting_text
@@ -89,7 +128,7 @@
         line-height: 24px;
         color: $dark;
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 415px) {
           margin-right: 0;
           font-size: 14px;
           line-height: 20px;
@@ -101,7 +140,7 @@
         right: 16px;
         top: 11px;
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 415px) {
           top: 8px;
         }
       }

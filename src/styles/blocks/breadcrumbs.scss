@@ -1,5 +1,5 @@
 .breadcrumbs {
-  min-height: 57px;
+  height: 57px;
   display: flex;
   align-items: center;
   //--.breadcrumbs_list
@@ -12,5 +12,13 @@
     font-family: 'Intro-Light';
     color: #333333;
     font-size: 14px;
+    @media screen and (max-width: 415px) {
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 415px){
+    height: 55px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

@@ -34,7 +34,9 @@ export class SimilarRecipes extends React.Component {
           }
         }}
         spaceBetween={30}
-        slidesPerView={2}
+        slidesPerView={1}
+        loop={true}
+        slidesOffsetBefore={60}
         centeredSlides={true}
         navigation={{nextEl: '.similar-recipes_carousel-next',
           prevEl: '.similar-recipes_carousel-prev'}}
@@ -43,6 +45,7 @@ export class SimilarRecipes extends React.Component {
           this.props.recipesData.map(item => {
             return(
               <SwiperSlide
+              className='similar-recipes_card-wrap'
                 key={item.id}>
                 <RecipeCard 
                   title={item.title}

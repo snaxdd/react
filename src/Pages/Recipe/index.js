@@ -57,15 +57,21 @@ export class Recipe extends React.Component {
               </div>
               <div className="recipe_right">
                 <RecipeDescription />
+                <Ingredients 
+                  data={pageData.ingredients}
+                  theme="mobile"
+                />
                 <NutritionalValue data={pageData.nutritionalValue}/>
-                <RecipeSteps recipeSteps={pageData.recipeSteps}/>
+                <div className="recipe_steps-wrap">
+                  <RecipeSteps recipeSteps={pageData.recipeSteps}/>
+                </div>
               </div>
             </div>
           </section>
 
           <section className="reviews">
             <div className="container">
-              <h2 className="section_heading">
+              <h2 className="section_heading reviews_heading--pc">
                 Отзывы о рецепте
               </h2>
               <Reviews reviewsData={pageData.reviews}/>

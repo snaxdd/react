@@ -1,11 +1,26 @@
 .recipe {
   margin-bottom: 25px;
 
-  //--.recipe-container
+  //--.recipe_container
   &_container {
     display: flex;
     padding-top: 40px;
     flex-wrap: wrap;
+    @media screen and (max-width: 415px){
+      padding-top: 22.5px;
+    }
+  }
+
+  &_description {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  &_description-heading {
+    display: none;
+    @media screen and (max-width: 415px) {
+      display: inline-block;
+    }
   }
 
   //--.recipe-videos
@@ -15,7 +30,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 415px) {
       display: none;
     }
 
@@ -49,7 +64,7 @@
   }
 
   //--.recipe_description
-  &_description {
+  &_description-text {
     font-family: 'Intro-Book';
     font-size: 24px;
     line-height: 32px;
@@ -58,8 +73,10 @@
     // POS
     margin-bottom: 38px;
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 415px) {
       font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 26px;
     }
   }
 
@@ -69,7 +86,7 @@
     width: 100%;
     margin-right: 70px;
     
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 415px) {
       margin-right: 0;
     }
   }
@@ -87,11 +104,22 @@
   //--.recipe_nutritional-value
   &_nutritional-value {
     margin-bottom: 60px;
+    @media screen and (max-width: 415px) {
+      padding-top: 4.5px;
+      margin-bottom: 49.5px;
+    }
   }
 
   //--.recipe_steps
   &_steps {
     padding-left: 65px;
+
+    &-wrap {
+      @media screen and (max-width: 415px) {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
   }
 
   &_step {

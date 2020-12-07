@@ -13,7 +13,7 @@ export class UserActionIcons extends React.Component {
       <div className='slider_user-actions'>
         <div className='slider_user-actions-icon'>
           <a href='#' className='slider_user-actions-link'>
-            <IconFavWhite className='slider_user-actions-svg'/>
+            <IconFavWhite className='slider_user-actions-svg slider_user-actions-svg--favorite'/>
           </a>
         </div>
         <div className='slider_user-actions-icon'>

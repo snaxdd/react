@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 415px) {
       min-width: 80px;
       height: 80px;
       margin-right: 24px;
@@ -29,9 +29,9 @@
   }
   &_title {
     line-height: 1;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 415px) {
       font-size: 8.23529px;
-      line-height: 14px;
+      line-height: normal;
     }
   }
   //--.nutritional-value_weight
@@ -40,9 +40,9 @@
     font-size: 24px;
     font-family: 'Intro-Bold';
     color: $dark;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 415px) {
       font-size: 14.1176px;
-      line-height: 19px;
+      line-height: normal;
     }
     //--.nutritional-value_weight-unit
     &-unit {
@@ -51,14 +51,15 @@
       color: #999999;
       font-family: 'Intro-Book';
       font-size: 14px;
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 415px) {
         font-size: 8.23529px;
-        line-height: 14px;
+        line-height: 11.55px;
+        transform: translateY(-4.8px);
       }
     }
   }
   &_icon {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 415px) {
       width: 24px;
       height: 24px;
       display: flex;
@@ -67,7 +68,22 @@
     }
   }
 
-  @media screen and (max-width: 425px) {
+  &_wrap {
+    @media screen and (max-width: 415px) {
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 29.5px;
+    }
+  }
+
+  &_heading {
+    display: none;
+    @media screen and (max-width: 415px) {
+      display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 415px) {
     overflow-y: scroll;
   }
 }

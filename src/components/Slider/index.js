@@ -1,13 +1,14 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation } from 'swiper';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper.scss';
 import { SliderItem } from './SliderItem';
 import { ReactComponent as IconSliderArrowNext } from '../../assets/icons/Slider/next-arrow.svg';
 import { ReactComponent as IconSliderArrowPrev } from '../../assets/icons/Slider/prev-arrow.svg';
 
 SwiperCore.use([
-  Navigation
+  Navigation,
+  Pagination
 ]);
 
 export class Slider extends React.Component {
@@ -20,8 +21,15 @@ export class Slider extends React.Component {
       <div className='slider'>
         <Swiper
         breakpoints={{
-          425: {
+          415: {
             spaceBetween: 20
+          }
+        }}
+        pagination={{
+          el: '.slider_pagination',
+          clickable: true,
+          renderBullet: function(index, className) {
+            return '<span class="' + className + '"></span>'; 
           }
         }}
         spaceBetween={50}
@@ -45,6 +53,9 @@ export class Slider extends React.Component {
         <div className='slider_button slider_button-prev'>
           <IconSliderArrowPrev />
         </div> 
+        <div className="slider_pagination">
+
+        </div>
       </div>
     );
   };

@@ -5,6 +5,31 @@
     line-height: 40px;
     color: #333333;
     margin-right: 54px;
+
+    @media screen and (max-width: 415px) {
+      margin-right: 7px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      max-width: 109px;
+      width: 100%;
+      transform: translateY(-5.5px)
+    }
+  }
+
+  &--mobile {
+    display: none;
+
+    @media screen and (max-width: 415px) {
+      display: block !important;
+    }
+  }
+
+  &_wrap {
+    @media screen and (max-width: 415px) {
+      //display: none;
+      transform: translateY(8px);
+    }
   }
 
   &_heading {
@@ -14,6 +39,10 @@
     color: #333333;
     display: inline-block;
     margin-bottom: 14.5px;
+
+    @media screen and (max-width: 415px) {
+      display: none;
+    }
   }
 
   &_recipe-weight {
@@ -22,19 +51,35 @@
     line-height: 40px;
     color: #333333;
     margin-right: 13px;
+
+    @media screen and (max-width: 415px) {
+      line-height: normal;
+      transform: translateY(-16px);
+      margin-right: 16px;
+    }
   }
 
   &_header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+
     &-img {
       margin-right: 16.5px;
+
+      @media screen and (max-width: 415px) {
+        margin-right: 16px;
+        transform: translateY(-14.5px);
+      }
     }
   }
 
   &_buy-button {
     max-width: 100px;
+
+    @media screen and (max-width: 415px) {
+      transform: translateY(-17px);
+    }
   }
 
   &_row {
@@ -44,6 +89,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &:last-child {
+      @media screen and (max-width: 415px) {
+        border-bottom: none;
+        min-height: 56px;
+      }
+    }
   }
 
   &_product {
@@ -56,6 +108,9 @@
       font-size: 16px;
       line-height: 40px;
       color: #333333;
+      @media screen and (max-width: 415px) {
+        line-height: 24px;
+      }
     }
 
     &-count {
@@ -64,9 +119,37 @@
       line-height: 40px;
       color: #333333;
 
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 415px) {
         white-space: nowrap;
       }
     }
+
+    @media screen and (max-width: 415px) {
+      align-items: center;
+    }
+  }
+
+  &_spoiler {
+    font-family: 'Intro-Regular';
+    font-size: 18px;
+    line-height: 24px;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none; 
+
+    @media screen and (max-width: 415px) {
+      display: flex;
+    }
+  }
+
+  @media screen and (max-width: 415px) {
+    display: none;
+    background-color: #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
   }
 }

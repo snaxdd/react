@@ -22,7 +22,7 @@
       justify-content: space-between;
     }
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 415px) {
       display: none;
     }
   }
@@ -32,7 +32,7 @@
     justify-content: center;
     padding-top: 16px;
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 415px) {
       display: none;
     }
     //-- .header_bottom-container
@@ -211,7 +211,7 @@
       justify-content: space-between;
     }
 
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 415px){
       display: block;
     }
   }

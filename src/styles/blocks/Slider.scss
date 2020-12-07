@@ -1,5 +1,26 @@
 .slider {
   position: relative;
+  &_pagination {
+    display: none;
+    @media screen and (max-width: 415px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 17.4px;
+    }
+    &-bullet {
+      width: 4px;
+      height: 4px;
+      background-color: rgba(241, 85, 38, 0.24);
+      border-radius: 100%;
+      margin-right: 16px;
+      &-active {
+        width: 6px;
+        height: 6px;
+        background-color: $red;
+      }
+    }
+  }
   //--.slider-button
   &_button {
     width: 40px;
@@ -12,7 +33,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 415px) {
       display: none;
     }
     &-next {
@@ -28,7 +49,11 @@
   }
   //--.slider-top
   &-top {
-    height: 376px;
+    min-height: 376px;
+    @media screen and (max-width: 415px) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
   //--.slider_title
   &_title {
@@ -41,13 +66,14 @@
     text-align: center; 
     z-index: 5;
     letter-spacing: -0.8px;
-    @media screen and (max-width: 425px) {
-      bottom: 0;
-      position: relative;
+    @media screen and (max-width: 415px) {
+      position: static;
       text-align: left;
       font-size: 24px;
       line-height: 32px;
       color: $dark;
+      letter-spacing: -0.5px;
+      margin-bottom: 15.5px;
     }
   }
   //--.slider_image
@@ -61,8 +87,9 @@
       height: 100%;
       border-radius: 16px;
       overflow: hidden;
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 415px) {
         height: 216px;
+        border-radius: 8px;
       }
       &::after {
         left: 0;
@@ -80,12 +107,10 @@
   &_item {
     height: 376px;
     position: relative;
-    //background-color: rgba(0, 0, 0, 0.1);
-    //border-radius: 16px;
-    //overflow: hidden;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 415px) {
       display: flex;
       flex-direction: column;
+      height: 392px;
     }
   }
   //--.slider_props
@@ -95,10 +120,10 @@
     left: 50%;
     bottom: 34px;
     z-index: 5;
-    @media screen and (max-width: 425px) {
-      position: relative;
-      left: 0;
-      bottom: 0;
+    @media screen and (max-width: 415px) {
+      position: static;
+      transform: none;
+      margin-bottom: 17px;
     }
     //--.slider_props-group
     &-group {
@@ -112,7 +137,7 @@
       font-family: 'Intro-Book';
       font-size: 14px;
       margin-right: 16px;
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 415px) {
         color: $dark;
       }
       &:last-child {
@@ -127,13 +152,23 @@
       justify-content: center;
       &-svg {
         fill: white;
+        @media screen and (max-width: 415px) {
+          fill: $dark;
+        }
       }
       &-calories {
         stroke: white;
+        @media screen and (max-width: 415px) {
+          stroke: $dark;
+        }
       }
       &-complexity {
         stroke: white;
         fill: white;
+        @media screen and (max-width: 415px) {
+          stroke: $dark;
+          fill: $dark;
+        }
       }
     } 
   }
@@ -147,16 +182,22 @@
     width: 100%;
     justify-content: space-between;
     z-index: 5;
-    @media screen and (max-width: 425px) {
-      position: relative;
-      top: 0;
-      right: 0;
+    box-sizing: border-box;
+    @media screen and (max-width: 415px) {
+      position: static;
+      max-width: 152px;
+      margin-bottom: 16px;
     }
     &-icon {
       width: 48px;
       height: 48px;
       background-color: $dark;
       border-radius: 100%;
+      @media screen and (max-width: 415px) {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+      }
     }
     &-link {
       display: flex;
@@ -164,6 +205,19 @@
       align-items: center;
       width: 100%;
       height: 100%;
+    }
+    &-svg {
+      fill: white;
+      @media screen and (max-width: 415px) {
+        fill: $dark;
+      }
+      &--favorite {
+        fill: none;
+        stroke: white;
+        @media screen and (max-width: 415px) {
+          stroke: $dark;
+        }
+      }
     }
   }
 }
