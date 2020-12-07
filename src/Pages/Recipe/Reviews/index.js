@@ -1,6 +1,7 @@
 import React from 'react';
 import { ReviewHeader } from './ReviewHeader';
 import { Review } from './Review';
+import { Button } from '../../../components/Button/index';
 
 export class Reviews extends React.Component {
   constructor(props) {
@@ -30,6 +31,10 @@ export class Reviews extends React.Component {
             );
           })
         }
+
+        <div className="reviews_mobile-btn-wrap">
+          <Button text="Написать комментарий"/>
+        </div>
       </div>
     );
   };

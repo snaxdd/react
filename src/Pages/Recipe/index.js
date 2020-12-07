@@ -11,6 +11,7 @@ import { Reviews } from './Reviews/index';
 import { SimilarRecipes } from './SimilarRecipes/index';
 import { CallbackDiscount } from '../../components/CallbackDiscount/index';
 import { Footer } from '../../components/Footer/index';
+import { Faq } from '../../components/FAQ/index';
 
 //TopMenu Icons
 import { ReactComponent as IconDelivery } from '../../assets/icons/Delivery.svg';
@@ -80,7 +81,7 @@ export class Recipe extends React.Component {
 
           <section className="similar-recipes">
             <div className="container">
-              <h2 className="section_heading">
+              <h2 className="section_heading similar-recipes_heading">
                 Похожие рецепты
               </h2>
               <SimilarRecipes recipesData={pageData.similarRecipes}/>
@@ -100,6 +101,8 @@ export class Recipe extends React.Component {
               </a>
             </div>
           </div>
+
+          <Faq data={pageData.faq}/>
         </main>
 
         <Footer data={pageData.footer}/>
@@ -424,6 +427,24 @@ const pageData = {
       title: 'калорийность',
       weight: '387',
       weightUnit: 'ккал'
+    },
+  ],
+  faq: [
+    {
+      id: 1,
+      title: 'А у вас точно качественная продукция?'
+    },
+    {
+      id: 2,
+      title: 'А это дороже, чем покупать в магазине?'
+    },
+    {
+      id: 3,
+      title: 'Как происходит доставка и оплата?'
+    },
+    {
+      id: 4,
+      title: 'Где и как собираются заказы?'
     },
   ]
 }

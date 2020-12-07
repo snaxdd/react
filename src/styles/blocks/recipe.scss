@@ -12,8 +12,10 @@
   }
 
   &_description {
-    padding-left: 16px;
-    padding-right: 16px;
+    @media screen and (max-width: 415px) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
 
   &_description-heading {
@@ -106,7 +108,7 @@
     margin-bottom: 60px;
     @media screen and (max-width: 415px) {
       padding-top: 4.5px;
-      margin-bottom: 49.5px;
+      margin-bottom: 37px;
     }
   }
 
@@ -114,6 +116,9 @@
   &_steps {
     padding-left: 65px;
 
+    @media screen and (max-width: 415px) {
+      padding-bottom: 64.5px;
+    }
     &-wrap {
       @media screen and (max-width: 415px) {
         padding-left: 16px;
@@ -158,6 +163,10 @@
         background-repeat: no-repeat;
         border: 2px solid $red;
       }
+
+      @media screen and (max-width: 415px) {
+        line-height: 31.5px;
+      }
     }
 
     //--.recipe_steps-text
@@ -169,6 +178,10 @@
       padding-bottom: 34px;
       padding-top: 6px;
       line-height: 24px;
+
+      @media screen and (max-width: 415px) {
+        padding-bottom: 16px;
+      }
 
       &::after {
         content: '';
@@ -188,5 +201,9 @@
         padding-bottom: 0;
       }
     }
+  }
+
+  @media screen and (max-width: 415px) {
+    margin-bottom: 0px
   }
 }

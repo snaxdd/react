@@ -1,37 +1,60 @@
 .reviews {
   padding-bottom: 24px;
-  
+
+  &_mobile-btn-wrap {
+    display: none;
+
+    @media screen {
+      display: block;
+      min-height: 88px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
   &_heading {
     &--pc {
       @media screen and (max-width: 415px) {
         display: none;
       }
     }
+
     &--mobile {
       display: none;
+
       @media screen and (max-width: 415px) {
+        font-family: 'Intro-Bold';
+        font-size: 24px;
+        line-height: 40px;
+        padding-top: 34.5px;
         display: block;
         padding-left: 16px;
         padding-right: 16px;
       }
     }
   }
-  
+
   &_wrap {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04);
     border-radius: 8px;
   }
+
   //--.reviews-star
   &-star {
     margin-right: 4px;
     fill: $greyBlue;
+
     &--active {
       fill: $orange;
     }
+
     &:last-child {
       margin-right: 15px;
     }
   }
+
   //--.reviews_header
   &_header {
     box-sizing: border-box;
@@ -44,10 +67,14 @@
     background-color: #fff;
     border-radius: 8px 8px 0 0;
     border-bottom: 1px solid rgba(203, 218, 236, 0.56);
+
     @media screen and (max-width: 415px) {
       border-radius: 0;
       border: none;
       position: relative;
+      align-items: flex-start;
+      padding-top: 11.5px;
+
       &::after {
         content: '';
         width: 91.1%;
@@ -71,10 +98,12 @@
       margin-right: 5px;
       display: flex;
       align-items: center;
+
       @media screen and (max-width: 415px) {
         margin: 0;
-      } 
+      }
     }
+
     //--.reviews_header-button
     &-button {
       margin-right: 60px;
@@ -83,6 +112,7 @@
         display: none;
       }
     }
+
     //--.reviews_header-rate
     &-rate {
       display: flex;
@@ -92,6 +122,7 @@
         flex-direction: column;
         align-items: flex-start;
       }
+
       //--.reviews_header-rate-text
       &-text {
         font-family: 'Intro-Regular';
@@ -101,26 +132,43 @@
 
         @media screen and (max-width: 415px) {
           margin-right: 0;
-          margin-bottom: 3px;
         }
       }
     }
+
     //--.reviews_header-comments-number
     &-comments-number {
       line-height: 24px;
       font-family: 'Intro-Book';
       font-size: 14px;
       color: #999999;
+      @media screen and (max-width: 415px) {
+        transform: translateX(3px);
+      }
     }
+
     //--.reviews_header-sorting
     &-sorting {
       display: flex;
       align-items: center;
       position: relative;
       padding-right: 65px;
-      @media screen and (max-width: 415px){
-        padding-right: 30px;
+
+      @media screen and (max-width: 415px) {
+        padding-right: 23.2px;
       }
+
+      &-arrow {
+        display: none;
+
+        @media screen and (max-width: 415px) {
+          position: absolute;
+          display: inline-block;
+          top: 8.2px;
+          left: -15.6px;
+        }
+      }
+
       //--.reviews_header-sorting_text
       &-text {
         font-family: 'Intro-Light';
@@ -133,6 +181,20 @@
           font-size: 14px;
           line-height: 20px;
         }
+
+        &--pc {
+          @media screen and (max-width: 415px) {
+            display: none;
+          }
+        }
+
+        &--mobile {
+          display: none;
+
+          @media screen and (max-width: 415px) {
+            display: inline-block;
+          }
+        }
       }
 
       &-icon {
@@ -141,11 +203,13 @@
         top: 11px;
 
         @media screen and (max-width: 415px) {
-          top: 8px;
+          top: 9.7px;
+          right: 8px;
         }
       }
     }
   }
+
   &_comment {
     background-color: #fff;
     display: flex;
@@ -154,12 +218,13 @@
     padding: 23px 16px 15px 16px;
     border-bottom: 1px solid rgba(203, 218, 236, 0.56);
     letter-spacing: -0.4px;
-    
+    position: relative;
+
     &--last {
       border-bottom: 0;
       border-radius: 0 0 8px 8px;
     }
-    
+
     &-header {
       display: flex;
       align-items: center;
@@ -195,6 +260,7 @@
       margin-right: 4px;
       fill: $greyBlue;
       width: 13px;
+
       &--active {
         fill: $orange;
       }
@@ -229,6 +295,22 @@
 
     &-avatar {
       margin-right: 16px;
+    }
+
+    @media screen and (max-width: 415px) {
+      border-bottom: 0;
+      padding-top: 27px;
+      padding-bottom: 20px;
+      &::after {
+        content: '';
+        width: 91.1%;
+        height: 1px;
+        background-color: rgba(203, 218, 236, 0.56);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 }

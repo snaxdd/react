@@ -2,6 +2,7 @@ import React from 'react';
 import {ReactComponent as IconStar} from './../../../assets/icons/Reviews/star.svg';
 import {ReactComponent as IconArrowDown} from './../../../assets/icons/Reviews/arrow-down.svg';
 import {Button} from '../../../components/Button/index';
+import {ReactComponent as IconSortingArrow} from '../../../assets/icons/Reviews/SortingArrow.svg';
 
 export class ReviewHeader extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ export class ReviewHeader extends React.Component {
   render() {
     return (
       <div className="reviews_header-wrap">
-        <div className="section_heading reviews_heading--mobile">
+        <div className="reviews_heading--mobile">
           Отзывы
         </div>
         <div className="reviews_header">
@@ -37,8 +38,14 @@ export class ReviewHeader extends React.Component {
           <Button text="Написать комментарий" className="reviews_header-button"/>
 
           <div className="reviews_header-sorting">
-            <span className="reviews_header-sorting-text">
+            <IconSortingArrow 
+              className="reviews_header-sorting-arrow"
+            />
+            <span className="reviews_header-sorting-text reviews_header-sorting-text--pc">
               Самые полезные
+            </span>
+            <span className="reviews_header-sorting-text reviews_header-sorting-text--mobile">
+              По популярности
             </span>
             <IconArrowDown className="reviews_header-sorting-icon"/>
           </div>
