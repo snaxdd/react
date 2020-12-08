@@ -47,7 +47,7 @@ export class Review extends React.Component {
           </p>
           
           {
-            this.props.image ? <img src={this.props.image} alt="" className="reviews_comment-img"/> : ''
+            this.props.image ? <img src={this.props.image} alt="" className="reviews_comment-img"/> : null
           }
 
           <a href="#" className="reviews_comment-answer-button">

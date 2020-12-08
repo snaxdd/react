@@ -8,13 +8,14 @@ export class Ingredients extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      spoiler: true
+      dropDown: false
     }
   }
 
-  handleSpoiler = () => {
+  handleDropDown = () => {
+    let newState = !this.state.dropDown;
     this.setState({
-      spoiler: !this.state.spoiler
+      dropDown: newState
     });
   };
 
@@ -26,18 +27,16 @@ export class Ingredients extends React.Component {
         </span>
         <div 
           className="ingredients_spoiler"
-          onClick={() => this.handleSpoiler()}
+          onClick={() => this.handleDropDown()}
         >
           Ингредиенты
           <IconArrow 
-            className="ingredients_spoiler-icon"
+            className="ingredients_spoiler-icon ingredients_spoiler-icon--dark"
           />
         </div>
         <div 
-          className="ingredients_wrap"
-          style={
-            {display: this.state.spoiler ? 'block' : 'none'}
-          }
+          className={`ingredients_wrap 
+          ingredients_wrap--${this.state.dropDown ? 'visible' : 'hidden'}`}
         >
         <div className="ingredients_row">
           <div className="ingredients_header">

@@ -2,7 +2,7 @@ import React from 'react';
 import { MenuItem } from './MenuItem';
 import {ReactComponent as IconMobile} from './../../../assets/icons/Callback.svg';
 import {ReactComponent as IconLocation} from './../../../assets/icons/Location.svg';
-import {ReactComponent as Pyrobyte} from './../../../assets/icons/pyrobyte.svg';
+import {ReactComponent as IconPyrobyte} from './../../../assets/icons/pyrobyte.svg';
 
 export class FooterMobile extends React.Component {
   constructor(props) {
@@ -53,7 +53,7 @@ export class FooterMobile extends React.Component {
         </div>
 
         <div className="footer-mobile_pyrobyte">
-          <Pyrobyte />
+          <IconPyrobyte />
         </div>
 
         <span className="footer-mobile_copyright">

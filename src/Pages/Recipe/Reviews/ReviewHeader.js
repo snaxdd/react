@@ -12,7 +12,7 @@ export class ReviewHeader extends React.Component {
   render() {
     return (
       <div className="reviews_header-wrap">
-        <div className="reviews_heading--mobile">
+        <div className="reviews_heading reviews_heading--mobile">
           Отзывы
         </div>
         <div className="reviews_header">

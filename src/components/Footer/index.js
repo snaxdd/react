@@ -53,7 +53,7 @@ export class Footer extends React.Component {
                   <a href="#" className="footer_contacts-link footer_contacts-phone">+7 (495) 445-05-50</a>
                 </li>
                 <li className="footer_contacts-item">
-                  <IconMail className="footer_contacts-icon footer_contacts-icon--email"/>
+                  <IconMail className="footer_contacts-icon footer_contacts-icon--stroke"/>
                   <a href="#" className="footer_contacts-link">info@fish2o.ru</a>
                 </li>
               </ul>
