@@ -18,7 +18,6 @@ export class SimilarRecipes extends React.Component {
     return(
       <div className="similar-recipes_carousel">
         <Swiper
-        setWrapperSize={true}
         breakpoints={{
           1160: {
             slidesPerView: 4,
@@ -35,9 +34,6 @@ export class SimilarRecipes extends React.Component {
         }}
         spaceBetween={30}
         slidesPerView={1}
-        loop={true}
-        slidesOffsetBefore={60}
-        centeredSlides={true}
         navigation={{nextEl: '.similar-recipes_carousel-next',
           prevEl: '.similar-recipes_carousel-prev'}}
         >

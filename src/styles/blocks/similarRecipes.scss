@@ -8,12 +8,13 @@
   }
 
   &_slider {
-    padding: 0 26px !important;
-    margin: 0 -26px;
   }
 
   &_card-wrap {
-    max-width: 260px;
+    @media screen and (max-width: 415px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   //--.similar-recipes_section-heading
