@@ -12,6 +12,8 @@ import { SimilarRecipes } from './SimilarRecipes/index';
 import { CallbackDiscount } from '../../components/CallbackDiscount/index';
 import { Footer } from '../../components/Footer/index';
 import { Faq } from '../../components/FAQ/index';
+import { AskQuestion } from '../../components/AskQuestion/index';
+import { FooterMobile } from '../../components/Footer/Mobile/index';
 
 //TopMenu Icons
 import { ReactComponent as IconDelivery } from '../../assets/icons/Delivery.svg';
@@ -103,9 +105,12 @@ export class Recipe extends React.Component {
           </div>
 
           <Faq data={pageData.faq}/>
+          
+          <AskQuestion />
         </main>
 
         <Footer data={pageData.footer}/>
+        <FooterMobile data={pageData.footerMobile}/>
       </div>
     );
   };
@@ -399,6 +404,71 @@ const pageData = {
       },
     ]
   },
+  footerMobile: [
+    {
+      id: 1,
+      title: 'О компании',
+      links: [
+        {
+          id: 1,
+          href: '#',
+          text: 'Tested link'
+        },
+        {
+          id: 2,
+          href: '#',
+          text: 'Tested link'
+        },
+        {
+          id: 3,
+          href: '#',
+          text: 'Tested link'
+        }
+      ]
+    },
+    {
+      id: 2,
+      title: 'Клиентам',
+      links: [
+        {
+          id: 1,
+          href: '#',
+          text: 'Весь ассортимент'
+        },
+        {
+          id: 2,
+          href: '#',
+          text: 'Условия доставки'
+        },
+        {
+          id: 3,
+          href: '#',
+          text: 'Программа лояльности'
+        }
+      ]
+    },
+    {
+      id: 3,
+      title: 'Партнерам',
+      links: [
+        {
+          id: 1,
+          href: '#',
+          text: 'Tested link'
+        },
+        {
+          id: 2,
+          href: '#',
+          text: 'Tested link'
+        },
+        {
+          id: 3,
+          href: '#',
+          text: 'Tested link'
+        }
+      ]
+    }
+  ],
   nutritionalValue: [
     {
       id: 1,

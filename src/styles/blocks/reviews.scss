@@ -4,7 +4,7 @@
   &_mobile-btn-wrap {
     display: none;
 
-    @media screen {
+    @media screen and (max-width: 415px) {
       display: block;
       min-height: 88px;
       background-color: #fff;

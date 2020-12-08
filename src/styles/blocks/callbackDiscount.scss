@@ -14,7 +14,7 @@
       flex-direction: column;
       align-items: flex-start;
       padding-top: 27px;
-      padding-bottom: 27px;
+      padding-bottom: 31.5px;
       padding-left: 16px;
       padding-right: 16px;
     }
@@ -39,6 +39,7 @@
       font-size: 20px;
       line-height: 32px;
       margin-bottom: 13px;
+      letter-spacing: -0.4px;
     }
   }
   //--.callback-discount_form
@@ -95,6 +96,10 @@
     width: 88px;
     top: -64px;
     right: -109px;
+    @media screen and (max-width: 415px) {
+      top: -67.8px;
+      right: -118.5px;
+    }
     //--.callback-discount_offer-percents
     &-percents {
       left: 15px;

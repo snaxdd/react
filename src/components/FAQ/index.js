@@ -8,7 +8,7 @@ export class Faq extends React.Component {
 
   render() {
     return(
-      <div className="faq">
+      <section className="faq main_faq">
         <h2 className="faq_heading">
           Частые вопросы
         </h2>
@@ -25,7 +25,7 @@ export class Faq extends React.Component {
             })
           }
         </ul>
-      </div>
+      </section>
     );
   };
 };

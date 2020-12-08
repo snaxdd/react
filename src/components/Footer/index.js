@@ -61,6 +61,7 @@ export class Footer extends React.Component {
               <Button 
                 text="Обратная связь"
                 className="footer_callback-btn"
+                href="#"
               />
             </div>
           </div>
