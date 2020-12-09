@@ -6,28 +6,6 @@
     color: #333333;
     margin-right: 54px;
     transform: translate(-1.7px, -1.8px);
-
-    @media screen and (max-width: 415px) {
-      margin-right: 7px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 24px;
-      max-width: 109px;
-      width: 100%;
-      transform: translateY(-2px)
-    }
-  }
-
-  &--mobile {
-    display: none;
-
-    @media screen and (max-width: 415px) {
-      display: block !important;
-    }
-  }
-
-  &_wrap {
-    transition: height 0.35s ease-out;
   }
 
   &_heading {
@@ -36,11 +14,7 @@
     line-height: 32px;
     color: #333333;
     display: inline-block;
-    margin-bottom: 14.5px;
-
-    @media screen and (max-width: 415px) {
-      display: none;
-    }
+    margin-bottom: 14.5px;  
   }
 
   &_recipe-weight {
@@ -50,12 +24,6 @@
     color: #333333;
     margin-right: 13px;
     transform: translate(-4.7px, -1px);
-
-    @media screen and (max-width: 415px) {
-      line-height: normal;
-      transform: translateY(-12px);
-      margin-right: 16px;
-    }
   }
 
   &_header {
@@ -65,20 +33,11 @@
 
     &-img {
       margin-right: 16.5px;
-
-      @media screen and (max-width: 415px) {
-        margin-right: 16px;
-        transform: translateY(-11.5px);
-      }
     }
   }
 
   &_buy-button {
     max-width: 100px;
-
-    @media screen and (max-width: 415px) {
-      transform: translateY(-10px);
-    }
   }
 
   &_row {
@@ -88,17 +47,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    &:last-child {
-      @media screen and (max-width: 415px) {
-        border-bottom: none;
-        min-height: 56px;
-      }
-    }
-
+    
     @media screen and (max-width: 415px) {
-      justify-content: start;
-      padding: 7px 0px;
+      &:last-child {
+        border-bottom: none;
+      }
     }
   }
 
@@ -119,44 +72,13 @@
       font-size: 16px;
       line-height: 40px;
       color: #333333;
-
-      @media screen and (max-width: 415px) {
-        white-space: nowrap;
-      }
-    }
-
-    @media screen and (max-width: 415px) {
-      align-items: center;
-    }
-  }
-
-  &_spoiler {
-    font-family: 'Intro-Regular';
-    font-size: 18px;
-    line-height: 24px;
-    padding: 20px 0px;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    display: none;
-
-    @media screen and (max-width: 415px) {
-      display: flex;
-    }
-
-    &-icon {
-      &--dark {
-        fill: $dark;
-      }
+      text-align: right;
+      white-space: nowrap;
     }
   }
 
   @media screen and (max-width: 415px) {
     display: none;
-    background-color: #fff;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 8px;
   }
 }
+

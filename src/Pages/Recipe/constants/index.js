@@ -11,6 +11,7 @@ import { ReactComponent as IconCalories } from './../../../assets/icons/Nutritio
 //Images
 import Image from './../../../assets/images/image.jpg';
 import CommentImage from './../../../assets/images/Reviews/comment-image.jpg';
+import IngredientsImg from '../../../assets/images/Ingredients/title-img.png';
 
 export const pageData = {
   breadcrumbs: [
@@ -50,6 +51,7 @@ export const pageData = {
   ingredients : {
     title: 'Филе семги без кожи',
     recipeWeight: '150 г',
+    image: IngredientsImg,
     ingredients: [
       {
         name: 'Руккола',

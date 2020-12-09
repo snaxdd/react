@@ -6,6 +6,7 @@ import { RecipeVideos } from './../../components/RecipeVideos/index';
 import { RecipeDescription } from './RecipeDescription';
 import { NutritionalValue } from '../../components/NutritionalValue/index';
 import { Ingredients } from '../../components/Ingredients/index';
+import { IngredientsMobile } from '../../components/Ingredients/IngredientsMobile';
 import { RecipeSteps } from '../../components/RecipeSteps/index';
 import { Reviews } from './Reviews/index';
 import { SimilarRecipes } from './SimilarRecipes/index';
@@ -61,10 +62,7 @@ export class Recipe extends React.Component {
               </div>
               <div className="recipe_right">
                 <RecipeDescription />
-                <Ingredients 
-                  data={pageData.ingredients}
-                  theme="mobile"
-                />
+                <IngredientsMobile data={pageData.ingredients}/>
                 <NutritionalValue data={pageData.nutritionalValue}/>
                 <div className="recipe_steps-wrap">
                   <RecipeSteps recipeSteps={pageData.recipeSteps}/>

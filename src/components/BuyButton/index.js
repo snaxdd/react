@@ -8,7 +8,7 @@ export class BuyButton extends React.Component {
 
   render() {
     return(
-      <a href='#' className={`buy-button ${this.props.class ? this.props.class : ''}`}>
+      <a href='#' className={`buy-button ${this.props.class ? this.props.class : null}`}>
         <IconCart 
           className="buy-button_icon"
         />
