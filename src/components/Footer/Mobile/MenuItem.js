@@ -6,20 +6,48 @@ export class MenuItem extends React.Component {
   constructor(props) {
     super(props);
     this.state =  {
-      spoiler: false
+      contentBlockHeight: 0,
+      contentOpen: true
     }
+    this.refHiddenContent = React.createRef();
+    this.refButton = React.createRef();
   }
 
-  handleSpoiler = () => {
+  handleDropDown = () => {
+    let newContentOpen = !this.state.contentOpen;
+    
     this.setState({
-      spoiler: !this.state.spoiler
-    });
+      contentOpen: newContentOpen
+    })
+    
+    if (this.state.contentOpen) {
+      this.refHiddenContent.current.style.height = this.state.contentBlockHeight + "px";
+    } else {
+      this.refHiddenContent.current.style.height = "0px";
+    }    
   };
+
+  componentDidMount = () => {
+    this.setState({
+      contentBlockHeight: this.refHiddenContent.current.clientHeight
+    })
+
+    this.refHiddenContent.current.style.height = "0px";
+    this.refHiddenContent.current.style.overflow = 'hidden';
+  }
+
+  componentWillUnmount = () => {
+    this.refButton.current.removeEventListener('click', this.handleDropDown);
+  }
 
   render() {
     return (
       <li className="footer-mobile_menu-item">
-        <div className="footer-mobile_menu-heading-wrap" onClick={() => this.handleSpoiler()}>
+        <div
+          ref={this.refButton} 
+          className="footer-mobile_menu-heading-wrap" 
+          onClick={() => this.handleDropDown()}
+        >
           <span className="footer-mobile_menu-list-heading">
             {this.props.title}
           </span>
@@ -27,9 +55,10 @@ export class MenuItem extends React.Component {
             className="footer-mobile_menu-list-icon"
           />
         </div>
-        <ul className="footer-mobile_menu-inner-list" style={{
-          display: this.state.spoiler ? 'block' : 'none'
-        }}>
+        <ul
+          ref={this.refHiddenContent} 
+          className="footer-mobile_menu-inner-list"
+        >
           {this
             .props
             .innerLinks

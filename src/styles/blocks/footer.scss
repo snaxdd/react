@@ -320,7 +320,8 @@
 
       &-inner {
         &-list {
-          //display: none;
+          transition: height 0.35s ease-in;
+          transform: translateY(-6px);
         }
 
         &-link {
@@ -332,6 +333,9 @@
 
         &-item {
           margin-bottom: 12px;
+          &:last-child {
+            padding-bottom: 10px;
+          }
         }
       }
     }
