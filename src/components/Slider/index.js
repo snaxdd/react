@@ -32,6 +32,7 @@ export class Slider extends React.Component {
             return '<span class="' + className + '"></span>'; 
           }
         }}
+        loop={true}
         spaceBetween={50}
         slidesPerView={1}
         navigation={{nextEl: '.slider_button-next',

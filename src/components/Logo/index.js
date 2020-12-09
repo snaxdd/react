@@ -8,7 +8,9 @@ export class Logo extends React.Component {
 
   render() {
     return (
-      <IconLogotype className={this.props.class}/>
+      <a href="#">
+        <IconLogotype className={this.props.class}/>
+      </a>
     );
   };
 };

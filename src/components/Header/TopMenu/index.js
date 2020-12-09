@@ -32,8 +32,8 @@ export class TopMenu extends React.Component {
             </a>
           </li>
           <li className='header_contacts-callback'>
-            <IconCallback className="header_contacts-icon"/>
             <a href='#' className='header_contacts-callback-link'>
+              <IconCallback className="header_contacts-icon"/>
               Обратный звонок
             </a>
           </li>
