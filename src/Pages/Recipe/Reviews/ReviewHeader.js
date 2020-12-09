@@ -41,12 +41,12 @@ export class ReviewHeader extends React.Component {
             <IconSortingArrow 
               className="reviews_header-sorting-arrow"
             />
-            <span className="reviews_header-sorting-text reviews_header-sorting-text--pc">
+            <button className="reviews_header-sorting-button reviews_header-sorting-button--pc">
               Самые полезные
-            </span>
-            <span className="reviews_header-sorting-text reviews_header-sorting-text--mobile">
+            </button>
+            <button className="reviews_header-sorting-button reviews_header-sorting-button--mobile">
               По популярности
-            </span>
+            </button>
             <IconArrowDown className="reviews_header-sorting-icon"/>
           </div>
         </div>

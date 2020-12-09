@@ -11,7 +11,7 @@ export class SliderItem extends React.Component {
   render() {
     return(
       <article className='slider_item'>
-        <UserActionIcons />
+        <UserActionIcons href="#"/>
         <h2 className='slider_title'>
           { this.props.slideData.title }
         </h2>

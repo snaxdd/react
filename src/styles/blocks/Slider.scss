@@ -1,19 +1,23 @@
 .slider {
   position: relative;
+
   &_pagination {
     display: none;
+
     @media screen and (max-width: 415px) {
       display: flex;
       justify-content: center;
       align-items: center;
       padding-top: 17.4px;
     }
+
     &-bullet {
       width: 4px;
       height: 4px;
       background-color: rgba(241, 85, 38, 0.24);
       border-radius: 100%;
       margin-right: 16px;
+
       &-active {
         width: 6px;
         height: 6px;
@@ -21,6 +25,7 @@
       }
     }
   }
+
   //--.slider-button
   &_button {
     width: 40px;
@@ -33,28 +38,39 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: darken(#fff, 5);
+    }
+
     @media screen and (max-width: 415px) {
       display: none;
     }
+
     &-next {
       position: absolute;
       right: -20px;
       top: 160px;
     }
+
     &-prev {
       position: absolute;
       top: 160px;
       left: -20px;
     }
   }
+
   //--.slider-top
   &-top {
     min-height: 376px;
+
     @media screen and (max-width: 415px) {
       padding-left: 16px;
       padding-right: 16px;
     }
   }
+
   //--.slider_title
   &_title {
     color: white;
@@ -63,9 +79,10 @@
     position: absolute;
     bottom: 75px;
     width: 100%;
-    text-align: center; 
+    text-align: center;
     z-index: 5;
     letter-spacing: -0.8px;
+
     @media screen and (max-width: 415px) {
       position: static;
       text-align: left;
@@ -76,21 +93,25 @@
       margin-bottom: 15.5px;
     }
   }
+
   //--.slider_image
   &_image {
     object-fit: cover;
     height: 100%;
     width: 100%;
+
     //--.slider_image-container
     &-container {
       position: relative;
       height: 100%;
       border-radius: 16px;
       overflow: hidden;
+
       @media screen and (max-width: 415px) {
         height: 216px;
         border-radius: 8px;
       }
+
       &::after {
         left: 0;
         top: 0;
@@ -98,21 +119,24 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        background: rgb(255,255,255);
-        background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 110%);
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 110%);
       }
     }
   }
+
   //--.slider_item
   &_item {
     height: 376px;
     position: relative;
+
     @media screen and (max-width: 415px) {
       display: flex;
       flex-direction: column;
       height: 392px;
     }
   }
+
   //--.slider_props
   &_props {
     position: absolute;
@@ -120,15 +144,18 @@
     left: 50%;
     bottom: 34px;
     z-index: 5;
+
     @media screen and (max-width: 415px) {
       position: static;
       transform: none;
       margin-bottom: 17px;
     }
+
     //--.slider_props-group
     &-group {
       display: flex;
     }
+
     //--.slider_props-item
     &-item {
       display: flex;
@@ -137,41 +164,51 @@
       font-family: 'Intro-Book';
       font-size: 14px;
       margin-right: 16px;
+
       @media screen and (max-width: 415px) {
         color: $dark;
       }
+
       &:last-child {
         margin-right: 0;
       }
     }
+
     //--.slider_props-icon
     &-icon {
       margin-right: 4px;
       display: flex;
       align-items: center;
       justify-content: center;
+
       &-svg {
         fill: white;
+
         @media screen and (max-width: 415px) {
           fill: $dark;
         }
       }
+
       &-calories {
         stroke: white;
+
         @media screen and (max-width: 415px) {
           stroke: $dark;
         }
       }
+
       &-complexity {
         stroke: white;
         fill: white;
+
         @media screen and (max-width: 415px) {
           stroke: $dark;
           fill: $dark;
         }
       }
-    } 
+    }
   }
+
   //.slider_user-actions
   &_user-actions {
     position: absolute;
@@ -183,37 +220,59 @@
     justify-content: space-between;
     z-index: 5;
     box-sizing: border-box;
+
     @media screen and (max-width: 415px) {
       position: static;
       max-width: 152px;
       margin-bottom: 16px;
     }
+
     &-icon {
       width: 48px;
       height: 48px;
       background-color: $dark;
       border-radius: 100%;
+
       @media screen and (max-width: 415px) {
         width: 40px;
         height: 40px;
         background-color: #fff;
       }
     }
+
     &-link {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      height: 100%;
+      width: 48px;
+      height: 48px;
+      background-color: $dark;
+      border-radius: 100%;
+      box-sizing: border-box;
+      transition: 0.2s ease;
+
+      &:hover {
+        background-color: rgba($color: $dark, $alpha: 0.85);
+      }
+
+      @media screen and (max-width: 415px) {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+      }
     }
+
     &-svg {
       fill: white;
+
       @media screen and (max-width: 415px) {
         fill: $dark;
       }
-      &--favorite {
+
+      &--stroke {
         fill: none;
         stroke: white;
+
         @media screen and (max-width: 415px) {
           stroke: $dark;
         }
@@ -221,4 +280,3 @@
     }
   }
 }
-

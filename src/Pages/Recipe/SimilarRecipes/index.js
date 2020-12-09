@@ -3,6 +3,7 @@ import { RecipeCard } from './RecipeCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper.scss';
+import { ReactComponent as IconControlArrow } from '../../../assets/icons/Slider/control-arrow.svg';
 
 SwiperCore.use([
   Navigation,
@@ -50,6 +51,8 @@ export class SimilarRecipes extends React.Component {
                   reviewsCount={item.reviewsCount}
                   cookingTime={item.cookingTime}
                   calories={item.calories}
+                  titleLink='#'
+                  imageLink='#'
                 />
               </SwiperSlide>
             );
@@ -57,8 +60,16 @@ export class SimilarRecipes extends React.Component {
         }  
         </Swiper>
         <div className="similar-recipes_carousel-controls">
-          <div className="similar-recipes_carousel-button similar-recipes_carousel-prev"></div>
-          <div className="similar-recipes_carousel-button similar-recipes_carousel-next"></div>
+          <div className="similar-recipes_carousel-button">
+            <IconControlArrow 
+              className="similar-recipes_carousel-icon similar-recipes_carousel-prev"
+            />
+          </div>
+          <div className="similar-recipes_carousel-button">
+            <IconControlArrow 
+              className="similar-recipes_carousel-icon similar-recipes_carousel-next"
+            />
+          </div>
         </div>
         <div className="swiper-pagination">
 

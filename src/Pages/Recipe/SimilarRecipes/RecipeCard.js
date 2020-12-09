@@ -13,11 +13,15 @@ export class RecipeCard extends React.Component {
     return(
       <article className="similar-recipes_card">
         <div className="similar-recipes_card-image-wrap">
-          <img 
-            src={Preview} 
-            alt=""
-            className="similar-recipes_card-image"
-          />
+          <a 
+            href={this.props.imageLink} 
+            className="similar-recipes_card-image-link">
+            <img 
+              src={Preview} 
+              alt=""
+              className="similar-recipes_card-image"
+            />
+          </a>
         </div>
 
         <div className="similar-recipes_card-description">
@@ -33,7 +37,11 @@ export class RecipeCard extends React.Component {
           </div>
 
           <h3 className="similar-recipes_card-title">
-            {this.props.title}
+            <a 
+              href={this.props.titleLink} 
+              className="similar-recipes_card-title-link">
+              {this.props.title}
+            </a>
           </h3>
 
           <p className="similar-recipes_card-text">

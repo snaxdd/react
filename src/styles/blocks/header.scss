@@ -89,6 +89,10 @@
 
     &-link {
       color: #666666;
+      transition: 0.2s ease;
+      &:hover {
+        color: rgba($color: #666666, $alpha: 0.85);
+      }
     }
   }
 
@@ -103,6 +107,11 @@
 
       &-link {
         color: $dark;
+        transition: 0.2s ease;
+        border-bottom: 1px dashed rgba(0, 0, 0, 0);
+        &:hover {
+          border-bottom: 1px dashed $dark;
+        }
       }
     }
 
@@ -111,7 +120,10 @@
       font-family: 'Intro-Book';
       border-bottom: 1px dashed #666666;
       position: relative;
-
+      transition: 0.2s ease;
+      &:hover {
+        border-bottom: 1px dashed rgba(0, 0, 0, 0);
+      }
       &-link {
         color: #666666;
       }
@@ -174,8 +186,21 @@
       align-items: center;
     }
 
-    &-profile {
+    &-svg {
       fill: $dark;
+      transition: 0.2s ease;
+      &--stroke {
+        fill: none;
+        stroke: $dark;
+        transition: 0.2s ease;
+        &:hover {
+          fill: none;
+          stroke: rgba($color: $dark, $alpha: 0.85);
+        }
+      }
+      &:hover {
+        fill: rgba($color: $dark, $alpha: 0.85);
+      }
     }
   }
 

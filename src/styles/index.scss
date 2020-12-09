@@ -1,7 +1,7 @@
-@import './style.scss';
 @import './variables.scss';
-@import './fonts.scss';
 @import './Keyframes.scss';
+@import './fonts.scss';
+@import './style.scss';
 
 @import './blocks/Header.scss';
 @import './blocks/Logo.scss';
@@ -26,6 +26,3 @@
 @import './blocks/AskQuestion.scss';
 @import './blocks/main.scss';
 
-body {
-  background-color: $pageBg;
-}

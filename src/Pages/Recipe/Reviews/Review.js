@@ -50,9 +50,9 @@ export class Review extends React.Component {
             this.props.image ? <img src={this.props.image} alt="" className="reviews_comment-img"/> : null
           }
 
-          <a href="#" className="reviews_comment-answer-button">
+          <button className="reviews_comment-answer-button">
             Ответить
-          </a>
+          </button>
         </div>
       </div>
     );

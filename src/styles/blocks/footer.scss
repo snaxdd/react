@@ -28,6 +28,10 @@
       font-size: 14px;
       line-height: 24px;
       color: rgba(255, 255, 255, 0.64);
+      transition: 0.2s ease;
+      &:hover {
+        opacity: 0.85;
+      }
     }
 
     &-item {
@@ -39,7 +43,7 @@
 
   //--.footer_callback-btn
   &_callback-btn {
-    padding: 10px 39px;
+    padding: 7.3px 39px;
   }
 
   //--.footer_socials-wrap
@@ -84,6 +88,10 @@
       font-size: 16px;
       line-height: 24px;
       color: rgba(255, 255, 255, 0.72);
+      transition: 0.2s ease;
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
     }
 
     //--.footer_menu-list
@@ -118,7 +126,7 @@
 
     //--.footer_contacts-item
     &-item {
-      margin-bottom: 25px;
+      margin-bottom: 25.5px;
 
       &:last-child {
         margin-bottom: 0;
@@ -127,7 +135,7 @@
 
     //--.footer_contacts-list
     &-list {
-      margin-bottom: 32px;
+      margin-bottom: 25.5px;
     }
 
     //--.footer_contacts-heading
@@ -141,6 +149,10 @@
       font-size: 16px;
       line-height: 24px;
       color: rgba(255, 255, 255, 0.72);
+      transition: 0.2s ease;
+      &:hover {
+        opacity: 0.85;
+      }
     }
 
     //--.footer_contacts-phone

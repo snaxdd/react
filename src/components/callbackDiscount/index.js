@@ -28,11 +28,10 @@ export class CallbackDiscount extends React.Component {
                 className="callback-discount_phone"
                 placeholder="Введите ваш телефон"
               />
-              <a href="#" className="callback-discount_button">
-                <span className="callback-discount_button-text">
-                  Отправить
-                </span>
-              </a>
+              <button 
+                className="callback-discount_button">
+                Отправить
+              </button>
             </div>
           </div>
         </div>

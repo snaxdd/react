@@ -14,3 +14,10 @@ ul {
 a {
   text-decoration: none;
 }
+
+body {
+  background-color: $pageBg;
+  background-image: url('../assets/images/bg/pad.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+}

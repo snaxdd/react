@@ -1,6 +1,7 @@
 .callback-discount {
-  padding-top: 61px;
+  padding-top: 57.5px;
   padding-bottom: 24px;
+
   &_container {
     max-width: 840px;
     width: 100%;
@@ -10,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+
     @media screen and (max-width: 415px) {
       flex-direction: column;
       align-items: flex-start;
@@ -19,12 +21,14 @@
       padding-right: 16px;
     }
   }
+
   //--.callback-discount-wrap
   &_wrap {
     background-image: url('../../assets/patterns/fish_pattern.png'), radial-gradient(71.29% 202.7% at 71.29% 56.86%, #FCAA17 0%, #F15526 100%);
     min-height: 80px;
     background-repeat: repeat;
   }
+
   //--.callback-discount_title
   &_title {
     position: relative;
@@ -42,6 +46,7 @@
       letter-spacing: -0.4px;
     }
   }
+
   //--.callback-discount_form
   &_form {
     position: relative;
@@ -52,6 +57,7 @@
     border-radius: 24px;
     background: white;
   }
+
   //--.callback-discount_phone
   &_phone {
     border: none;
@@ -64,6 +70,7 @@
     line-height: 24px;
     color: #666666;
   }
+
   //--.callback-discount_icon
   &_icon {
     fill: black;
@@ -71,9 +78,11 @@
     top: 50%;
     left: 24px;
     transform: translateY(-50%);
-  } 
+  }
+
   //--.callback-discount_button
   &_button {
+    border: none;
     border-radius: 16px;
     position: absolute;
     right: 8px;
@@ -81,14 +90,17 @@
     background-color: $red;
     padding: 5px 15px;
     transform: translateY(-50%);
-    //--.callback-discount_button-text
-    &-text {
-      color: white;
-      font-family: 'Intro-Regular';
-      font-size: 16px;
-      line-height: 24px;
+    color: white;
+    font-family: 'Intro-Regular';
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    &:hover {
+      background-color: rgba($red, 0.85);
     }
   }
+
   //--.callback-discount_offer
   &_offer {
     position: absolute;
@@ -96,10 +108,12 @@
     width: 88px;
     top: -64px;
     right: -109px;
+
     @media screen and (max-width: 415px) {
       top: -67.8px;
       right: -118.5px;
     }
+
     //--.callback-discount_offer-percents
     &-percents {
       left: 15px;

@@ -4,16 +4,20 @@
   border: 1px solid $red;
   transition: 0.1s;
   display: inline-block;
-  //--.button_text
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
   &_text {
     color: $red;
     font-family: 'Intro-Regular';
     line-height: 24px;
     font-size: 16px;
   }
+
   &:hover {
     background-color: $red;
-    &, .button_text {
+
+    &,
+    .button_text {
       color: white;
     }
   }

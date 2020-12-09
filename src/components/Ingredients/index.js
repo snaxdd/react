@@ -8,7 +8,7 @@ export class Ingredients extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      dropDown: false
+      dropDown: true
     }
   }
 
@@ -18,6 +18,10 @@ export class Ingredients extends React.Component {
       dropDown: newState
     });
   };
+
+  componentDidMount() {
+    
+  }
 
   render() {
     return(

@@ -4,8 +4,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  //--.socials_link
-  &_link {
 
+  &_logo {
+    transition: 0.2s ease;
+    &:hover {
+      opacity: 0.85;
+    }
   }
 }

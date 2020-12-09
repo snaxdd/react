@@ -9,21 +9,30 @@
   border-radius: 8px;
   transition: 0.1s;
   box-sizing: border-box;
+
   &_icon {
     fill: $red;
+    margin-right: 8px;
+    transform: translateX(-2px);
   }
-  //--.buy-button_text
+
   &_text {
     color: $red;
     font-family: 'Intro-Regular';
     font-size: 16px;
+    transform: translateX(-2px);
   }
+
   &:hover {
     background-color: $red;
-    &, .buy-button_text {
+
+    &,
+    .buy-button_text {
       color: white;
     }
-    &, .buy-button_icon {
+
+    &,
+    .buy-button_icon {
       fill: white;
     }
   }
