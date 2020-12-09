@@ -27,15 +27,7 @@
   }
 
   &_wrap {
-    @media screen and (max-width: 415px) {
-      &--hidden {
-        display: none;
-      }
-
-      &--visible {
-        display: block;
-      }
-    }
+    transition: height 0.35s ease-out;
   }
 
   &_heading {

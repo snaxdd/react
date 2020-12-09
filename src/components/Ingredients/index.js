@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ImageTitle from '../../assets/images/Ingredients/title-img.png';
 import { BuyButton } from '../BuyButton/index';
 import { Ingredient } from '../Ingredients/Ingredient';
@@ -8,19 +8,38 @@ export class Ingredients extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      dropDown: true
+      contentBlockHeight: 0,
+      contentOpen: true
     }
+    this.refHiddenContent = React.createRef();
+    this.refButton = React.createRef();
   }
 
   handleDropDown = () => {
-    let newState = !this.state.dropDown;
+    let newContentOpen = !this.state.contentOpen;
+    
     this.setState({
-      dropDown: newState
-    });
+      contentOpen: newContentOpen
+    })
+    
+    if (this.state.contentOpen) {
+      this.refHiddenContent.current.style.height = this.state.contentBlockHeight + "px";
+    } else {
+      this.refHiddenContent.current.style.height = "0px";
+    }
   };
 
-  componentDidMount() {
-    
+  componentDidMount = () => {
+    this.setState({
+      contentBlockHeight: this.refHiddenContent.current.clientHeight
+    })
+
+    this.refHiddenContent.current.style.height = "0px";
+    this.refHiddenContent.current.style.overflow = 'hidden';
+  }
+
+  componentWillUnmount = () => {
+    this.refButton.current.removeEventListener('click', this.handleDropDown);
   }
 
   render() {
@@ -30,6 +49,7 @@ export class Ingredients extends React.Component {
           Ингредиенты
         </span>
         <div 
+          ref={this.refButton}
           className="ingredients_spoiler"
           onClick={() => this.handleDropDown()}
         >
@@ -38,9 +58,9 @@ export class Ingredients extends React.Component {
             className="ingredients_spoiler-icon ingredients_spoiler-icon--dark"
           />
         </div>
-        <div 
-          className={`ingredients_wrap 
-          ingredients_wrap--${this.state.dropDown ? 'visible' : 'hidden'}`}
+        <div
+          ref={this.refHiddenContent} 
+          className={`ingredients_wrap`}
         >
         <div className="ingredients_row">
           <div className="ingredients_header">
