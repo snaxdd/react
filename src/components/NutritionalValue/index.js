@@ -2,10 +2,6 @@ import React from 'react';
 import { NutritionalValueItem } from './NutritionalValueItem';
 
 export class NutritionalValue extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <div className="nutritional-value_wrap">

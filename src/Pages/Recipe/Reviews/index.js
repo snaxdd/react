@@ -4,10 +4,6 @@ import { Review } from './Review';
 import { Button } from '../../../components/Button/index';
 
 export class Reviews extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <div className="reviews_wrap">

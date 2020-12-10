@@ -5,10 +5,6 @@ import {Button} from '../../../components/Button/index';
 import {ReactComponent as IconSortingArrow} from '../../../assets/icons/Reviews/SortingArrow.svg';
 
 export class ReviewHeader extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="reviews_header-wrap">

@@ -3,10 +3,6 @@ import { MenuItem } from './MenuItem';
 import { ReactComponent as IconCallback } from '../../../assets/icons/Callback.svg';
 
 export class TopMenu extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <div className="container header_top-container">

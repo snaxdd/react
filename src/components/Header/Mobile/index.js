@@ -5,10 +5,6 @@ import { ReactComponent as IconSearchMobile } from '../../../assets/icons/Mobile
 import { ReactComponent as IconProfileMobile } from '../../../assets/icons/Mobile/ProfileMobile.svg';
 
 export class HeaderMobile extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <div className="header_mobile-wrap">

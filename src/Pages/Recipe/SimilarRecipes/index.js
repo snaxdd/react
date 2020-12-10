@@ -11,10 +11,6 @@ SwiperCore.use([
 ]);
 
 export class SimilarRecipes extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <div className="similar-recipes_carousel">

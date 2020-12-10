@@ -4,10 +4,6 @@ import { BottomMenu } from './BottomMenu/index';
 import { HeaderMobile } from './Mobile/index';
 
 export class Header extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  
   render() {
     return(
       <header className='header page_header'>

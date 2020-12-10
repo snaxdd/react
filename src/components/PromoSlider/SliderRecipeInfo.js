@@ -4,10 +4,6 @@ import {ReactComponent as IconTimer} from "../../assets/icons/Timer.svg";
 import {ReactComponent as IconCalories} from "../../assets/icons/Calories.svg";
 
 export class SliderRecipeInfo extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="promo-slider_recipe-info">

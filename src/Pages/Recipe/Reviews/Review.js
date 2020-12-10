@@ -3,10 +3,6 @@ import Avatar from './../../../assets/images/Reviews/avatar.png';
 import { ReactComponent as IconStar } from '../../../assets/icons/Reviews/star.svg';
 
 export class Review extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <div className={`reviews_comment ${this.props.last ? 'reviews_comment--last' : ''}`}>

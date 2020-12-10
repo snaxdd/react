@@ -2,10 +2,6 @@ import React from 'react';
 import { Button } from '../Button/index';
 
 export class AskQuestion extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <div className="ask-question main_ask-question">

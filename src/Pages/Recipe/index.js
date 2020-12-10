@@ -18,10 +18,6 @@ import {FooterMobile} from '../../components/Footer/Mobile/index';
 import {pageData} from './constants/index';
 
 export class Recipe extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className='page'>

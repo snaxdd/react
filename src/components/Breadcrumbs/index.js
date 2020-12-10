@@ -2,10 +2,6 @@ import React from 'react';
 import {BreadcrumbsItem} from './BreadcrumbItem';
 
 export class Breadcrumbs extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <ul className='breadcrumbs_list'>

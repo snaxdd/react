@@ -5,10 +5,6 @@ import { ReactComponent as IconVK } from './../../assets/icons/Socials/VK.svg';
 import { ReactComponent as IconYoutube } from './../../assets/icons/Socials/Youtube.svg';
 
 export class Socials extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <div className="socials">

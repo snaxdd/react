@@ -1,10 +1,6 @@
 import React from 'react';
 
 export class RecipeDescription extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <div className="recipe_description">

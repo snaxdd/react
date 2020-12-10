@@ -5,10 +5,6 @@ import { SearchInput } from './SearchInput';
 import { UserIcons } from './UserIcons';
 
 export class BottomMenu extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <div className='container header_bottom-container'>

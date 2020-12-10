@@ -1,10 +1,6 @@
 import React from 'react';
 
 export class MenuItem extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <li className="footer_menu-item">

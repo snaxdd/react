@@ -1,10 +1,6 @@
 import React from 'react';
 
 export class MenuInnerItem extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <li className="footer-mobile_menu-inner-item">

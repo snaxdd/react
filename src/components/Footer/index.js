@@ -8,10 +8,6 @@ import { Button } from '../Button/index';
 import { MenuItem } from './MenuItem';
 
 export class Footer extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <footer className="footer">

@@ -2,10 +2,6 @@ import React from 'react';
 import { Question } from './Question';
 
 export class Faq extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <section className="faq main_faq">

@@ -9,10 +9,6 @@ import { SliderRecipeInfo } from "./SliderRecipeInfo";
 SwiperCore.use([Navigation, Pagination]);
 
 export class PromoSlider extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="promo-slider_wrap">

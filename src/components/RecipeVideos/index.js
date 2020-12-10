@@ -2,10 +2,6 @@ import React from 'react';
 import { VideoItem } from './VideoItem';
 
 export class RecipeVideos extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <div className='recipe-videos recipe_recipe-videos'>

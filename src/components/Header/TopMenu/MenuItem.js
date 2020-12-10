@@ -1,10 +1,6 @@
 import React from 'react';
 
 export class MenuItem extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   setIcon() {
     if (this.props.iconLeft) {
       return (

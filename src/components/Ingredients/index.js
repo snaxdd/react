@@ -4,10 +4,6 @@ import {BuyButton} from '../BuyButton/index';
 import {Ingredient} from '../Ingredients/Ingredient';
 
 export class Ingredients extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div

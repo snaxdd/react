@@ -4,10 +4,6 @@ import {ReactComponent as IconPrintWhite} from "../../assets/icons/PrintWhite.sv
 import {ReactComponent as IconShareWhite} from "../../assets/icons/ShareWhite.svg";
 
 export class UserActionIcons extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="promo-slider_user-actions">

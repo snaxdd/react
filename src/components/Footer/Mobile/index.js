@@ -5,10 +5,6 @@ import {ReactComponent as IconLocation} from './../../../assets/icons/Location.s
 import {ReactComponent as IconPyrobyte} from './../../../assets/icons/pyrobyte.svg';
 
 export class FooterMobile extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <footer className="footer-mobile">

@@ -2,13 +2,9 @@ import React from 'react';
 import { ReactComponent as IconCart } from '../../assets/icons/Buttons/Cart.svg';
 
 export class BuyButton extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
-      <a href='#' className={`buy-button ${this.props.class ? this.props.class : null}`}>
+      <a href='/#' className={`buy-button ${this.props.class ? this.props.class : null}`}>
         <IconCart 
           className="buy-button_icon"
         />

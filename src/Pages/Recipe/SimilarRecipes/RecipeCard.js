@@ -5,10 +5,6 @@ import { ReactComponent as IconCalories} from '../../../assets/icons/Calories.sv
 import { ReactComponent as IconTimer } from '../../../assets/icons/Timer.svg';
 
 export class RecipeCard extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <article className="similar-recipes_card">

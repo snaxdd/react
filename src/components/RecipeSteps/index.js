@@ -2,10 +2,6 @@ import React from 'react';
 import { Step } from './Step';
 
 export class RecipeSteps extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return(
       <div className="recipe_steps">
