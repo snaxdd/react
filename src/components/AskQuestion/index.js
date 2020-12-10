@@ -6,10 +6,10 @@ export class AskQuestion extends React.Component {
     return(
       <div className="ask-question main_ask-question">
         <span className="ask-question_heading">
-          Не знаете с чего начать ?
+          Не знаете с чего начать?
         </span>
         <p className="ask-question_text">
-          Всегда можете написать нам <br /> 
+          Всегда можете написать нам,<br /> 
           и мы с радостью ответим <br /> 
           на все вопросы!
         </p>
