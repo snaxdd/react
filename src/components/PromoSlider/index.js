@@ -2,7 +2,7 @@ import React from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore, {Navigation, Pagination} from "swiper";
 import "swiper/swiper.scss";
-import {ReactComponent as IconArrow} from "../../assets/icons/Slider/control-arrow.svg";
+import {ReactComponent as IconArrow} from "../../assets/icons/PromoSlider/control-arrow.svg";
 import { UserActionIcons } from "./UserActionIcons";
 import { SliderRecipeInfo } from "./SliderRecipeInfo";
 
@@ -58,10 +58,10 @@ export class PromoSlider extends React.Component {
 }
         </Swiper>
         <div className="promo-slider_button promo-slider_button-next">
-          <IconArrow/>
+          <IconArrow className="promo-slider_button-icon" />
         </div>
         <div className="promo-slider_button promo-slider_button-prev">
-          <IconArrow/>
+          <IconArrow className="promo-slider_button-icon" />
         </div>
         <div className="promo-slider_pagination"></div>
       </div>

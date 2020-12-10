@@ -53,6 +53,20 @@
     position: absolute;
     z-index: 5;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04);
+    transition: background-color 0.12s ease-out;
+
+    &-icon {
+      fill: #A0A0A0;
+      transition: fill 0.12s ease-out;
+    }
+
+    &:hover {
+      background-color: #F15526;
+
+      & .promo-slider_button-icon {
+        fill: white;
+      }
+    }
 
     @media screen and (max-width: 415px) {
       display: none;

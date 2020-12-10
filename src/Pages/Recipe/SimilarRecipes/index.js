@@ -2,8 +2,7 @@ import React from 'react';
 import { RecipeCard } from './RecipeCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
-//import 'swiper/swiper.scss';
-import { ReactComponent as IconControlArrow } from '../../../assets/icons/Slider/control-arrow.svg';
+import { ReactComponent as IconControlArrow } from '../../../assets/icons/PromoSlider/control-arrow.svg';
 
 SwiperCore.use([
   Navigation,
@@ -61,12 +60,12 @@ export class SimilarRecipes extends React.Component {
         <div className="similar-recipes_carousel-controls">
           <div className="similar-recipes_carousel-button similar-recipes_carousel-prev">
             <IconControlArrow 
-              className="similar-recipes_carousel-icon"
+              className="similar-recipes_carousel-button-icon"
             />
           </div>
           <div className="similar-recipes_carousel-button similar-recipes_carousel-next">
             <IconControlArrow 
-              className="similar-recipes_carousel-icon"
+              className="similar-recipes_carousel-button-icon"
             />
           </div>
         </div>
