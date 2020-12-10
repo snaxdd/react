@@ -10,7 +10,7 @@ export class Header extends React.Component {
   
   render() {
     return(
-      <header className='header'>
+      <header className='header page_header'>
         <div className='header_top'>
           <TopMenu data={this.props.data} />
         </div>
