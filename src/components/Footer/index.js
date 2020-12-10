@@ -46,18 +46,18 @@ export class Footer extends React.Component {
               <ul className="footer_contacts-list">
                 <li className="footer_contacts-item">
                   <IconCallback className="footer_contacts-icon"/>
-                  <a href="#" className="footer_contacts-link footer_contacts-phone">+7 (495) 445-05-50</a>
+                  <a href="/#" className="footer_contacts-link footer_contacts-phone">+7 (495) 445-05-50</a>
                 </li>
                 <li className="footer_contacts-item">
                   <IconMail className="footer_contacts-icon"/>
-                  <a href="#" className="footer_contacts-link">info@fish2o.ru</a>
+                  <a href="/#" className="footer_contacts-link">info@fish2o.ru</a>
                 </li>
               </ul>
 
               <Button 
                 text="Обратная связь"
                 className="footer_callback-btn"
-                href="#"
+                href="/#"
               />
             </div>
           </div>
@@ -68,7 +68,7 @@ export class Footer extends React.Component {
                 © 2020 Fish2O. Все права защищены
               </span>
               <div className="footer_pyrobyte">
-                <a href="#">
+                <a href="/#">
                   <IconPyrobyte className="footer_pyrobyte-logo"/>
                 </a>
                 <span className="footer_pyrobyte-text">
@@ -79,12 +79,12 @@ export class Footer extends React.Component {
             <div className="footer_bottom-right">
               <ul className="footer_documents">
                 <li className="footer_documents-item">
-                  <a href="#" className="footer_documents-link">
+                  <a href="/#" className="footer_documents-link">
                     Политика конфиденциальности
                   </a>
                 </li>
                 <li className="footer_documents-item">
-                  <a href="#" className="footer_documents-link">
+                  <a href="/#" className="footer_documents-link">
                     Договор оферты
                   </a>
                 </li>

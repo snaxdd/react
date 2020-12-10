@@ -10,13 +10,13 @@ export class HeaderMobile extends React.Component {
       <div className="header_mobile-wrap">
         <Logo class="header_mobile-logo"/>
         <div className="header_mobile-icons-wrap">
-          <a href="#">
+          <a href="/#">
             <IconSearchMobile className="header_mobile-icon"/>
           </a>
-          <a href="#">
+          <a href="/#">
             <IconProfileMobile className="header_mobile-icon"/>
           </a>
-          <a href="#">
+          <a href="/#">
             <IconBurgerMobile className="header_mobile-icon"/>
           </a>
         </div>

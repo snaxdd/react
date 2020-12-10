@@ -22,7 +22,7 @@ export class MenuItem extends React.Component {
   render() {
     return (
       <li className='header_menu-item'>
-        <a href='#' className='header_menu-link'>{this.setIcon()}{this.props.text}</a>
+        <a href='/#' className='header_menu-link'>{this.setIcon()}{this.props.text}</a>
       </li>
     );
   };

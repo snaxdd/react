@@ -59,7 +59,7 @@ export class IngredientsMobile extends React.Component {
           <div className="ingredients-mobile_header">
             <img
               src={this.props.data.image}
-              alt="recipe-image"
+              alt=""
               className="ingredients-mobile_header-img"/>
 
             <span className="ingredients-mobile_header-title">

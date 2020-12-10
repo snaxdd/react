@@ -31,7 +31,7 @@ export class FooterMobile extends React.Component {
             <li className="footer-mobile_contacts-item footer-mobile_contacts-phone">
               <IconMobile className="footer-mobile_contacts-icon"/>
               <a 
-                href="#" 
+                href="/#" 
                 className="footer-mobile_contacts-link footer-mobile_contacts-link-phone"
               >
                 +7 (495) 445-05-50
@@ -41,7 +41,7 @@ export class FooterMobile extends React.Component {
               <IconLocation 
                 className="footer-mobile_contacts-icon footer-mobile_contacts-icon-location"
               />
-              <a href="#" className="footer-mobile_contacts-link">
+              <a href="/#" className="footer-mobile_contacts-link">
                 Химки, ул. Заводская, 20
               </a>
             </li>
@@ -58,12 +58,12 @@ export class FooterMobile extends React.Component {
 
         <ul className="footer-mobile_documents">
           <li className="footer-mobile_documents-item">
-            <a href="#" className="footer-mobile_documents-link">
+            <a href="/#" className="footer-mobile_documents-link">
               Политика конфиденциальности
             </a>
           </li>
           <li className="footer-mobile_documents-item">
-            <a href="#" className="footer-mobile_documents-link">
+            <a href="/#" className="footer-mobile_documents-link">
               Договор оферты
             </a>
           </li>

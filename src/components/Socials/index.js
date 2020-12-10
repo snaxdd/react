@@ -9,22 +9,22 @@ export class Socials extends React.Component {
     return(
       <div className="socials">
         <a 
-          href="#" 
+          href="/#" 
           className="socials_link">
           <IconFacebook className="socials_logo"/>
         </a>
         <a 
-          href="#" 
+          href="/#" 
           className="socials_link">
           <IconInstagram className="socials_logo"/>
         </a>
         <a 
-          href="#" 
+          href="/#" 
           className="socials_link">
           <IconVK className="socials_logo"/>
         </a>
         <a 
-          href="#" 
+          href="/#" 
           className="socials_link">
           <IconYoutube className="socials_logo"/>
         </a>

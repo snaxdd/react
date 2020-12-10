@@ -8,21 +8,21 @@ export class UserIcons extends React.Component {
     return (
       <div className='header_user-icons'>
         <div className='header_user-icons-item'>
-          <a href='#' className='header_user-icons-link'>
+          <a href='/#' className='header_user-icons-link'>
             <IconProfile 
               className='header_user-icons-svg'
             />
           </a>
         </div>
         <div className='header_user-icons-item'>
-          <a href='#' className='header_user-icons-link'>
+          <a href='/#' className='header_user-icons-link'>
             <IconFav 
               className='header_user-icons-svg'
             />
           </a>
         </div>
         <div className='header_user-icons-item'>
-          <a href='#' className='header_user-icons-link'>
+          <a href='/#' className='header_user-icons-link'>
             <IconCart 
               className='header_user-icons-svg'
             />
