@@ -8,8 +8,12 @@ import { ReactComponent as IconPizza } from './../../../assets/icons/Nutritional
 import { ReactComponent as IconRice } from './../../../assets/icons/NutritionalValue/Rice.svg';
 import { ReactComponent as IconCalories } from './../../../assets/icons/NutritionalValue/Calories.svg';
 
+//Top Slider Image
+import PromoSlide1 from './../../../assets/images/PromoSlider/image.jpg';
+import PromoSlide2 from './../../../assets/images/PromoSlider/preview3.jpg';
+import PromoSlide3 from './../../../assets/images/PromoSlider/preview4.jpg';
+
 //Images
-import Image from './../../../assets/images/image.jpg';
 import CommentImage from './../../../assets/images/Reviews/comment-image.jpg';
 import IngredientsImg from '../../../assets/images/Ingredients/title-img.png';
 
@@ -87,10 +91,13 @@ export const pageData = {
       }
     ]
   },
-  topSlider: [
-    {
+  promoSlider: {
       title: 'Семга, запеченная в духовке',
-      image: Image,
+      images: [
+        PromoSlide1,
+        PromoSlide2,
+        PromoSlide3
+      ],
       id: 1,
       properties: {
         complexity: 'Средняя',
@@ -98,17 +105,6 @@ export const pageData = {
         kkal: '387 ккал'
       }
     },
-    {
-      title: 'Селедка под шубой',
-      image: Image,
-      id: 2,
-      properties: {
-        complexity: 'Низкая',
-        timer: '7 мин',
-        kkal: '213 ккал'
-      }
-    }
-  ],
   content: {
     contentVideos: [
       {

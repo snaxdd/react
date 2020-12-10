@@ -7,7 +7,7 @@
     padding-top: 40px;
     flex-wrap: wrap;
     @media screen and (max-width: 415px){
-      padding-top: 22.5px;
+      padding-top: 0;
     }
   }
 
@@ -22,6 +22,7 @@
     display: none;
     @media screen and (max-width: 415px) {
       display: inline-block;
+      margin-bottom: 18px;
     }
   }
 
@@ -108,7 +109,7 @@
     margin-bottom: 60px;
     @media screen and (max-width: 415px) {
       padding-top: 4.5px;
-      margin-bottom: 37px;
+      margin-bottom: 35px;
     }
   }
 
@@ -116,13 +117,11 @@
   &_steps {
     padding-left: 65px;
 
-    @media screen and (max-width: 415px) {
-      padding-bottom: 64.5px;
-    }
     &-wrap {
       @media screen and (max-width: 415px) {
         padding-left: 16px;
         padding-right: 16px;
+        padding-bottom: 17.5px;
       }
     }
   }
@@ -181,7 +180,7 @@
       letter-spacing: 0.01px;
       
       @media screen and (max-width: 415px) {
-        padding-bottom: 16px;
+        padding-bottom: 26px;
       }
 
       &::after {
@@ -202,6 +201,16 @@
         padding-bottom: 0;
       }
     }
+  }
+
+  &_promo-slider {
+    @media screen and (max-width: 415px) {
+      margin-bottom: 17.5px;
+    }
+  }
+
+  &_ingredients-mobile {
+    margin-bottom: 19.5px;
   }
 
   @media screen and (max-width: 415px) {

@@ -1,9 +1,4 @@
 .reviews {
-  padding-bottom: 24px;
-
-  @media screen and (max-width: 415px) {
-    padding-top: 3.5px;
-  }
 
   &_mobile-btn-wrap {
     display: none;
@@ -206,6 +201,7 @@
 
           @media screen and (max-width: 415px) {
             display: inline-block;
+            transform: translateY(5px);
           }
         }
       }
@@ -242,6 +238,10 @@
       display: flex;
       align-items: center;
       margin-bottom: 2px;
+      
+      @media screen and (max-width: 415px) {
+        margin-bottom: 2.7px;
+      }
     }
 
     &-user-name {
@@ -250,6 +250,7 @@
       line-height: 24px;
       color: $dark;
       margin-right: 17px;
+      letter-spacing: 0;
     }
 
     &-publish-date {
@@ -301,11 +302,12 @@
       color: $red;
       font-family: 'Intro-Light';
       font-size: 16px;
-      line-height: 24px;
+      line-height: 19px;
       border: none;
       border-bottom: 1px dashed $red;
       background-color: rgba(0, 0, 0, 0);
       letter-spacing: normal;
+      margin-bottom: 4px;
       cursor: pointer;
       transition: 0.2s ease;
       &:hover {

@@ -5,6 +5,23 @@ import { ReactComponent as IconOffer } from '../../assets/icons/Offer.svg';
 export class CallbackDiscount extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      screenWidth: window.innerWidth
+    }
+  }
+
+  updatePlaceholder = () => {
+    this.setState({
+      screenWidth: window.innerWidth
+    });
+  }
+
+  componentDidMount = () => {
+    window.addEventListener('resize', this.updatePlaceholder);
+  }
+
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this.updatePlaceholder);
   }
 
   render() {
@@ -26,7 +43,9 @@ export class CallbackDiscount extends React.Component {
               <input 
                 type="text" 
                 className="callback-discount_phone"
-                placeholder="Введите ваш телефон"
+                placeholder={
+                  this.state.screenWidth > 415 ? 'Введите ваш телефон' : 'Ваш телефон'
+                }
               />
               <button 
                 className="callback-discount_button">

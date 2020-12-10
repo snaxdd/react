@@ -6,4 +6,15 @@
   &_faq {
     margin-bottom: 32px;
   }
+
+  &_similar-recipes {
+    margin-bottom: 61px;
+    @media screen and (max-width: 415px) {
+      margin-bottom: 65px;
+    }
+  }
+
+  &_reviews {
+    margin-bottom: 43px;
+  }
 }

@@ -47,7 +47,7 @@ export class IngredientsMobile extends React.Component {
 
   render() {
     return (
-      <div className="ingredients-mobile">
+      <div className="ingredients-mobile recipe_ingredients-mobile">
         <button ref={this.refButton} className="ingredients-mobile_dropdown">
           Ингредиенты
           <IconArrow className="ingredients-mobile_dropdown-icon"/>

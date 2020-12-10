@@ -53,7 +53,7 @@ export class Footer extends React.Component {
                   <a href="#" className="footer_contacts-link footer_contacts-phone">+7 (495) 445-05-50</a>
                 </li>
                 <li className="footer_contacts-item">
-                  <IconMail className="footer_contacts-icon footer_contacts-icon--stroke"/>
+                  <IconMail className="footer_contacts-icon"/>
                   <a href="#" className="footer_contacts-link">info@fish2o.ru</a>
                 </li>
               </ul>
@@ -72,7 +72,9 @@ export class Footer extends React.Component {
                 © 2020 Fish2O. Все права защищены
               </span>
               <div className="footer_pyrobyte">
-                <IconPyrobyte className="footer_pyrobyte-logo"/>
+                <a href="#">
+                  <IconPyrobyte className="footer_pyrobyte-logo"/>
+                </a>
                 <span className="footer_pyrobyte-text">
                   Дизайн сайта
                 </span>

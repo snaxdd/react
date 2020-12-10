@@ -2,7 +2,7 @@ import React from 'react';
 import { RecipeCard } from './RecipeCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
-import 'swiper/swiper.scss';
+//import 'swiper/swiper.scss';
 import { ReactComponent as IconControlArrow } from '../../../assets/icons/Slider/control-arrow.svg';
 
 SwiperCore.use([
@@ -19,6 +19,7 @@ export class SimilarRecipes extends React.Component {
     return(
       <div className="similar-recipes_carousel">
         <Swiper
+        loop={true}
         breakpoints={{
           1160: {
             slidesPerView: 4,
@@ -27,13 +28,15 @@ export class SimilarRecipes extends React.Component {
         }}
         className={'similar-recipes_slider'}
         pagination={{
-          el: '.swiper-pagination',
+          el: '.similar-recipes_pagination',
           clickable: true,
           renderBullet: function(index, className) {
             return '<span class="' + className + '"></span>'; 
-          }
+          },
+          bulletClass: 'similar-recipes_pagination-bullet',
+          bulletActiveClass: 'similar-recipes_pagination-bullet--active'
         }}
-        spaceBetween={30}
+        spaceBetween={40}
         slidesPerView={1}
         navigation={{nextEl: '.similar-recipes_carousel-next',
           prevEl: '.similar-recipes_carousel-prev'}}
@@ -60,18 +63,18 @@ export class SimilarRecipes extends React.Component {
         }  
         </Swiper>
         <div className="similar-recipes_carousel-controls">
-          <div className="similar-recipes_carousel-button">
+          <div className="similar-recipes_carousel-button similar-recipes_carousel-prev">
             <IconControlArrow 
-              className="similar-recipes_carousel-icon similar-recipes_carousel-prev"
+              className="similar-recipes_carousel-icon"
             />
           </div>
-          <div className="similar-recipes_carousel-button">
+          <div className="similar-recipes_carousel-button similar-recipes_carousel-next">
             <IconControlArrow 
-              className="similar-recipes_carousel-icon similar-recipes_carousel-next"
+              className="similar-recipes_carousel-icon"
             />
           </div>
         </div>
-        <div className="swiper-pagination">
+        <div className="similar-recipes_pagination">
 
         </div>
       </div>

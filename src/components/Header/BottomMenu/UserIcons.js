@@ -17,7 +17,7 @@ export class UserIcons extends React.Component {
         <div className='header_user-icons-item'>
           <a href='#' className='header_user-icons-link'>
             <IconFav 
-              className='header_user-icons-svg header_user-icons-svg--stroke'
+              className='header_user-icons-svg'
             />
           </a>
         </div>

@@ -6,6 +6,7 @@
   display: inline-block;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
+  outline: none;
   &_text {
     color: $red;
     font-family: 'Intro-Regular';

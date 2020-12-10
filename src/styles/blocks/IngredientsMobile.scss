@@ -11,6 +11,7 @@
   }
 
   &_dropdown {
+    outline: none;
     box-sizing: border-box;
     width: 100%;
     background-color: white;
@@ -75,6 +76,10 @@
       box-sizing: border-box;
       max-width: 102px;
     }
+  }
+
+  &_table {
+    padding-bottom: 25px;
   }
 
 }

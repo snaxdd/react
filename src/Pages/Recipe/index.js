@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header } from './../../components/Header/index';
 import { Breadcrumbs } from './../../components/Breadcrumbs/index';
-import { Slider } from './../../components/Slider/index';
+import { PromoSlider } from '../../components/PromoSlider/index';
 import { RecipeVideos } from './../../components/RecipeVideos/index';
 import { RecipeDescription } from './RecipeDescription';
 import { NutritionalValue } from '../../components/NutritionalValue/index';
@@ -48,10 +48,10 @@ export class Recipe extends React.Component {
             </div>
           </div>
   
-          <section className="recipe">
-            <div className='slider-top'>
-              <div className='container slider-top_container'>
-                <Slider sliderData={pageData.topSlider}/>
+          <section className="recipe main_recipe">
+            <div className='promo-slider recipe_promo-slider'>
+              <div className='container promo-slider_container'>
+                <PromoSlider sliderData={pageData.promoSlider}/>
               </div>
             </div>
 
@@ -71,7 +71,7 @@ export class Recipe extends React.Component {
             </div>
           </section>
 
-          <section className="reviews">
+          <section className="reviews main_reviews">
             <div className="container">
               <h2 className="section_heading reviews_heading--pc">
                 Отзывы о рецепте
@@ -80,7 +80,7 @@ export class Recipe extends React.Component {
             </div>
           </section>
 
-          <section className="similar-recipes">
+          <section className="similar-recipes main_similar-recipes">
             <div className="container">
               <h2 className="section_heading similar-recipes_heading">
                 Похожие рецепты
@@ -97,9 +97,9 @@ export class Recipe extends React.Component {
               Все наши курьеры доставляют заказы в медицинских масках, одноразовых перчатках, а также регулярно обрабатывают руки и автомобили. Доставка день-в-день осуществляется по Москве и Химкам при оформлении заказа до 14:00 и при условии свободных мест на доставку. Ваш заказ не покидает холодильника даже в пути! Мы доставляем только специальным транспортом, который оборудован рефрижераторами и поддерживает специальную температуру в кузове.
               </p>
 
-              <a href="#" className="delivery-notice_read-more">
+              <button className="delivery-notice_read-more">
                 Читать больше
-              </a>
+              </button>
             </div>
           </div>
 
