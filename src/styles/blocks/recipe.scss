@@ -1,12 +1,13 @@
 .recipe {
   margin-bottom: 25px;
 
-  //--.recipe_container
+
   &_container {
     display: flex;
     padding-top: 40px;
     flex-wrap: wrap;
-    @media screen and (max-width: 415px){
+
+    @media screen and (max-width: 415px) {
       padding-top: 0;
     }
   }
@@ -20,13 +21,14 @@
 
   &_description-heading {
     display: none;
+
     @media screen and (max-width: 415px) {
       display: inline-block;
       margin-bottom: 18px;
     }
   }
 
-  //--.recipe-videos
+
   &-videos {
     width: 100%;
     max-width: 429px;
@@ -37,7 +39,7 @@
       display: none;
     }
 
-    //.recipe-videos_item
+
     &_item {
       width: 127px;
       height: 88px;
@@ -66,14 +68,14 @@
     }
   }
 
-  //--.recipe_description
+
   &_description-text {
     font-family: 'Intro-Book';
     font-size: 24px;
     line-height: 32px;
     color: #333333;
     max-width: 660px;
-    // POS
+
     margin-bottom: 38px;
 
     @media screen and (max-width: 415px) {
@@ -83,12 +85,12 @@
     }
   }
 
-  //--.recipe-left-wrap
+
   &_left {
     max-width: 430px;
     width: 100%;
     margin-right: 70px;
-    
+
     @media screen and (max-width: 415px) {
       margin-right: 0;
     }
@@ -99,21 +101,22 @@
     max-width: 660px;
   }
 
-  //--.recipe_recipe-videos
+
   &_recipe-videos {
     margin-bottom: 42px;
   }
 
-  //--.recipe_nutritional-value
+
   &_nutritional-value {
     margin-bottom: 60px;
+
     @media screen and (max-width: 415px) {
       padding-top: 4.5px;
       margin-bottom: 35px;
     }
   }
 
-  //--.recipe_steps
+
   &_steps {
     padding-left: 65px;
 
@@ -128,7 +131,7 @@
 
   &_step {
 
-    //--.recipe-steps_title
+
     &-title {
       font-family: 'Intro-Book';
       font-size: 24px;
@@ -136,7 +139,7 @@
       position: relative;
       line-height: 32px;
       letter-spacing: -0.8px;
-      
+
       &::after {
         content: '';
         left: -56px;
@@ -168,7 +171,7 @@
       }
     }
 
-    //--.recipe_steps-text
+
     &-text {
       font-family: 'Intro-Light';
       font-size: 16px;
@@ -178,7 +181,7 @@
       padding-top: 6px;
       line-height: 24px;
       letter-spacing: 0.01px;
-      
+
       @media screen and (max-width: 415px) {
         padding-bottom: 26px;
       }

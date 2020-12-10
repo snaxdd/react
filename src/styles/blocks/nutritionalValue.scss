@@ -7,7 +7,7 @@
   font-family: 'Intro-Book';
   font-size: 14px;
   text-align: center;
-  //--.nutritional-value_item
+
   &_item {
     min-width: 136px;
     height: 136px;
@@ -18,39 +18,45 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+
     @media screen and (max-width: 415px) {
       min-width: 80px;
       height: 80px;
       margin-right: 24px;
+
       &:last-child {
         margin-right: 0;
       }
     }
   }
+
   &_title {
     line-height: 1;
+
     @media screen and (max-width: 415px) {
       font-size: 8.23529px;
       line-height: normal;
     }
   }
-  //--.nutritional-value_weight
+
   &_weight {
     line-height: 1.1;
     font-size: 24px;
     font-family: 'Intro-Bold';
     color: $dark;
+
     @media screen and (max-width: 415px) {
       font-size: 14.1176px;
       line-height: normal;
     }
-    //--.nutritional-value_weight-unit
+
     &-unit {
       line-height: 1;
       display: block;
       color: #999999;
       font-family: 'Intro-Book';
       font-size: 14px;
+
       @media screen and (max-width: 415px) {
         font-size: 8.23529px;
         line-height: 11.55px;
@@ -58,6 +64,7 @@
       }
     }
   }
+
   &_icon {
     @media screen and (max-width: 415px) {
       width: 24px;
@@ -68,12 +75,9 @@
     }
   }
 
-  &_wrap {
-    
-  }
-
   &_heading {
     display: none;
+
     @media screen and (max-width: 415px) {
       display: inline-block;
       padding: 0 16px 0 16px;

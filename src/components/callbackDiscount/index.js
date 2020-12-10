@@ -26,7 +26,6 @@ export class CallbackDiscount extends React.Component {
 
   render() {
     return(
-      <section className="callback-discount">
         <div className="callback-discount_wrap">
           <div className="callback-discount_container">
             <div className="callback-discount_title">
@@ -54,7 +53,6 @@ export class CallbackDiscount extends React.Component {
             </div>
           </div>
         </div>
-      </section>
     );
   };
 };

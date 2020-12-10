@@ -40,7 +40,7 @@
     border-radius: 8px;
   }
 
-  //--.reviews-star
+
   &-star {
     margin-right: 4px;
     fill: $greyBlue;
@@ -54,7 +54,7 @@
     }
   }
 
-  //--.reviews_header
+
   &_header {
     box-sizing: border-box;
     display: flex;
@@ -74,7 +74,7 @@
       align-items: flex-start;
       padding-top: 11.5px;
       min-height: 82.5px;
-      
+
       &::after {
         content: '';
         width: 91.1%;
@@ -93,7 +93,7 @@
       }
     }
 
-    //--.reviews_header-star-wrap
+
     &-star-wrap {
       margin-right: 5px;
       display: flex;
@@ -104,7 +104,7 @@
       }
     }
 
-    //--.reviews_header-button
+
     &-button {
       margin-right: 60px;
 
@@ -113,7 +113,7 @@
       }
     }
 
-    //--.reviews_header-rate
+
     &-rate {
       display: flex;
       align-items: center;
@@ -123,7 +123,7 @@
         align-items: flex-start;
       }
 
-      //--.reviews_header-rate-text
+
       &-text {
         font-family: 'Intro-Regular';
         font-size: 16px;
@@ -136,18 +136,19 @@
       }
     }
 
-    //--.reviews_header-comments-number
+
     &-comments-number {
       line-height: 24px;
       font-family: 'Intro-Book';
       font-size: 14px;
       color: #999999;
+
       @media screen and (max-width: 415px) {
         transform: translateX(3px);
       }
     }
 
-    //--.reviews_header-sorting
+
     &-sorting {
       display: flex;
       align-items: center;
@@ -169,7 +170,7 @@
         }
       }
 
-      //--.reviews_header-sorting_text
+
       &-button {
         font-family: 'Intro-Light';
         font-size: 16px;
@@ -179,7 +180,7 @@
         border: none;
         cursor: pointer;
         transition: 0.2s ease;
-        
+
         &:hover {
           color: rgba($color: $dark, $alpha: 0.85);
         }
@@ -238,7 +239,7 @@
       display: flex;
       align-items: center;
       margin-bottom: 2px;
-      
+
       @media screen and (max-width: 415px) {
         margin-bottom: 2.7px;
       }
@@ -310,6 +311,7 @@
       margin-bottom: 4px;
       cursor: pointer;
       transition: 0.2s ease;
+
       &:hover {
         border-bottom: 1px dashed rgba(0, 0, 0, 0);
       }
@@ -323,6 +325,7 @@
       border-bottom: 0;
       padding-top: 27px;
       padding-bottom: 20px;
+
       &::after {
         content: '';
         width: 91.1%;

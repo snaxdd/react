@@ -1,5 +1,6 @@
 .faq {
   display: none;
+
   &_heading {
     font-family: 'Intro-Bold';
     font-size: 24px;
@@ -11,9 +12,11 @@
     letter-spacing: -0.5px;
     margin-bottom: 20.5px;
   }
+
   @media screen and (max-width: 415px) {
     display: block;
   }
+
   &_item {
     box-sizing: border-box;
     font-family: 'Intro-Regular';
@@ -26,9 +29,11 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(203, 218, 236, 0.56);
+
     &:first-child {
       border-top: 1px solid rgba(203, 218, 236, 0.56);
     }
+
     &-icon {
       fill: rgba(0, 0, 0, 0.16);
     }

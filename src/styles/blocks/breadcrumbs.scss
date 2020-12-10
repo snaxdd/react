@@ -2,21 +2,23 @@
   height: 57px;
   display: flex;
   align-items: center;
-  //--.breadcrumbs_list
+
   &_list {
     display: flex;
   }
-  //--.breadcrumbs_item-link
+
   &_item-link {
     white-space: pre-wrap;
     font-family: 'Intro-Light';
     color: #333333;
     font-size: 14px;
+
     @media screen and (max-width: 415px) {
       font-size: 12px;
     }
   }
-  @media screen and (max-width: 415px){
+
+  @media screen and (max-width: 415px) {
     height: 55px;
     padding-left: 16px;
     padding-right: 16px;

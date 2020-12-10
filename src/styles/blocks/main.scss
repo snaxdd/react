@@ -3,12 +3,14 @@
     margin: 0 auto;
     margin-bottom: 24px;
   }
+
   &_faq {
     margin-bottom: 32px;
   }
 
   &_similar-recipes {
     margin-bottom: 61px;
+
     @media screen and (max-width: 415px) {
       margin-bottom: 65px;
     }
@@ -16,5 +18,13 @@
 
   &_reviews {
     margin-bottom: 43px;
+  }
+
+  &_callback-discount {
+    margin-bottom: 48px;
+  }
+
+  &_delivery-notice {
+    margin-bottom: 39px;
   }
 }

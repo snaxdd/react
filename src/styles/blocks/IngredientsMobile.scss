@@ -40,7 +40,7 @@
 
   &_header {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
     box-sizing: border-box;
     border-bottom: 1px solid rgba(#BDD5F2, 0.56);
@@ -81,5 +81,4 @@
   &_table {
     padding-bottom: 25px;
   }
-
 }

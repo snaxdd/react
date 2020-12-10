@@ -15,7 +15,7 @@
     height: 47px;
     border-bottom: 1px solid #D9E8F6;
 
-    //-- .header_top-container
+
     &-container {
       display: flex;
       align-items: center;
@@ -35,7 +35,7 @@
     @media screen and (max-width: 415px) {
       display: none;
     }
-    //-- .header_bottom-container
+
     &-container {
       display: flex;
       align-items: center;
@@ -90,6 +90,7 @@
     &-link {
       color: #666666;
       transition: 0.2s ease;
+
       &:hover {
         color: rgba($color: #666666, $alpha: 0.85);
       }
@@ -109,6 +110,7 @@
         color: $dark;
         transition: 0.2s ease;
         border-bottom: 1px dashed rgba(0, 0, 0, 0);
+
         &:hover {
           border-bottom: 1px dashed $dark;
         }
@@ -121,9 +123,11 @@
       border-bottom: 1px dashed #666666;
       position: relative;
       transition: 0.2s ease;
+
       &:hover {
         border-bottom: 1px dashed rgba(0, 0, 0, 0);
       }
+
       &-link {
         color: #666666;
       }
@@ -177,7 +181,7 @@
     justify-content: space-between;
     width: 100%;
     max-width: 178px;
-    
+
     &-item {
       width: 48px;
       height: 48px;
@@ -189,15 +193,18 @@
     &-svg {
       fill: $dark;
       transition: 0.2s ease;
+
       &--stroke {
         fill: none;
         stroke: $dark;
         transition: 0.2s ease;
+
         &:hover {
           fill: none;
           stroke: rgba($color: $dark, $alpha: 0.85);
         }
       }
+
       &:hover {
         fill: rgba($color: $dark, $alpha: 0.85);
       }
@@ -236,7 +243,7 @@
       justify-content: space-between;
     }
 
-    @media screen and (max-width: 415px){
+    @media screen and (max-width: 415px) {
       display: block;
     }
   }

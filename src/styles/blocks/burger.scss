@@ -10,17 +10,18 @@
   padding-left: 16.5px;
   box-sizing: border-box;
   transition: 0.2s ease;
+
   &:hover {
     background-color: rgba($color: $dark, $alpha: 0.85);
   }
-  //--.burger-menu_icon
+
   &_icon {
     margin-right: 16px;
     display: flex;
     align-items: center;
     fill: white;
   }
-  //--.burger-menu_text
+
   &_text {
     color: white;
     font-size: 16px;
@@ -29,4 +30,3 @@
     align-items: center;
   }
 }
-
