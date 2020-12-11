@@ -8,7 +8,7 @@ export class HeaderMobile extends React.Component {
   render() {
     return(
       <div className="header_mobile-wrap">
-        <Logo class="header_mobile-logo"/>
+        <Logo className="header_mobile-logo"/>
         <div className="header_mobile-icons-wrap">
           <a href="/#">
             <IconSearchMobile className="header_mobile-icon"/>

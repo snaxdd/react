@@ -17,39 +17,81 @@ import PromoSlide3 from './../../../assets/images/PromoSlider/preview4.jpg';
 import CommentImage from './../../../assets/images/Reviews/comment-image.jpg';
 import IngredientsImg from '../../../assets/images/Ingredients/title-img.png';
 
+export const topMenu = [
+  { 
+    id: 1,
+    href: '/#',
+    title: "Кто мы ?",
+    iconL: null,
+    iconR: null,
+    dropDown: null
+  },
+  { 
+    id: 2,
+    href: '/#',
+    title: "Доставка и оплата",
+    iconL: <IconDelivery />,
+    iconR: null,
+    dropDown: null
+  },
+  { 
+    id: 3,
+    href: '/#',
+    title: "Наши магазины",
+    iconL: null,
+    iconR: null,
+    dropDown: null
+  },
+  { 
+    id: 4,
+    href: '/#',
+    title: "Покупателям",
+    iconL: null,
+    iconR: <IconMenuArrowDown />,
+    dropDown: [
+      {
+        id: 1,
+        text: "Бесконтактная доставка и оплата онлайн",
+        href: "/#"
+      },
+      {
+        id: 2,
+        text: "Как сделать заказ",
+        href: "/#"
+      },
+      {
+        id: 3,
+        text: "Акции и скидки",
+        href: "/#"
+      },
+      {
+        id: 4,
+        text: "Программа лояльности",
+        href: "/#"
+      },
+      {
+        id: 5,
+        text: "Гарантия и возврат",
+        href: "/#"
+      }
+    ]
+  },
+  { 
+    id: 5,
+    href: '/#',
+    title: "Новости",
+    iconL: null,
+    iconR: null,
+    dropDown: null
+  },
+];
+
 export const pageData = {
   breadcrumbs: [
     'Главная',
     'Рецепты'
   ],
   header: {
-    menu: [
-      {
-        text: 'Кто мы',
-        iconLeft: '',
-        iconRight: ''
-      },
-      {
-        text: 'Доставка и оплата',
-        iconLeft: <IconDelivery />,
-        iconRight: ''
-      },
-      {
-        text: 'Наши магазины',
-        iconLeft: '',
-        iconRight: <IconMenuArrowDown />  
-      },
-      {
-        text: 'Покупателям',
-        iconLeft: '',
-        iconRight: <IconMenuArrowDown />
-      },
-      {
-        text: 'Новости',
-        iconLeft: '',
-        iconRight: ''
-      }
-    ],
     phoneNumber: '+7 (495) 445-05-50'
   },
   ingredients : {

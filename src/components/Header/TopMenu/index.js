@@ -8,13 +8,13 @@ export class TopMenu extends React.Component {
       <div className="container header_top-container">
         <nav className='header_menu'>
           <ul className='header_menu-list'>
-            {this.props.data.menu.map(item => {
+            {this.props.menu.map(item => {
               return(
                 <MenuItem 
-                  text={item.text} 
-                  iconLeft={item.iconLeft}
-                  iconRight={item.iconRight}
-                  key={ item + Math.random() }
+                  href={item.href}
+                  text={item.title} 
+                  key={item.id}
+                  dropDown={item.dropDown}
                 />
               );
             })}
@@ -24,7 +24,7 @@ export class TopMenu extends React.Component {
         <ul className='header_contacts-list'>
           <li className='header_contacts-phone'>
             <a href='tel:123' className='header_contacts-phone-link'>
-              {this.props.data.phoneNumber}
+              {this.props.phone}
             </a>
           </li>
           <li className='header_contacts-callback'>

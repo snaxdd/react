@@ -4,6 +4,10 @@
   padding-top: 100px;
   padding-bottom: 100px;
 
+  @media screen and (max-width: 415px) {
+    display: none;
+  }
+
   &_preview {
     font-family: 'Intro-Light';
     font-style: normal;

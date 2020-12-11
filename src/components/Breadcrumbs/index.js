@@ -13,7 +13,7 @@ export class Breadcrumbs extends React.Component {
               text={item + (indexItem !== arr.length - 1
               ? ' / '
               : '')}
-              href={indexItem === arr.length - 1 ? null : '#'}
+              href={indexItem === arr.length - 1 ? null : '/#'}
               key={item + Math.random()}/>)
           })}
       </ul>
