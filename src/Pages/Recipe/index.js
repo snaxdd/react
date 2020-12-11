@@ -17,6 +17,7 @@ import {AskQuestion} from '../../components/AskQuestion/index';
 import {FooterMobile} from '../../components/Footer/Mobile/index';
 import {pageData} from './constants/index';
 import { Forms } from './../../components/Forms/index';
+import { DeliveryNotice } from './../../components/DeliveryNotice/index';
 
 export class Recipe extends React.Component {
   render() {
@@ -77,20 +78,7 @@ export class Recipe extends React.Component {
           </section>
 
           <section className="delivery-notice main_delivery-notice">
-            <div className="container">
-              <p className="delivery-notice_text">
-                Все наши курьеры доставляют заказы в медицинских масках, одноразовых перчатках,
-                а также регулярно обрабатывают руки и автомобили. Доставка день-в-день
-                осуществляется по Москве и Химкам при оформлении заказа до 14:00 и при условии
-                свободных мест на доставку. Ваш заказ не покидает холодильника даже в пути! Мы
-                доставляем только специальным транспортом, который оборудован рефрижераторами и
-                поддерживает специальную температуру в кузове.
-              </p>
-
-              <button className="delivery-notice_read-more">
-                Читать больше
-              </button>
-            </div>
+            <DeliveryNotice />
           </section>
 
           <Faq data={pageData.faq}/>

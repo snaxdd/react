@@ -49,7 +49,9 @@ export class FooterMobile extends React.Component {
         </div>
 
         <div className="footer-mobile_pyrobyte">
-          <IconPyrobyte />
+          <a href="/#">
+            <IconPyrobyte />
+          </a>
         </div>
 
         <span className="footer-mobile_copyright">

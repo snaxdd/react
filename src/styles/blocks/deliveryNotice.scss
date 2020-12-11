@@ -5,6 +5,17 @@
     font-size: 14px;
     line-height: 24px;
     color: #333333;
+
+    &--hidden {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -moz-box;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      line-clamp: 3;
+      box-orient: vertical;
+    }
   }
 
   &_read-more {
