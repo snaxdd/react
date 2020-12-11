@@ -5,11 +5,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  &_logo {
-    transition: 0.2s ease;
+  &_link {
+    opacity: 0.32;
+    transition: 0.12s ease-out;
 
     &:hover {
-      opacity: 0.85;
+      opacity: 1;
     }
   }
 }
