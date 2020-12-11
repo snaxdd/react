@@ -9,10 +9,10 @@
   cursor: pointer;
   padding-left: 16.5px;
   box-sizing: border-box;
-  transition: 0.2s ease;
+  transition: 0.12s ease-out;
 
   &:hover {
-    background-color: rgba($color: $dark, $alpha: 0.85);
+    opacity: 0.92;
   }
 
   &_icon {

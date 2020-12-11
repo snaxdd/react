@@ -89,10 +89,10 @@
 
     &-link {
       color: #666666;
-      transition: 0.2s ease;
+      transition: 0.12s ease-out;
 
       &:hover {
-        color: rgba($color: #666666, $alpha: 0.85);
+        color: #88898B;
       }
     }
   }
@@ -108,11 +108,11 @@
 
       &-link {
         color: $dark;
-        transition: 0.2s ease;
+        transition: 0.12s ease-out;
         border-bottom: 1px dashed rgba(0, 0, 0, 0);
 
         &:hover {
-          border-bottom: 1px dashed $dark;
+          opacity: 0.76;
         }
       }
     }
@@ -192,7 +192,7 @@
 
     &-svg {
       fill: $dark;
-      transition: 0.2s ease;
+      transition: 0.12s ease-out;
 
       &--stroke {
         fill: none;
@@ -206,7 +206,7 @@
       }
 
       &:hover {
-        fill: rgba($color: $dark, $alpha: 0.85);
+        fill: #515964;
       }
     }
   }
