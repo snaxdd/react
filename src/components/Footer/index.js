@@ -15,7 +15,7 @@ export class Footer extends React.Component {
           <div className="footer_top">
 
             <div className="footer_socials-wrap">
-              <Logo/>
+              <Logo className="logo"/>
 
               <Socials />
             </div>

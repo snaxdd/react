@@ -16,6 +16,7 @@ import {Faq} from '../../components/FAQ/index';
 import {AskQuestion} from '../../components/AskQuestion/index';
 import {FooterMobile} from '../../components/Footer/Mobile/index';
 import {pageData} from './constants/index';
+import { Forms } from './../../components/Forms/index';
 
 export class Recipe extends React.Component {
   render() {
@@ -99,6 +100,7 @@ export class Recipe extends React.Component {
 
         <Footer data={pageData.footer}/>
         <FooterMobile data={pageData.footerMobile}/>
+        <Forms />
       </div>
     );
   };
