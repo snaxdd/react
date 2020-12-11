@@ -8,6 +8,10 @@
   font-size: 14px;
   text-align: center;
 
+  &_wrap {
+    overflow: hidden;
+  }
+
   &_item {
     min-width: 136px;
     height: 136px;
