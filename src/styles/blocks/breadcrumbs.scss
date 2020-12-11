@@ -6,14 +6,26 @@
     display: flex;
   }
 
-  &_item-link {
+  &_item {
     white-space: pre-wrap;
     font-family: 'Intro-Light';
     color: #333333;
     font-size: 14px;
 
-    @media screen and (max-width: 415px) {
-      font-size: 12px;
+    &-link {
+      white-space: pre-wrap;
+      font-family: 'Intro-Light';
+      color: #333333;
+      font-size: 14px;
+      transition: 0.12s ease-out;
+
+      &:hover {
+        opacity: 0.85;
+      }
+
+      @media screen and (max-width: 415px) {
+        font-size: 12px;
+      }
     }
   }
 
