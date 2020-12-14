@@ -15,6 +15,8 @@ export class TopMenu extends React.Component {
                   text={item.title} 
                   key={item.id}
                   dropDown={item.dropDown}
+                  iconR={item.iconR}
+                  iconL={item.iconL}
                 />
               );
             })}

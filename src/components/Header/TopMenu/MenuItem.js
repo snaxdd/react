@@ -12,10 +12,12 @@ export class MenuItem extends React.Component {
   render() {
     return (
       <li className='header_menu-item'>
+        {this.props.iconL}
         <a href={this.props.href} className='header_menu-link'>
           {this.props.text}
         </a>
         {this.dropDown()}
+        {this.props.iconR}
       </li>
     );
   };

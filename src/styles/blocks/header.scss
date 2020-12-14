@@ -98,6 +98,7 @@
     }
 
     &-dropdown {
+      overflow: hidden;
       display: none;
       position: absolute;
       bottom: -4px;
@@ -122,11 +123,16 @@
       &-item {
         display: flex;
         align-items: center;
-        padding: 8px 16px 8px 16px;
+        padding: 12px 16px 12px 16px;
         border-bottom: 1px solid #DEECFF;
+        transition: background-color 0.12s ease-out;
 
         &:last-child {
           border-bottom: none;
+        }
+
+        &:hover {
+          background-color: $pageBg;
         }
       }
     }
