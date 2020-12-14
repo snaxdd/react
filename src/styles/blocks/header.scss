@@ -53,39 +53,19 @@
     }
 
     &-icon {
-      position: absolute;
-
-      &--left {
-        left: -26%;
+      &-left {
+        margin-right: 8px;
       }
-
-      &--right {
-        right: -19%;
-        top: -12%;
+      &-right {
+        margin-left: 8px;
       }
     }
 
     &-item {
       position: relative;
-
-      &:nth-child(1) {
-        margin-right: 74px;
-      }
-
-      &:nth-child(2) {
-        margin-right: 40px;
-        position: relative;
-      }
-
-      &:nth-child(3) {
-        margin-right: 53px;
-        position: relative;
-      }
-
-      &:nth-child(4) {
-        margin-right: 53px;
-        position: relative;
-      }
+      display: flex;
+      align-items: center;
+      margin-right: 40px;
     }
 
     &-link {

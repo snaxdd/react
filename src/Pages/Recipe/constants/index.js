@@ -21,7 +21,7 @@ export const topMenu = [
   { 
     id: 1,
     href: '/#',
-    title: "Кто мы ?",
+    title: "Кто мы",
     iconL: null,
     iconR: null,
     dropDown: null
@@ -30,7 +30,7 @@ export const topMenu = [
     id: 2,
     href: '/#',
     title: "Доставка и оплата",
-    iconL: <IconDelivery />,
+    iconL: <IconDelivery className="header_menu-icon-left"/>,
     iconR: null,
     dropDown: null
   },
@@ -39,7 +39,7 @@ export const topMenu = [
     href: '/#',
     title: "Наши магазины",
     iconL: null,
-    iconR: null,
+    iconR: <IconMenuArrowDown className="header_menu-icon-right"/>,
     dropDown: null
   },
   { 
@@ -47,7 +47,7 @@ export const topMenu = [
     href: '/#',
     title: "Покупателям",
     iconL: null,
-    iconR: <IconMenuArrowDown />,
+    iconR: <IconMenuArrowDown className="header_menu-icon-right"/>,
     dropDown: [
       {
         id: 1,
