@@ -115,6 +115,10 @@
           background-color: $pageBg;
         }
       }
+
+      &--open {
+        display: block;
+      }
     }
   }
 

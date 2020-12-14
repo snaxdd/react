@@ -4,7 +4,7 @@ import {DropDownItem} from './DropDownItem';
 export class DropDown extends React.Component {
   render() {
     return (
-      <ul className="header_menu-dropdown">
+      <ul className={`header_menu-dropdown ${this.props.open ? 'header_menu-dropdown--open' : null}`}>
         {this
           .props
           .dropDown

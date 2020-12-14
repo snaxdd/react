@@ -40,7 +40,23 @@ export const topMenu = [
     title: "Наши магазины",
     iconL: null,
     iconR: <IconMenuArrowDown className="header_menu-icon-right"/>,
-    dropDown: null
+    dropDown: [
+      {
+        id: 1,
+        text: "г.Москва ул.Ленина д.23",
+        href: "/#"
+      },
+      {
+        id: 2,
+        text: "г.Новосибирск пр.Калинина д.123",
+        href: "/#"
+      },
+      {
+        id: 3,
+        text: "г.Томск пр.Красноармейский д.289",
+        href: "/#"
+      }
+    ]
   },
   { 
     id: 4,
