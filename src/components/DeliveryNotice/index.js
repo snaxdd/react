@@ -18,9 +18,8 @@ export class DeliveryNotice extends React.Component {
 
     if (!this.state.contentOpen) {
       this.refText.current.classList.remove('delivery-notice_text--hidden');
-      this.refContent.current.style.height = this.state.contentHeight + "px";
     } else {
-      this.refContent.current.style.height = this.contentHeight + "px";
+      this.refText.current.classList.add('delivery-notice_text--hidden');
     }
 
     this.setState({
@@ -29,10 +28,7 @@ export class DeliveryNotice extends React.Component {
   };
 
   componentDidMount = () => {
-    console.log(this.refContent.current.clientHeight);
-  
-
-    
+    this.refText.current.classList.add('delivery-notice_text--hidden');
     
     this
       .refButton
