@@ -17,7 +17,7 @@ export class IngredientsMobile extends React.Component {
   handleDropDown = () => {
     let newContentOpen = !this.state.contentOpen;
 
-    this.setState({contentOpen: newContentOpen})
+    this.setState({contentOpen: newContentOpen});
 
     if (this.state.contentOpen) {
       this.refHiddenContent.current.style.height = this.state.contentBlockHeight + "px";

@@ -5,10 +5,8 @@ export class Button extends React.Component {
     return(
       <button 
         href={this.props.href} 
-        className={`button ${this.props.className ? this.props.className : ''}`}>
-        <span className='button_text'>
-          {this.props.text}
-        </span>
+        className={`button ${this.props.className ? this.props.className : null}`}>
+        {this.props.text}
       </button>
     );
   }

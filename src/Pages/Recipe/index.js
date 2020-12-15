@@ -18,6 +18,8 @@ import {FooterMobile} from '../../components/Footer/Mobile/index';
 import {pageData} from './constants/index';
 import { Forms } from './../../components/Forms/index';
 import { DeliveryNotice } from './../../components/DeliveryNotice/index';
+//import { cartData } from './constants/index';
+//import { Cart } from './../../components/Cart/index';
 
 export class Recipe extends React.Component {
   render() {
@@ -89,6 +91,7 @@ export class Recipe extends React.Component {
         <Footer data={pageData.footer}/>
         <FooterMobile data={pageData.footerMobile}/>
         <Forms />
+        
       </div>
     );
   };

@@ -1,0 +1,133 @@
+.cart {
+  max-width: 560px;
+  width: 100%;
+  min-height: 350px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 26px 24px 32px 24px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+
+  &_heading {
+    display: block;
+    font-family: "Intro-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 23px;
+  }
+
+  &_image {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 16px;
+  }
+
+  &_item {
+    box-sizing: border-box;
+    min-height: 80px;
+    border-bottom: 1px solid rgba(203, 218, 236, 0.56);
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-heading {
+      display: inline-block;
+      color: $dark;
+      font-family: 'Intro-Regular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &-weight {
+      font-family: 'Intro-Book';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #999999;
+      padding-left: 15px;
+    }
+
+    &-count {
+      display: block;
+      font-family: 'Intro-Book';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 7px;
+      color: #999999;
+    }
+
+    &-price {
+      font-family: 'Intro-Regular', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      color: $dark;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &_left-wrap {
+    max-width: 310px;
+    display: flex;
+  }
+
+  &_right-wrap {
+    padding-right: 7px;
+  }
+
+  &_close {
+    margin-left: 22.5px;
+    transform: translateY(-3px);
+    cursor: pointer;
+  }
+
+  &_summ {
+    font-family: 'Intro-Bold', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: $dark;
+
+    &-heading {
+      font-family: 'Intro-Regular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      color: $dark;
+      padding-top: 7px;
+    }
+
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      margin-bottom: 22px;
+    }
+  }
+
+  &_list {
+    margin-bottom: 34px;
+  }
+}

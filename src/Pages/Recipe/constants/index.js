@@ -16,6 +16,9 @@ import PromoSlide3 from './../../../assets/images/PromoSlider/preview4.jpg';
 //Images
 import CommentImage from './../../../assets/images/Reviews/comment-image.jpg';
 import IngredientsImg from '../../../assets/images/Ingredients/title-img.png';
+import CartImg1 from '../../../assets/images/Cart/cart1.png';
+import CartImg2 from '../../../assets/images/Cart/cart2.png';
+import CartImg3 from '../../../assets/images/Cart/cart4.jpg';
 
 export const topMenu = [
   { 
@@ -99,6 +102,30 @@ export const topMenu = [
     iconL: null,
     iconR: null,
     dropDown: null
+  },
+];
+
+export const cartData = [
+  {
+    title: 'Стейки форели морской охлажденные',
+    weight: '0.5 кг',
+    count: 6,
+    price: 1740,
+    image: CartImg1
+  },
+  {
+    title: 'Палтус холодного копчения',
+    weight: '0.7 кг',
+    count: 1,
+    price: 275,
+    image: CartImg2
+  },
+  {
+    title: 'Крылья ската',
+    weight: '0.2 кг',
+    count: 1,
+    price: 170,
+    image: CartImg3
   },
 ];
 

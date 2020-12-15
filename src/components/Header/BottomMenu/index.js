@@ -3,6 +3,7 @@ import { Logo } from '../../Logo/index';
 import { Burger } from './Burger';
 import { SearchInput } from './SearchInput';
 import { UserIcons } from './UserIcons';
+import { Catalog } from './Catalog/Catalog';
 
 export class BottomMenu extends React.Component {
   render() {
@@ -14,6 +15,7 @@ export class BottomMenu extends React.Component {
           <Burger />
           <SearchInput />
           <UserIcons />
+          <Catalog />
       </div>
     );
   };
