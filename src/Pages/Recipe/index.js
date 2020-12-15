@@ -16,10 +16,14 @@ import {Faq} from '../../components/FAQ/index';
 import {AskQuestion} from '../../components/AskQuestion/index';
 import {FooterMobile} from '../../components/Footer/Mobile/index';
 import {pageData} from './constants/index';
-import { Forms } from './../../components/Forms/index';
-import { DeliveryNotice } from './../../components/DeliveryNotice/index';
+import {Forms} from './../../components/Forms/index';
+import {DeliveryNotice} from './../../components/DeliveryNotice/index';
+//import {FeedbackThankYou} from './../../components/Feedback/FeedbackThankYou';
+//import { Feedback } from '../../components/Feedback/index';
 //import { cartData } from './constants/index';
 //import { Cart } from './../../components/Cart/index';
+//import {Registration} from './../../components/Registration/index';
+import { Login } from "./../../components/Login/index";
 
 export class Recipe extends React.Component {
   render() {
@@ -91,7 +95,9 @@ export class Recipe extends React.Component {
         <Footer data={pageData.footer}/>
         <FooterMobile data={pageData.footerMobile}/>
         <Forms />
-        
+        <div className="container">
+          <Login />
+        </div>
       </div>
     );
   };
