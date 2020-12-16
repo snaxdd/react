@@ -76,6 +76,8 @@
 
   &_right-list {
     padding-top: 9px;
+    max-width: 510px;
+    width: 100%;
 
     &-heading {
       font-family: 'Intro-Regular';
@@ -97,7 +99,6 @@
   &_products {
     display: flex;
     flex-wrap: wrap;
-    max-width: 510px;
     width: 100%;
     align-items: start;
 
@@ -106,6 +107,7 @@
       margin-bottom: 24px;
 
       &-heading {
+        display: block;
         font-family: 'Intro-Regular';
         font-style: normal;
         font-weight: normal;
