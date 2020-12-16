@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent as IconArrow} from '../../assets/icons/Spoiler/arrow.svg';
+import {ReactComponent as IconArrow} from '../../assets/icons/arrow.svg';
 import {Ingredient} from './Ingredient';
 import {BuyButton} from './../BuyButton/index';
 

@@ -1,4 +1,9 @@
 .header {
+  position: relative;
+
+  &--white {
+    background-color: white;
+  }
 
   &_burger {
     margin-right: 32px;

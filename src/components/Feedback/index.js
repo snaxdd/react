@@ -28,7 +28,10 @@ export class Feedback extends React.Component {
                   {Array(5)
                     .fill(0)
                     .map(item => {
-                      return <IconStar className="feedback_rate-star"/>;
+                      return <IconStar 
+                      className="feedback_rate-star"
+                      key={Math.random()}
+                      />;
                     })
 }
                 </div>
@@ -45,7 +48,12 @@ export class Feedback extends React.Component {
             </form>
           </div>
         </div>
-        <IconClose className="feedback_close"/>
+        <IconClose 
+          className="feedback_close"
+          onClick={() => this.props.modal({
+            feedback: false
+          })}
+        />
         <Button text="Отправить" className="button--orange"/>
       </div>
     );

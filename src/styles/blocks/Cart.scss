@@ -7,6 +7,7 @@
   padding: 26px 24px 32px 24px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04);
   border-radius: 8px;
+  position: relative;
 
   &_heading {
     display: block;
@@ -94,10 +95,19 @@
     padding-right: 7px;
   }
 
-  &_close {
+  &_item-close {
     margin-left: 22.5px;
     transform: translateY(-3px);
     cursor: pointer;
+  }
+
+  &_close {
+    position: absolute;
+    cursor: pointer;
+    right: 18px;
+    top: 21px;
+    width: 18px;
+    height: 18px;
   }
 
   &_summ {

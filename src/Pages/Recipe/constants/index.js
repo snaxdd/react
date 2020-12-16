@@ -129,6 +129,507 @@ export const cartData = [
   },
 ];
 
+export const catalog = [
+  {
+    heading: 'Весь ассортимент'
+  },
+  {
+    heading: 'Скидки',
+    products: [
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+    ]
+  },
+  {
+    heading: 'Скидки',
+    products: [
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+    ]
+  },
+  {
+    heading: 'Скидки',
+    products: [
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+    ]
+  },
+  {
+    heading: 'Скидки',
+    products: [
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+    ]
+  },
+  {
+    heading: 'Скидки',
+    products: [
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+    ]
+  },
+  {
+    heading: 'Скидки',
+    products: [
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+    ]
+  },
+  {
+    heading: 'Скидки',
+    products: [
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+    ]
+  },
+  {
+    heading: 'Скидки',
+    products: [
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+    ]
+  },
+  {
+    heading: 'Скидки',
+    products: [
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+    ]
+  },
+  {
+    heading: 'Скидки',
+    products: [
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+    ]
+  },
+  {
+    heading: 'Скидки',
+    products: [
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+      {
+        title: 'Tested link',
+        href: '/#'
+      },
+    ]
+  },
+];
+
 export const pageData = {
   breadcrumbs: [
     'Главная',

@@ -25,7 +25,7 @@ export class CartItem extends React.Component {
           <div className="cart_right-wrap">
             <span className="cart_item-price">
               {this.props.data.price + " ₽"}
-              <IconClose className="cart_close"/>
+              <IconClose className="cart_item-close"/>
             </span>
           </div>
       </li>

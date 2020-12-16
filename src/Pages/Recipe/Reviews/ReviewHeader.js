@@ -31,7 +31,11 @@ export class ReviewHeader extends React.Component {
             </div>
           </div>
 
-          <Button text="Написать комментарий" className="reviews_header-button"/>
+          <Button 
+            text="Написать комментарий" 
+            className="reviews_header-button"
+            modal={this.props.modal}
+          />
 
           <div className="reviews_header-sorting">
             <IconSortingArrow 

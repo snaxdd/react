@@ -1,6 +1,7 @@
 import React from "react";
 import { CartItem } from './CartItem';
 import { Button } from './../Button/index';
+import {ReactComponent as IconClose} from './../../assets/icons/close.svg';
 
 export class Cart extends React.Component {
   constructor(props) {
@@ -10,7 +11,7 @@ export class Cart extends React.Component {
     }
   }
 
-  summCompute() {
+  summCompute = () => {
     let prevSumm = this.state.summ;
 
     this.props.data.map(item => {
@@ -35,7 +36,7 @@ export class Cart extends React.Component {
         <ul className="cart_list">
           {
             this.props.data.map(item => {
-              return <CartItem data={item} />;
+              return <CartItem data={item} key={Math.random()} />;
             })
           }
         </ul>
@@ -52,6 +53,12 @@ export class Cart extends React.Component {
         </div>
 
         <Button text="Оформить заказ" className="button--orange"/>
+        <IconClose 
+          className="cart_close"
+          onClick={() => this.props.modal({
+            cart: false
+          })}
+        />
       </div>
     );
   };

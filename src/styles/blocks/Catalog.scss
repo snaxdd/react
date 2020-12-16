@@ -1,0 +1,133 @@
+.catalog {
+  z-index: 6;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 48px;
+  position: absolute;
+  width: 100%;
+
+  &_left-list {
+    box-sizing: border-box;
+    max-width: 260px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgba(241, 85, 38, 0.24);
+    overflow: hidden;
+    margin-right: 72px;
+
+    &-icon {
+      fill: $red;
+      transform: rotate(-90deg);
+      position: absolute;
+      right: 13px;
+      transition: 0.12s ease-out;
+      opacity: 0;
+    }
+
+    &-link {
+      color: #1E2833;
+      width: 100%;
+      height: 100%;
+      transition: 0.12s ease-out;
+    }
+
+    &-item {
+      position: relative;
+      font-family: 'Intro-Regular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      cursor: pointer;
+      min-height: 56px;
+      border-bottom: 1px solid rgba(241, 85, 38, 0.24);
+      padding-left: 16px;
+      display: flex;
+      align-items: center;
+
+      &--active {
+        background: linear-gradient(0deg, #FFF6F3, #FFF6F3), #FFFFFF;
+
+        & .catalog_left-list-link {
+          color: $red;
+        }
+
+        & .catalog_left-list-icon {
+          opacity: 1;
+        }
+      }
+
+      &:hover {
+        background: linear-gradient(0deg, #FFF6F3, #FFF6F3), #FFFFFF;
+
+        & .catalog_left-list-link {
+          color: $red;
+        }
+
+        & .catalog_left-list-icon {
+          opacity: 1;
+        }
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &_right-list {
+    padding-top: 9px;
+
+    &-heading {
+      font-family: 'Intro-Regular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 32px;
+      color: #1E2833;
+      margin-bottom: 22px;
+      display: inline-block;
+    }
+  }
+
+  &_wrap {
+    padding-top: 17px;
+    display: flex;
+  }
+
+  &_products {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 510px;
+    width: 100%;
+    align-items: start;
+
+    &-category {
+      flex-basis: 50%;
+      margin-bottom: 24px;
+
+      &-heading {
+        font-family: 'Intro-Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1E2833;
+        margin-bottom: 8px;
+      }
+
+      &-item {
+        font-family: 'Intro-Light';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1E2833;
+        margin-bottom: 8px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

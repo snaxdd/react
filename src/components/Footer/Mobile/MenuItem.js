@@ -1,6 +1,6 @@
 import React from 'react';
 import {MenuInnerItem} from './MenuInnerItem';
-import {ReactComponent as IconArrow} from './../../../assets/icons/Spoiler/arrow.svg';
+import {ReactComponent as IconArrow} from './../../../assets/icons/arrow.svg';
 
 export class MenuItem extends React.Component {
   constructor(props) {

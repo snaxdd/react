@@ -11,6 +11,7 @@ export class Reviews extends React.Component {
           text={this.props.reviewsData.overallRating.text}
           overallRate={this.props.reviewsData.overallRating.rate}
           commentsNumber={this.props.reviewsData.overallRating.commentsNumber}
+          modal={this.props.modal}
         />
         {
           this.props.reviewsData.comments.map((item, index, arr) => {

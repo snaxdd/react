@@ -9,7 +9,9 @@ export class UserIcons extends React.Component {
       <div className='header_user-icons'>
         <div className='header_user-icons-item'>
           <a href='/#' className='header_user-icons-link'>
-            <IconProfile 
+            <IconProfile onClick={() => this.props.modal({
+              login: true
+            })}
               className='header_user-icons-svg'
             />
           </a>
@@ -25,6 +27,9 @@ export class UserIcons extends React.Component {
           <a href='/#' className='header_user-icons-link'>
             <IconCart 
               className='header_user-icons-svg'
+              onClick={() => this.props.modal({
+                cart: true
+              })}
             />
           </a>
         </div>

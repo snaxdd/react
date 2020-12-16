@@ -18,18 +18,41 @@ import {FooterMobile} from '../../components/Footer/Mobile/index';
 import {pageData} from './constants/index';
 import {Forms} from './../../components/Forms/index';
 import {DeliveryNotice} from './../../components/DeliveryNotice/index';
-//import {FeedbackThankYou} from './../../components/Feedback/FeedbackThankYou';
-//import { Feedback } from '../../components/Feedback/index';
-//import { cartData } from './constants/index';
-//import { Cart } from './../../components/Cart/index';
-//import {Registration} from './../../components/Registration/index';
-import { Login } from "./../../components/Login/index";
+import {Login} from "./../../components/Login/index";
+import {Cart} from './../../components/Cart/index';
+import {Modal} from './../../components/Modal/index';
+import {cartData} from './constants/index';
+import { Feedback } from './../../components/Feedback/index';
 
 export class Recipe extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      modalShow: false,
+      login: false,
+      cart: false,
+      feedback: false
+    };
+  }
+
+  handlerModal = (type) => {
+    const toggler = !this.state.modalShow;
+
+    type.modalShow = toggler;
+  
+    this.setState(type);
+
+    if (toggler) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  };
+
   render() {
     return (
-      <div className='page'>
-        <Header data={pageData.header}/>
+      <div className='page' ref={this.page}>
+        <Header data={pageData.header} modal={this.handlerModal}/>
         <main className='main'>
 
           <section className='breadcrumbs main_breadcrumbs'>
@@ -66,7 +89,7 @@ export class Recipe extends React.Component {
               <h2 className="section_heading reviews_heading--pc">
                 Отзывы о рецепте
               </h2>
-              <Reviews reviewsData={pageData.reviews}/>
+              <Reviews reviewsData={pageData.reviews} modal={this.handlerModal}/>
             </div>
           </section>
 
@@ -84,7 +107,7 @@ export class Recipe extends React.Component {
           </section>
 
           <section className="delivery-notice main_delivery-notice">
-            <DeliveryNotice />
+            <DeliveryNotice/>
           </section>
 
           <Faq data={pageData.faq}/>
@@ -94,10 +117,15 @@ export class Recipe extends React.Component {
 
         <Footer data={pageData.footer}/>
         <FooterMobile data={pageData.footerMobile}/>
-        <Forms />
-        <div className="container">
-          <Login />
-        </div>
+        <Forms/>
+        {
+          <Modal 
+          show={this.state.modalShow}
+          login={this.state.login ? <Login modal={this.handlerModal}/> : null}
+          cart={this.state.cart ? <Cart data={cartData} modal={this.handlerModal}/> : null}
+          feedback={this.state.feedback ? <Feedback modal={this.handlerModal}/> : null}
+          />
+        }
       </div>
     );
   };

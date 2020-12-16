@@ -2,6 +2,7 @@ import React from "react";
 import {ReactComponent as IconPhone} from '../../assets/icons/Registration/Phone.svg';
 import {ReactComponent as IconView} from '../../assets/icons/Registration/View.svg';
 import { Button } from "../Button/index";
+import {ReactComponent as IconClose} from './../../assets/icons/close.svg';
 
 export class Login extends React.Component {
   render() {
@@ -48,6 +49,12 @@ export class Login extends React.Component {
               </a>
             </span>
           </div>
+        <IconClose 
+          className="login_close"
+          onClick={() => this.props.modal({
+            login: false
+          })}
+        />
       </div>
     );
   };

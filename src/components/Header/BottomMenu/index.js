@@ -3,7 +3,6 @@ import { Logo } from '../../Logo/index';
 import { Burger } from './Burger';
 import { SearchInput } from './SearchInput';
 import { UserIcons } from './UserIcons';
-import { Catalog } from './Catalog/Catalog';
 
 export class BottomMenu extends React.Component {
   render() {
@@ -12,10 +11,9 @@ export class BottomMenu extends React.Component {
         <div className='logo header_logo'>
           <Logo />
         </div>
-          <Burger />
+          <Burger openCatalog={this.props.openCatalog}/>
           <SearchInput />
-          <UserIcons />
-          <Catalog />
+          <UserIcons modal={this.props.modal} />
       </div>
     );
   };
