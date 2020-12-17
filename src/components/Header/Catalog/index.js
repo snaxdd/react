@@ -17,11 +17,9 @@ export class Catalog extends React.Component {
   }
 
   render() {
-    if (!this.props.showCatalog) {
-      return null;
-    }
     return(
-      <div className="catalog">
+      <div className={`catalog${this.props.showCatalog ? 
+        ' catalog--open' : ''}`}>
         <div className="catalog_wrap">
           <div className="container catalog_container">
             <LeftList 
