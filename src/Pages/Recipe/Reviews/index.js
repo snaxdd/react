@@ -30,7 +30,10 @@ export class Reviews extends React.Component {
         }
 
         <div className="reviews_mobile-btn-wrap">
-          <Button text="Написать комментарий"/>
+          <Button 
+            text="Написать комментарий"
+            className="reviews_mobile-btn"
+          />
         </div>
       </div>
     );

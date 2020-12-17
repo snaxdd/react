@@ -1,15 +1,23 @@
 .reviews {
 
-  &_mobile-btn-wrap {
-    display: none;
+  &_mobile-btn {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 7px 15px;
 
-    @media screen and (max-width: 415px) {
-      display: block;
-      min-height: 88px;
-      background-color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    &-wrap {
+      display: none;
+
+      @media screen and (max-width: 415px) {
+        display: block;
+        min-height: 88px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 
