@@ -9,7 +9,7 @@ export class IngredientsMobile extends React.Component {
     this.state = {
       contentBlockHeight: 0,
       contentOpen: false
-    }
+    };
     this.refHiddenContent = React.createRef();
     this.refButton = React.createRef();
   };
@@ -46,6 +46,9 @@ export class IngredientsMobile extends React.Component {
   }
 
   render() {
+    if (this.state.screenWidth > 415) {
+      return null;
+    }
     return (
       <div className="ingredients-mobile recipe_ingredients-mobile">
         <button ref={this.refButton} className="ingredients-mobile_dropdown">

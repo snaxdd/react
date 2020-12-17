@@ -31,7 +31,8 @@ export class Recipe extends React.Component {
       modalShow: false,
       login: false,
       cart: false,
-      feedback: false
+      feedback: false,
+      screenWidth: window.innerWidth
     };
   }
 
@@ -48,6 +49,20 @@ export class Recipe extends React.Component {
       document.body.style.overflow = 'auto';
     }
   };
+
+  updateWindowWidth = () => {
+    this.setState({
+      screenWidth: window.innerWidth
+    });
+  }
+
+  componentDidMount = () => {
+    window.addEventListener('resize', this.updateWindowWidth);
+  }
+
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this.updateWindowWidth);
+  }
 
   render() {
     return (
@@ -75,7 +90,11 @@ export class Recipe extends React.Component {
               </div>
               <div className="recipe_right">
                 <RecipeDescription/>
-                <IngredientsMobile data={pageData.ingredients}/>
+                {
+                  this.state.screenWidth < 415 ? 
+                  <IngredientsMobile data={pageData.ingredients}/> :
+                  null
+                }
                 <NutritionalValue data={pageData.nutritionalValue}/>
                 <div className="recipe_steps-wrap">
                   <RecipeSteps recipeSteps={pageData.recipeSteps}/>

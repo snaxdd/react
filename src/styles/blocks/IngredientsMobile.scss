@@ -4,11 +4,6 @@
   border-radius: 8px;
   background-color: white;
   overflow: hidden;
-  display: none;
-
-  @media screen and (max-width: 415px) {
-    display: block;
-  }
 
   &_dropdown {
     outline: none;
