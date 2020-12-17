@@ -1,54 +1,27 @@
 import React from 'react';
+import { ProductsList } from './ProductsList';
 
 export class RightList extends React.Component {
   render() {
-    return(
+    return (
       <div className="catalog_right-list">
         <span className="catalog_right-list-heading">
-          Весь ассортимент
+          {this.props.catalog[this.props.currentItem].heading}
         </span>
 
         <div className="catalog_products-wrap">
           <ul className="catalog_products">
-            <li className="catalog_products-category">
-              <span className="catalog_products-category-heading">Heading</span>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-            </li>
-            <li className="catalog_products-category">
-              <span className="catalog_products-category-heading">Heading</span>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-            </li>
-            <li className="catalog_products-category">
-              <span className="catalog_products-category-heading">Heading</span>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-            </li>
-            <li className="catalog_products-category">
-              <span className="catalog_products-category-heading">Heading</span>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-              <li className="catalog_products-category-item">list item</li>
-            </li>
+            {
+              this.props.catalog[this.props.currentItem].categories.map((item, index) => {
+                return <ProductsList 
+                  categories={item}
+                  key={Math.random()}
+                />;
+              })
+            }
           </ul>
         </div>
       </div>
-    );
-  };
-};
+    )
+  }
+}

@@ -3,6 +3,21 @@ import { MenuItem } from './MenuItem';
 import { ReactComponent as IconCallback } from '../../../assets/icons/Callback.svg';
 
 export class TopMenu extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      someOneOpen: false
+    };
+  }
+
+  handlerSomeOneOpen = () => {
+    const toggler = !this.state.someOneOpen;
+
+    this.setState({
+      someOneOpen: toggler
+    });
+  }
+  
   render() {
     return(
       <div className="container header_top-container">
@@ -17,6 +32,8 @@ export class TopMenu extends React.Component {
                   dropDown={item.dropDown}
                   iconR={item.iconR}
                   iconL={item.iconL}
+                  handlerSomeOneOpen={this.handlerSomeOneOpen}
+                  someOneOpen={this.state.someOneOpen}
                 />
               );
             })}

@@ -9,7 +9,10 @@ export class DropDown extends React.Component {
           .props
           .dropDown
           .map((item, index) => {
-            return (<DropDownItem key={item.id} text={item.text} href={item.href}/>)
+            return (<DropDownItem 
+              key={item.id} 
+              text={item.text} 
+              href={item.href}/>)
           })
 }
       </ul>

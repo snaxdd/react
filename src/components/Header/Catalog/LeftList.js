@@ -12,7 +12,9 @@ export class LeftList extends React.Component {
             return <LeftListItem 
               key={Math.random()} 
               text={item.heading}
-              active={index === 0 ? true : false}
+              active={index === this.props.currentItem ? true : false}
+              index={index}
+              setCurrent={this.props.setCurrent}
             />
           })}
       </ul>

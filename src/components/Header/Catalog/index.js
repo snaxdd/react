@@ -5,6 +5,15 @@ import { RightList } from './RightList';
 export class Catalog extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      currentItem: 0
+    }
+  }
+
+  setCurrentItem = (index) => {
+    this.setState({
+      currentItem: index
+    });
   }
 
   render() {
@@ -13,10 +22,17 @@ export class Catalog extends React.Component {
     }
     return(
       <div className="catalog">
-        <div className="container">
-          <div className="catalog_wrap">
-            <LeftList catalog={this.props.catalog} />
-            <RightList />
+        <div className="catalog_wrap">
+          <div className="container catalog_container">
+            <LeftList 
+              catalog={this.props.catalog} 
+              setCurrent={this.setCurrentItem}
+              currentItem={this.state.currentItem}
+            />
+            <RightList 
+              catalog={this.props.catalog} 
+              currentItem={this.state.currentItem}
+            />
           </div>
         </div>
       </div>
