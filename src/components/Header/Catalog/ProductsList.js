@@ -12,7 +12,7 @@ export class ProductsList extends React.Component {
         <ul className="catalog_products-list">
           {
             this.props.categories.products.map(item => {
-              return <ProductItem href={item.href} text={item.title}/>;
+              return <ProductItem key={Math.random()} href={item.href} text={item.title}/>;
             })
           }
         </ul>

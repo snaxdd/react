@@ -135,7 +135,11 @@ export class Recipe extends React.Component {
         </main>
 
         <Footer data={pageData.footer}/>
-        <FooterMobile data={pageData.footerMobile}/>
+        {
+          this.state.screenWidth < 415 ? 
+          <FooterMobile data={pageData.footerMobile}/> :
+          null
+        }
         <Forms/>
         {
           <Modal 

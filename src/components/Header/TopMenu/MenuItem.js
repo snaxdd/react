@@ -15,44 +15,47 @@ export class MenuItem extends React.Component {
     const toggler = !this.props.someOneOpen;
 
     if (this.props.someOneOpen) {
-      this.props.handlerSomeOneOpen();
+      this
+        .props
+        .handlerSomeOneOpen();
 
       this.handlerDropDown();
     }
 
-    this.props.handlerSomeOneOpen();
+    this
+      .props
+      .handlerSomeOneOpen();
 
-    this.setState({
-      dropDownOpen: toggler
-    });
+    this.setState({dropDownOpen: toggler});
   }
 
   componentDidMount = () => {
     if (this.dropDownItem) {
-      this.menuButton.current.addEventListener('click', this.handlerDropDown);
+      this
+        .menuButton
+        .current
+        .addEventListener('click', this.handlerDropDown);
     }
   }
 
   componentWillUnmount = () => {
-    this.menuButton.current.removeEventListener('click', this.handlerDropDown);
+    this
+      .menuButton
+      .current
+      .removeEventListener('click', this.handlerDropDown);
   }
 
   render() {
     return (
       <li className='header_menu-item'>
         {this.props.iconL}
-        <a ref={this.menuButton} 
-        href={this.props.href} 
-        className='header_menu-link'>
+        <a ref={this.menuButton} href={this.props.href} className='header_menu-link'>
           {this.props.text}
         </a>
-        {
-          this.props.dropDown ? 
-          <DropDown 
-            dropDown={this.props.dropDown} 
-            open={this.state.dropDownOpen}/> : 
-            null
-        }
+        <DropDown 
+          dropDown={this.props.dropDown} 
+          open={this.state.dropDownOpen}
+        />
         {this.props.iconR}
       </li>
     );

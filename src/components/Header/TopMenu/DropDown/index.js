@@ -3,8 +3,11 @@ import {DropDownItem} from './DropDownItem';
 
 export class DropDown extends React.Component {
   render() {
+    if (!this.props.dropDown) {
+      return null;
+    }
     return (
-      <ul className={`header_menu-dropdown ${this.props.open ? 'header_menu-dropdown--open' : null}`}>
+      <ul className={`header_menu-dropdown${this.props.open ? ' header_menu-dropdown--open' : ''}`}>
         {this
           .props
           .dropDown
