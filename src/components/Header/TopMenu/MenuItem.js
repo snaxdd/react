@@ -12,19 +12,7 @@ export class MenuItem extends React.Component {
   }
 
   handlerDropDown = () => {
-    const toggler = !this.props.someOneOpen;
-
-    if (this.props.someOneOpen) {
-      this
-        .props
-        .handlerSomeOneOpen();
-
-      this.handlerDropDown();
-    }
-
-    this
-      .props
-      .handlerSomeOneOpen();
+    const toggler = !this.state.dropDownOpen;
 
     this.setState({dropDownOpen: toggler});
   }

@@ -5,17 +5,6 @@ import { ReactComponent as IconCallback } from '../../../assets/icons/Callback.s
 export class TopMenu extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      someOneOpen: false
-    };
-  }
-
-  handlerSomeOneOpen = () => {
-    const toggler = !this.state.someOneOpen;
-
-    this.setState({
-      someOneOpen: toggler
-    });
   }
   
   render() {
@@ -32,8 +21,6 @@ export class TopMenu extends React.Component {
                   dropDown={item.dropDown}
                   iconR={item.iconR}
                   iconL={item.iconL}
-                  handlerSomeOneOpen={this.handlerSomeOneOpen}
-                  someOneOpen={this.state.someOneOpen}
                 />
               );
             })}
