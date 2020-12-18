@@ -22,38 +22,60 @@ import {Login} from "./../../components/Login/index";
 import {Cart} from './../../components/Cart/index';
 import {Modal} from './../../components/Modal/index';
 import {cartData} from './constants/index';
-import { Feedback } from './../../components/Feedback/index';
+import {Feedback} from './../../components/Feedback/index';
 
 export class Recipe extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       modalShow: false,
-      login: false,
-      cart: false,
-      feedback: false,
+      showLoginModal: false,
+      showCartModal: false,
+      showFeedbackModal: false,
       screenWidth: window.innerWidth
     };
   }
 
-  handlerModal = (type) => {
-    const toggler = !this.state.modalShow;
-
-    type.modalShow = toggler;
-  
-    this.setState(type);
-
-    if (toggler) {
+  bodyScrollBlock = (val) => {
+    if (val) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'auto';
     }
+  }
+
+  showLoginModal = () => {
+    const toggler = !this.state.showLoginModal;
+
+    this.setState({
+      showLoginModal: toggler
+    });
+
+    this.bodyScrollBlock(toggler);
+  };
+
+  showCartModal = () => {
+    const toggler = !this.state.showCartModal;
+
+    this.setState({
+      showCartModal: toggler
+    });
+
+    this.bodyScrollBlock(toggler);
+  };
+
+  showFeedbackModal = () => {
+    const toggler = !this.state.showFeedbackModal;
+
+    this.setState({
+      showFeedbackModal: toggler
+    });
+
+    this.bodyScrollBlock(toggler);
   };
 
   updateWindowWidth = () => {
-    this.setState({
-      screenWidth: window.innerWidth
-    });
+    this.setState({screenWidth: window.innerWidth});
   }
 
   componentDidMount = () => {
@@ -67,7 +89,11 @@ export class Recipe extends React.Component {
   render() {
     return (
       <div className='page' ref={this.page}>
-        <Header data={pageData.header} modal={this.handlerModal}/>
+        <Header 
+          data={pageData.header} 
+          showLoginModal={this.showLoginModal}
+          showCartModal={this.showCartModal}
+        />
         <main className='main'>
 
           <section className='breadcrumbs main_breadcrumbs'>
@@ -89,12 +115,10 @@ export class Recipe extends React.Component {
                 <Ingredients data={pageData.ingredients}/>
               </div>
               <div className="recipe_right">
-                <RecipeDescription/>
-                {
-                  this.state.screenWidth < 415 ? 
-                  <IngredientsMobile data={pageData.ingredients}/> :
-                  null
-                }
+                <RecipeDescription/> {this.state.screenWidth < 415
+                  ? <IngredientsMobile data={pageData.ingredients}/>
+                  : null
+}
                 <NutritionalValue data={pageData.nutritionalValue}/>
                 <div className="recipe_steps-wrap">
                   <RecipeSteps recipeSteps={pageData.recipeSteps}/>
@@ -122,7 +146,7 @@ export class Recipe extends React.Component {
           </section>
 
           <CallbackDiscount mixin="main_callback-discount"/>
-       
+
           <section className="delivery-notice main_delivery-notice">
             <DeliveryNotice/>
           </section>
@@ -132,21 +156,22 @@ export class Recipe extends React.Component {
           <AskQuestion/>
         </main>
 
-        <Footer data={pageData.footer}/>
-        {
-          this.state.screenWidth < 415 ? 
-          <FooterMobile data={pageData.footerMobile}/> :
-          null
-        }
+        <Footer data={pageData.footer}/> {this.state.screenWidth < 415
+          ? <FooterMobile data={pageData.footerMobile}/>
+          : null
+}
         <Forms/>
-        {
-          <Modal 
-          show={this.state.modalShow}
-          login={this.state.login ? <Login modal={this.handlerModal}/> : null}
-          cart={this.state.cart ? <Cart data={cartData} modal={this.handlerModal}/> : null}
-          feedback={this.state.feedback ? <Feedback modal={this.handlerModal}/> : null}
-          />
-        }
+        <React.Fragment>
+          <Modal modalShow={this.state.showLoginModal}>
+            <Login modalClose={this.showLoginModal}/>
+          </Modal>
+          <Modal modalShow={this.state.showCartModal}>
+            <Cart data={cartData} modalClose={this.showCartModal}/>
+          </Modal>
+          <Modal>
+            <Feedback modal={this.handlerModal}/>
+          </Modal>
+        </React.Fragment>
       </div>
     );
   };

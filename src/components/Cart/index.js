@@ -53,9 +53,7 @@ export class Cart extends React.Component {
         <Button text="Оформить заказ" className="button--orange"/>
         <IconClose 
           className="cart_close"
-          onClick={() => this.props.modal({
-            cart: false
-          })}
+          onClick={this.props.modalClose}
         />
       </div>
     );

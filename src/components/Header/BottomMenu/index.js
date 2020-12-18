@@ -13,7 +13,10 @@ export class BottomMenu extends React.Component {
         </div>
           <Burger openCatalog={this.props.openCatalog}/>
           <SearchInput />
-          <UserIcons modal={this.props.modal} />
+          <UserIcons 
+            showLoginModal={this.props.showLoginModal} 
+            showCartModal={this.props.showCartModal}
+          />
       </div>
     );
   };

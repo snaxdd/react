@@ -4,9 +4,7 @@ export class Button extends React.Component {
   render() {
     return(
       <button 
-        onClick={this.props.modal ? () => this.props.modal({
-          feedback: true
-        }) : null}
+        onClick={this.props.onClick}
         href={this.props.href} 
         className={`button ${this.props.className ? this.props.className : ''}`}>
         {this.props.text}

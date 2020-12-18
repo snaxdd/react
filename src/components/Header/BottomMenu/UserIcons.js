@@ -8,28 +8,25 @@ export class UserIcons extends React.Component {
     return (
       <div className='header_user-icons'>
         <div className='header_user-icons-item'>
-          <a href='/#' className='header_user-icons-link'>
-            <IconProfile onClick={() => this.props.modal({
-              login: true
-            })}
-              className='header_user-icons-svg'
+          <button 
+            onClick={this.props.showLoginModal}
+            className='header_user-icons-button'>
+            <IconProfile className='header_user-icons-svg'
             />
-          </a>
+          </button>
         </div>
         <div className='header_user-icons-item'>
-          <a href='/#' className='header_user-icons-link'>
+          <a href='/#' className='header_user-icons-button'>
             <IconFav 
               className='header_user-icons-svg'
             />
           </a>
         </div>
         <div className='header_user-icons-item'>
-          <a href='/#' className='header_user-icons-link'>
+          <a href='/#' className='header_user-icons-button'>
             <IconCart 
               className='header_user-icons-svg'
-              onClick={() => this.props.modal({
-                cart: true
-              })}
+              onClick={this.props.showCartModal}
             />
           </a>
         </div>

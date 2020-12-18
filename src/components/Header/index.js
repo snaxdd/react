@@ -28,7 +28,11 @@ export class Header extends React.Component {
           <TopMenu menu={topMenu} phone={pageData.header.phoneNumber}/>
         </div>
         <div className='header_bottom'>
-          <BottomMenu modal={this.props.modal} openCatalog={this.handlerBurger}/>
+          <BottomMenu 
+            showCartModal={this.props.showCartModal}
+            showLoginModal={this.props.showLoginModal} 
+            openCatalog={this.handlerBurger}
+          />
         </div>
         <div className="header_mobile">
           <HeaderMobile/>

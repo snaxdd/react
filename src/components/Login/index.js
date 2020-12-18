@@ -1,7 +1,7 @@
 import React from "react";
 import {ReactComponent as IconPhone} from '../../assets/icons/Registration/Phone.svg';
 import {ReactComponent as IconView} from '../../assets/icons/Registration/View.svg';
-import { Button } from "../Button/index";
+import {Button} from "../Button/index";
 import {ReactComponent as IconClose} from './../../assets/icons/close.svg';
 
 export class Login extends React.Component {
@@ -41,20 +41,15 @@ export class Login extends React.Component {
         </form>
 
         <div className="login_privacy-wrap">
-            <span className="login_privacy-policy">
-              Нажимая кнопку, вы соглашаетесь с нашей
-              <br/>
-              <a href="/#" className="login_privacy-link">
-                политикой конфиденциальности
-              </a>
-            </span>
-          </div>
-        <IconClose 
-          className="login_close"
-          onClick={() => this.props.modal({
-            login: false
-          })}
-        />
+          <span className="login_privacy-policy">
+            Нажимая кнопку, вы соглашаетесь с нашей
+            <br/>
+            <a href="/#" className="login_privacy-link">
+              политикой конфиденциальности
+            </a>
+          </span>
+        </div>
+        <IconClose className="login_close" onClick={this.props.modalClose}/>
       </div>
     );
   };
