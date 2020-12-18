@@ -1,6 +1,6 @@
 import React from 'react';
-import { ReactComponent as IconCallback } from './../../assets/icons/Callback.svg';
-import { ReactComponent as IconOffer } from '../../assets/icons/Offer.svg';
+import {ReactComponent as IconCallback} from './../../assets/icons/Callback.svg';
+import {ReactComponent as IconOffer} from '../../assets/icons/Offer.svg';
 
 export class CallbackDiscount extends React.Component {
   constructor(props) {
@@ -11,9 +11,7 @@ export class CallbackDiscount extends React.Component {
   }
 
   updatePlaceholder = () => {
-    this.setState({
-      screenWidth: window.innerWidth
-    });
+    this.setState({screenWidth: window.innerWidth});
   }
 
   componentDidMount = () => {
@@ -25,7 +23,9 @@ export class CallbackDiscount extends React.Component {
   }
 
   render() {
-    return(
+    return (
+      <section className={`callback-discount${this.props.mixin ?
+        ` ${this.props.mixin}` : ''}`}>
         <div className="callback-discount_wrap">
           <div className="callback-discount_container">
             <div className="callback-discount_title">
@@ -34,25 +34,24 @@ export class CallbackDiscount extends React.Component {
                 <span className="callback-discount_offer-percents">
                   -25%
                 </span>
-                <IconOffer />
+                <IconOffer/>
               </div>
             </div>
             <div className="callback-discount_form">
               <IconCallback className="callback-discount_icon"/>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 className="callback-discount_phone"
-                placeholder={
-                  this.state.screenWidth > 415 ? 'Введите ваш телефон' : 'Ваш телефон'
-                }
-              />
-              <button 
-                className="callback-discount_button">
+                placeholder={this.state.screenWidth > 415
+                ? 'Введите ваш телефон'
+                : 'Ваш телефон'}/>
+              <button className="callback-discount_button">
                 Отправить
               </button>
             </div>
           </div>
         </div>
+      </section>
     );
   };
 };

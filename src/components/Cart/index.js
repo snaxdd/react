@@ -12,14 +12,12 @@ export class Cart extends React.Component {
   }
 
   summCompute = () => {
-    let prevSumm = this.state.summ;
-
-    this.props.data.map(item => {
-      prevSumm += item.price;
-    });
+    let result = this.props.data.reduce((acc, val) => {
+      return acc + val.price;
+    }, 0);
 
     this.setState({
-      summ: prevSumm
+      summ: result
     });
   }
 

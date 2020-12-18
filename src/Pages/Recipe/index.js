@@ -121,10 +121,8 @@ export class Recipe extends React.Component {
             </div>
           </section>
 
-          <section className="callback-discount main_callback-discount">
-            <CallbackDiscount/>
-          </section>
-
+          <CallbackDiscount mixin="main_callback-discount"/>
+       
           <section className="delivery-notice main_delivery-notice">
             <DeliveryNotice/>
           </section>
