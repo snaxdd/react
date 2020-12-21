@@ -11,7 +11,9 @@ export class BottomMenu extends React.Component {
         <div className='logo header_logo'>
           <Logo />
         </div>
-          <Burger openCatalog={this.props.openCatalog}/>
+          <Burger 
+            openCatalog={this.props.openCatalog}
+            catalogIsOpen={this.props.catalogIsOpen}/>
           <SearchInput />
           <UserIcons 
             showLoginModal={this.props.showLoginModal} 

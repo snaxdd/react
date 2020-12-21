@@ -34,7 +34,7 @@ export class ReviewHeader extends React.Component {
           <Button 
             text="Написать комментарий" 
             className="reviews_header-button"
-            modal={this.props.modal}
+            onClick={this.props.showFeedbackModal}
           />
 
           <div className="reviews_header-sorting">

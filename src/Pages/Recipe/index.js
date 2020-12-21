@@ -132,7 +132,7 @@ export class Recipe extends React.Component {
               <h2 className="section_heading reviews_heading--pc">
                 Отзывы о рецепте
               </h2>
-              <Reviews reviewsData={pageData.reviews} modal={this.handlerModal}/>
+              <Reviews reviewsData={pageData.reviews} showFeebackModal={this.showFeedbackModal}/>
             </div>
           </section>
 
@@ -168,8 +168,8 @@ export class Recipe extends React.Component {
           <Modal modalShow={this.state.showCartModal}>
             <Cart data={cartData} modalClose={this.showCartModal}/>
           </Modal>
-          <Modal>
-            <Feedback modal={this.handlerModal}/>
+          <Modal modalShow={this.state.showFeedbackModal}>
+            <Feedback modalClose={this.showFeedbackModal}/>
           </Modal>
         </React.Fragment>
       </div>

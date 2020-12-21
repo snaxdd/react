@@ -4,12 +4,9 @@ export class DeliveryNotice extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      contentHeight: 0,
-      contentHidden: 0,
       contentOpen: false
     }
     this.refButton = React.createRef();
-    this.refContent = React.createRef();
     this.refText = React.createRef();
   }
 
@@ -29,11 +26,6 @@ export class DeliveryNotice extends React.Component {
 
   componentDidMount = () => {
     this.refText.current.classList.add('delivery-notice_text--hidden');
-    
-    this
-      .refButton
-      .current
-      .addEventListener('click', this.handleDropDown);
   }
 
   componentWillUnmount = () => {
@@ -63,7 +55,7 @@ export class DeliveryNotice extends React.Component {
           </p>
         </div>
 
-        <button ref={this.refButton} className="delivery-notice_read-more">
+        <button onClick={this.handleDropDown} ref={this.refButton} className="delivery-notice_read-more">
           Читать больше
         </button>
       </div>

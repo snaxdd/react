@@ -15,10 +15,16 @@ export class Header extends React.Component {
     };
   }
 
-  handlerBurger = () => {
+  handleBurger = () => {
     const toggler = !this.state.showCatalog;
 
     this.setState({showCatalog: toggler});
+
+    if (toggler) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
   }
 
   render() {
@@ -31,7 +37,8 @@ export class Header extends React.Component {
           <BottomMenu 
             showCartModal={this.props.showCartModal}
             showLoginModal={this.props.showLoginModal} 
-            openCatalog={this.handlerBurger}
+            openCatalog={this.handleBurger}
+            catalogIsOpen={this.state.showCatalog}
           />
         </div>
         <div className="header_mobile">

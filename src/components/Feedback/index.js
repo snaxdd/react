@@ -50,9 +50,7 @@ export class Feedback extends React.Component {
         </div>
         <IconClose 
           className="feedback_close"
-          onClick={() => this.props.modal({
-            feedback: false
-          })}
+          onClick={this.props.modalClose}
         />
         <Button text="Отправить" className="button--orange"/>
       </div>
