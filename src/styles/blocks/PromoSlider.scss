@@ -16,8 +16,7 @@
     }
 
     @media screen and (max-width: 415px) {
-      max-width: 328px;
-      max-height: 216px;
+      
       border-radius: 8px;
       margin: 0 auto;
     }
@@ -239,6 +238,8 @@
     @media screen and (max-width: 415px) {
       border-radius: 8px;
       margin-bottom: 16px;
+      max-width: 328px;
+      max-height: 216px;
     }
   }
 
