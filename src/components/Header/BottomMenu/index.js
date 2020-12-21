@@ -12,7 +12,7 @@ export class BottomMenu extends React.Component {
           <Logo />
         </div>
           <Burger 
-            openCatalog={this.props.openCatalog}
+            catalogHandle={this.props.catalogHandle}
             catalogIsOpen={this.props.catalogIsOpen}/>
           <SearchInput />
           <UserIcons 

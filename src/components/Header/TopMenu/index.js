@@ -16,10 +16,18 @@ export class TopMenu extends React.Component {
 
   componentDidMount() {
     document.body.addEventListener('click', e => {
-      let target = e.target;
+      const target = e.target;
 
-      console.log('target :>> ', target);
+      if (!target.closest('.header_menu-list')) {
+        this.setState({
+          activeDropown: ''
+        });
+      }
     });
+  }
+
+  componentWillUnmount() {
+    document.body.removeEventListener('click', e => {});
   }
 
   render() {
