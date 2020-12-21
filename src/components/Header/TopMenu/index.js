@@ -1,30 +1,36 @@
 import React from 'react';
-import { MenuItem } from './MenuItem';
+import { Menu } from './Menu';
 import { ReactComponent as IconCallback } from '../../../assets/icons/Callback.svg';
 
 export class TopMenu extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      activeDropown: '',
+    };
   }
-  
+
+  handleDropdown = (value) => {
+    this.setState({activeDropown: value});
+  }
+
+  componentDidMount() {
+    document.body.addEventListener('click', e => {
+      let target = e.target;
+
+      console.log('target :>> ', target);
+    });
+  }
+
   render() {
     return(
       <div className="container header_top-container">
         <nav className='header_menu'>
-          <ul className='header_menu-list'>
-            {this.props.menu.map(item => {
-              return(
-                <MenuItem 
-                  href={item.href}
-                  text={item.title} 
-                  key={item.id}
-                  dropDown={item.dropDown}
-                  iconR={item.iconR}
-                  iconL={item.iconL}
-                />
-              );
-            })}
-          </ul>
+          <Menu 
+            menu={this.props.menu}
+            activeDropown={this.state.activeDropown}
+            handleDropdown={this.handleDropdown}
+          />
         </nav>
         <div className='header_contacts'>
         <ul className='header_contacts-list'>

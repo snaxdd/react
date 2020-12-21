@@ -16,7 +16,6 @@
     }
 
     @media screen and (max-width: 415px) {
-      
       border-radius: 8px;
       margin: 0 auto;
     }
@@ -106,7 +105,7 @@
       transition: 0.2s;
 
       &:hover {
-        background-color: rgba(#1E2833, 0.85);
+        background-color: rgba(#1E2833, 0.75);
       }
 
       @media screen and (max-width: 415px) {

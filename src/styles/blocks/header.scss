@@ -68,13 +68,18 @@
     }
 
     &-item {
-      position: relative;
-      display: flex;
-      align-items: center;
       margin-right: 40px;
+      position: relative;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
     &-link {
+      position: relative;
+      display: flex;
+      align-items: center;
       color: #666666;
       transition: 0.12s ease-out;
 
@@ -239,13 +244,12 @@
         transition: 0.2s ease;
 
         &:hover {
-          fill: none;
-          stroke: rgba($color: $dark, $alpha: 0.85);
+          opacity: 0.75;
         }
       }
 
       &:hover {
-        fill: #515964;
+        opacity: 0.75;
       }
     }
   }

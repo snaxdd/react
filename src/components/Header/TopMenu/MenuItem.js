@@ -4,47 +4,27 @@ import {DropDown} from './DropDown';
 export class MenuItem extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      dropDownOpen: false
-    };
     this.menuButton = React.createRef();
-    this.dropDownItem = this.props.dropDown;
-  }
-
-  handlerDropDown = () => {
-    const toggler = !this.state.dropDownOpen;
-
-    this.setState({dropDownOpen: toggler});
-  }
-
-  componentDidMount = () => {
-    if (this.dropDownItem) {
-      this
-        .menuButton
-        .current
-        .addEventListener('click', this.handlerDropDown);
-    }
-  }
-
-  componentWillUnmount = () => {
-    this
-      .menuButton
-      .current
-      .removeEventListener('click', this.handlerDropDown);
   }
 
   render() {
     return (
-      <li className='header_menu-item'>
-        {this.props.iconL}
-        <a ref={this.menuButton} href={this.props.href} className='header_menu-link'>
+      <li className='header_menu-item'> 
+        <a 
+          onClick={this.props.handleDropdown} 
+          href={this.props.href} 
+          className='header_menu-link'>
+          {this.props.iconL}
           {this.props.text}
+          {this.props.iconR}
         </a>
-        <DropDown 
-          dropDown={this.props.dropDown} 
-          open={this.state.dropDownOpen}
-        />
-        {this.props.iconR}
+        {
+          this.props.dropDown &&
+          <DropDown 
+            dropDown={this.props.dropDown} 
+            isOpen={this.props.isDropDown}
+          /> 
+        }
       </li>
     );
   };
