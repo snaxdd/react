@@ -222,6 +222,13 @@
       align-items: center;
     }
 
+    &-button {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background-color: transparent;
+    }
+
     &-svg {
       fill: $dark;
       transition: 0.12s ease-out;

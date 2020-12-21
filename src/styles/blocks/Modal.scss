@@ -1,11 +1,7 @@
 .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
+  @include Modal;
   opacity: 0;
+  visibility: hidden;
   transition: opacity 0.1s ease-out;
   display: flex;
   justify-content: center;
@@ -14,7 +10,8 @@
   background-color: rgba(0, 0, 0, 0.56);
 
   &.modal--open {
-    z-index: 200;
+    visibility: visible;
+    z-index: 1000;
     opacity: 1;
   }
 }

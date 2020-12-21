@@ -16,19 +16,19 @@ export class UserIcons extends React.Component {
           </button>
         </div>
         <div className='header_user-icons-item'>
-          <a href='/#' className='header_user-icons-button'>
+          <button className='header_user-icons-button'>
             <IconFav 
               className='header_user-icons-svg'
             />
-          </a>
+          </button>
         </div>
         <div className='header_user-icons-item'>
-          <a href='/#' className='header_user-icons-button'>
+          <button className='header_user-icons-button'>
             <IconCart 
               className='header_user-icons-svg'
               onClick={this.props.showCartModal}
             />
-          </a>
+          </button>
         </div>
       </div>
     );
