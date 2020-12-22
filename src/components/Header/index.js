@@ -27,9 +27,35 @@ export class Header extends React.Component {
     }
   }
 
+  componentDidMount() {
+    document.body.addEventListener('click', e => {
+      const target = e.target;
+
+      if (target.classList.contains('catalog--open')) {
+        this.setState(state => ({
+          catalogIsOpen: !state.catalogIsOpen
+        }));
+      }
+    });
+
+    document.body.addEventListener('keydown', e => {
+      const key = e.code;
+
+      if (key.toLowerCase() === 'escape' && this.state.catalogIsOpen) {
+        this.setState(state => ({
+          catalogIsOpen: !state.catalogIsOpen
+        }));
+      }
+    });
+  }
+
+  componentWillUnmount() {
+    document.body.removeEventListener('click', e => {});
+  }
+
   render() {
     return (
-      <header className={`header page_header${this.state.showCatalog ? ' header--white' : ''}`}>
+      <header className={`header page_header${this.state.catalogIsOpen ? ' header--white' : ''}`}>
         <div className='header_top'>
           <TopMenu menu={topMenu} phone={pageData.header.phoneNumber}/>
         </div>
