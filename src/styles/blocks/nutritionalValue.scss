@@ -89,8 +89,13 @@
     }
   }
 
+  &_values-wrap {
+    padding: 0 16.5px 15px 16.5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   @media screen and (max-width: 415px) {
     overflow-y: scroll;
-    padding: 0 16.5px 15px 16.5px;
   }
 }
