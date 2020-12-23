@@ -90,9 +90,14 @@
   }
 
   &_values-wrap {
-    padding: 0 16.5px 15px 16.5px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+
+    @media screen and (max-width: 415px) {
+      width: auto;
+      padding: 0 16.5px 15px 16.5px;
+    }
   }
 
   @media screen and (max-width: 415px) {

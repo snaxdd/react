@@ -46,9 +46,16 @@
     min-height: 56px;
     padding-top: 13px;
 
+    &:first-child {
+      padding-top: 9px;
+    }
+
     @media screen and (max-width: 415px) {
       &:last-child {
         border-bottom: none;
+      }
+      &:first-child {
+        padding-top: 13px;
       }
     }
   }
