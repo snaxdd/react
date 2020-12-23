@@ -21,87 +21,87 @@ import CartImg2 from '../../../assets/images/Cart/cart2.png';
 import CartImg3 from '../../../assets/images/Cart/cart4.jpg';
 
 export const topMenu = [
-  { 
+  {
     id: 1,
     href: '/#',
-    title: "Кто мы",
+    title: 'Кто мы',
     iconL: null,
     iconR: null,
-    dropDown: null
+    dropDown: null,
   },
-  { 
+  {
     id: 2,
     href: '/#',
-    title: "Доставка и оплата",
-    iconL: <IconDelivery className="header_menu-icon-left"/>,
+    title: 'Доставка и оплата',
+    iconL: <IconDelivery className='header_menu-icon-left' />,
     iconR: null,
-    dropDown: null
+    dropDown: null,
   },
-  { 
+  {
     id: 3,
     href: '/#',
-    title: "Наши магазины",
+    title: 'Наши магазины',
     iconL: null,
-    iconR: <IconMenuArrowDown className="header_menu-icon-right"/>,
+    iconR: <IconMenuArrowDown className='header_menu-icon-right' />,
     dropDown: [
       {
         id: 1,
-        text: "г.Москва ул.Ленина д.23",
-        href: "/#"
+        text: 'г.Москва ул.Ленина д.23',
+        href: '/#',
       },
       {
         id: 2,
-        text: "г.Новосибирск пр.Калинина д.123",
-        href: "/#"
+        text: 'г.Новосибирск пр.Калинина д.123',
+        href: '/#',
       },
       {
         id: 3,
-        text: "г.Томск пр.Красноармейский д.289",
-        href: "/#"
-      }
-    ]
+        text: 'г.Томск пр.Красноармейский д.289',
+        href: '/#',
+      },
+    ],
   },
-  { 
+  {
     id: 4,
     href: '/#',
-    title: "Покупателям",
+    title: 'Покупателям',
     iconL: null,
-    iconR: <IconMenuArrowDown className="header_menu-icon-right"/>,
+    iconR: <IconMenuArrowDown className='header_menu-icon-right' />,
     dropDown: [
       {
         id: 1,
-        text: "Бесконтактная доставка и оплата онлайн",
-        href: "/#"
+        text: 'Бесконтактная доставка и оплата онлайн',
+        href: '/#',
       },
       {
         id: 2,
-        text: "Как сделать заказ",
-        href: "/#"
+        text: 'Как сделать заказ',
+        href: '/#',
       },
       {
         id: 3,
-        text: "Акции и скидки",
-        href: "/#"
+        text: 'Акции и скидки',
+        href: '/#',
       },
       {
         id: 4,
-        text: "Программа лояльности",
-        href: "/#"
+        text: 'Программа лояльности',
+        href: '/#',
       },
       {
         id: 5,
-        text: "Гарантия и возврат",
-        href: "/#"
-      }
-    ]
+        text: 'Гарантия и возврат',
+        href: '/#',
+      },
+    ],
   },
-  { 
+  {
     id: 5,
     href: '/#',
-    title: "Новости",
+    title: 'Новости',
     iconL: null,
     iconR: null,
-    dropDown: null
+    dropDown: null,
   },
 ];
 
@@ -111,21 +111,21 @@ export const cartData = [
     weight: '0.5 кг',
     count: 6,
     price: 1740,
-    image: CartImg1
+    image: CartImg1,
   },
   {
     title: 'Палтус холодного копчения',
     weight: '0.7 кг',
     count: 1,
     price: 275,
-    image: CartImg2
+    image: CartImg2,
   },
   {
     title: 'Крылья ската',
     weight: '0.2 кг',
     count: 1,
     price: 170,
-    image: CartImg3
+    image: CartImg3,
   },
 ];
 
@@ -138,154 +138,154 @@ export const catalog = [
         products: [
           {
             title: 'Скат',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Треска',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Палтус Синекорый',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Пикша',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Минтай',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сельдь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сибас',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Дорада',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Скумбрия',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Окунь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала-ерш',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Красная рыба',
         products: [
           {
             title: 'Форель',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сёмга',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Тунец',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Горбуша',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Морепродукты',
         products: [
           {
             title: 'Креветки Магаданские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Осьминоги',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Северные',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Тигровые',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Аргентинские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Кальмар',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Гребешок',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морская Капуста',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Коктейль',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мидии',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Бакалея',
         products: [
           {
             title: 'Оливки',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Брускетты',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Специи',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Консервация',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Соусы',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мука',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Масло',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
-    ]
+    ],
   },
   {
     heading: 'Скидки %',
@@ -295,154 +295,154 @@ export const catalog = [
         products: [
           {
             title: 'Скат',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Треска',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Палтус Синекорый',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Пикша',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Минтай',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сельдь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сибас',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Дорада',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Скумбрия',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Окунь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала-ерш',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Морепродукты',
         products: [
           {
             title: 'Креветки Магаданские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Осьминоги',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Северные',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Тигровые',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Аргентинские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Кальмар',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Гребешок',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морская Капуста',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Коктейль',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мидии',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Красная рыба',
         products: [
           {
             title: 'Форель',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сёмга',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Тунец',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Горбуша',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Бакалея',
         products: [
           {
             title: 'Оливки',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Брускетты',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Специи',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Консервация',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Соусы',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мука',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Масло',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
-    ]
+    ],
   },
   {
     heading: 'Икра',
@@ -452,154 +452,154 @@ export const catalog = [
         products: [
           {
             title: 'Скат',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Треска',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Палтус Синекорый',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Пикша',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Минтай',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сельдь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сибас',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Дорада',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Скумбрия',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Окунь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала-ерш',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Морепродукты',
         products: [
           {
             title: 'Креветки Магаданские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Осьминоги',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Северные',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Тигровые',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Аргентинские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Кальмар',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Гребешок',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морская Капуста',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Коктейль',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мидии',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Красная рыба',
         products: [
           {
             title: 'Форель',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сёмга',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Тунец',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Горбуша',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Бакалея',
         products: [
           {
             title: 'Оливки',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Брускетты',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Специи',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Консервация',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Соусы',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мука',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Масло',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
-    ]
+    ],
   },
   {
     heading: 'Филе/Стейки',
@@ -609,154 +609,154 @@ export const catalog = [
         products: [
           {
             title: 'Скат',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Треска',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Палтус Синекорый',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Пикша',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Минтай',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сельдь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сибас',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Дорада',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Скумбрия',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Окунь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала-ерш',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Морепродукты',
         products: [
           {
             title: 'Креветки Магаданские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Осьминоги',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Северные',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Тигровые',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Аргентинские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Кальмар',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Гребешок',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морская Капуста',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Коктейль',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мидии',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Красная рыба',
         products: [
           {
             title: 'Форель',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сёмга',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Тунец',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Горбуша',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Бакалея',
         products: [
           {
             title: 'Оливки',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Брускетты',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Специи',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Консервация',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Соусы',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мука',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Масло',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
-    ]
+    ],
   },
   {
     heading: 'Рыба целиком',
@@ -766,154 +766,154 @@ export const catalog = [
         products: [
           {
             title: 'Скат',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Треска',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Палтус Синекорый',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Пикша',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Минтай',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сельдь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сибас',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Дорада',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Скумбрия',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Окунь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала-ерш',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Морепродукты',
         products: [
           {
             title: 'Креветки Магаданские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Осьминоги',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Северные',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Тигровые',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Аргентинские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Кальмар',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Гребешок',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морская Капуста',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Коктейль',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мидии',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Красная рыба',
         products: [
           {
             title: 'Форель',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сёмга',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Тунец',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Горбуша',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Бакалея',
         products: [
           {
             title: 'Оливки',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Брускетты',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Специи',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Консервация',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Соусы',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мука',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Масло',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
-    ]
+    ],
   },
   {
     heading: 'Морепродукты',
@@ -923,154 +923,154 @@ export const catalog = [
         products: [
           {
             title: 'Скат',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Треска',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Палтус Синекорый',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Пикша',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Минтай',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сельдь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сибас',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Дорада',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Скумбрия',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Окунь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала-ерш',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Морепродукты',
         products: [
           {
             title: 'Креветки Магаданские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Осьминоги',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Северные',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Тигровые',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Аргентинские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Кальмар',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Гребешок',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морская Капуста',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Коктейль',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мидии',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Красная рыба',
         products: [
           {
             title: 'Форель',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сёмга',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Тунец',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Горбуша',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Бакалея',
         products: [
           {
             title: 'Оливки',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Брускетты',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Специи',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Консервация',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Соусы',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мука',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Масло',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
-    ]
+    ],
   },
   {
     heading: 'Копченая/вяленая рыба',
@@ -1080,154 +1080,154 @@ export const catalog = [
         products: [
           {
             title: 'Скат',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Треска',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Палтус Синекорый',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Пикша',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Минтай',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сельдь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сибас',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Дорада',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Скумбрия',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Окунь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала-ерш',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Морепродукты',
         products: [
           {
             title: 'Креветки Магаданские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Осьминоги',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Северные',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Тигровые',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Аргентинские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Кальмар',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Гребешок',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морская Капуста',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Коктейль',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мидии',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Красная рыба',
         products: [
           {
             title: 'Форель',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сёмга',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Тунец',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Горбуша',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Бакалея',
         products: [
           {
             title: 'Оливки',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Брускетты',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Специи',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Консервация',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Соусы',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мука',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Масло',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
-    ]
+    ],
   },
   {
     heading: 'Слабосоленая рыба',
@@ -1237,154 +1237,154 @@ export const catalog = [
         products: [
           {
             title: 'Скат',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Треска',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Палтус Синекорый',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Пикша',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Минтай',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сельдь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сибас',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Дорада',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Скумбрия',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Окунь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала-ерш',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Морепродукты',
         products: [
           {
             title: 'Креветки Магаданские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Осьминоги',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Северные',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Тигровые',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Аргентинские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Кальмар',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Гребешок',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морская Капуста',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Коктейль',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мидии',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Красная рыба',
         products: [
           {
             title: 'Форель',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сёмга',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Тунец',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Горбуша',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Бакалея',
         products: [
           {
             title: 'Оливки',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Брускетты',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Специи',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Консервация',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Соусы',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мука',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Масло',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
-    ]
+    ],
   },
   {
     heading: 'Полуфабрикаты/Консервы',
@@ -1394,154 +1394,154 @@ export const catalog = [
         products: [
           {
             title: 'Скат',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Треска',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Палтус Синекорый',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Пикша',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Минтай',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сельдь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сибас',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Дорада',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Скумбрия',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Окунь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала-ерш',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Морепродукты',
         products: [
           {
             title: 'Креветки Магаданские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Осьминоги',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Северные',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Тигровые',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Аргентинские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Кальмар',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Гребешок',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морская Капуста',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Коктейль',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мидии',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Красная рыба',
         products: [
           {
             title: 'Форель',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сёмга',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Тунец',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Горбуша',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Бакалея',
         products: [
           {
             title: 'Оливки',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Брускетты',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Специи',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Консервация',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Соусы',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мука',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Масло',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
-    ]
+    ],
   },
   {
     heading: 'Бакалея',
@@ -1551,154 +1551,154 @@ export const catalog = [
         products: [
           {
             title: 'Скат',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Треска',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Палтус Синекорый',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Пикша',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Минтай',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сельдь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сибас',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Дорада',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Скумбрия',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Окунь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала-ерш',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Морепродукты',
         products: [
           {
             title: 'Креветки Магаданские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Осьминоги',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Северные',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Тигровые',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Аргентинские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Кальмар',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Гребешок',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морская Капуста',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Коктейль',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мидии',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Красная рыба',
         products: [
           {
             title: 'Форель',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сёмга',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Тунец',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Горбуша',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Бакалея',
         products: [
           {
             title: 'Оливки',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Брускетты',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Специи',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Консервация',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Соусы',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мука',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Масло',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
-    ]
+    ],
   },
   {
     heading: 'Специи',
@@ -1708,154 +1708,154 @@ export const catalog = [
         products: [
           {
             title: 'Скат',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Треска',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Палтус Синекорый',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Пикша',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Минтай',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сельдь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сибас',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Дорада',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Скумбрия',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Окунь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала-ерш',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Морепродукты',
         products: [
           {
             title: 'Креветки Магаданские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Осьминоги',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Северные',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Тигровые',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Аргентинские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Кальмар',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Гребешок',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морская Капуста',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Коктейль',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мидии',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Красная рыба',
         products: [
           {
             title: 'Форель',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сёмга',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Тунец',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Горбуша',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Бакалея',
         products: [
           {
             title: 'Оливки',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Брускетты',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Специи',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Консервация',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Соусы',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мука',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Масло',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
-    ]
+    ],
   },
   {
     heading: 'Термопакеты',
@@ -1865,278 +1865,274 @@ export const catalog = [
         products: [
           {
             title: 'Скат',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Треска',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Палтус Синекорый',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Пикша',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Минтай',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сельдь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сибас',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Дорада',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Скумбрия',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Окунь',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Камбала-ерш',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Морепродукты',
         products: [
           {
             title: 'Креветки Магаданские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Осьминоги',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Северные',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Тигровые',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Креветки Аргентинские',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Кальмар',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Гребешок',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морская Капуста',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Морской Коктейль',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мидии',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Красная рыба',
         products: [
           {
             title: 'Форель',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Сёмга',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Тунец',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Горбуша',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
       {
         heading: 'Бакалея',
         products: [
           {
             title: 'Оливки',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Брускетты',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Специи',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Консервация',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Соусы',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Мука',
-            href: '/#'
+            href: '/#',
           },
           {
             title: 'Масло',
-            href: '/#'
+            href: '/#',
           },
-        ]
+        ],
       },
-    ]
+    ],
   },
 ];
 
 export const pageData = {
-  breadcrumbs: [
-    'Главная',
-    'Рецепты'
-  ],
+  breadcrumbs: ['Главная', 'Рецепты'],
   header: {
-    phoneNumber: '+7 (495) 445-05-50'
+    phoneNumber: '+7 (495) 445-05-50',
   },
-  ingredients : {
+  ingredients: {
     title: 'Филе семги без кожи',
     recipeWeight: '150 г',
     image: IngredientsImg,
     ingredients: [
       {
         name: 'Руккола',
-        count: '30 г'
+        count: '30 г',
       },
       {
         name: 'Авокадо',
-        count: '0.5 шт'
+        count: '0.5 шт',
       },
       {
         name: 'Перец черный молотый',
-        count: 'По вкусу'
+        count: 'По вкусу',
       },
       {
         name: 'Соль',
-        count: 'По вкусу'
+        count: 'По вкусу',
       },
       {
         name: 'Яйцо куриное',
-        count: '2 шт.'
+        count: '2 шт.',
       },
       {
         name: 'Песто',
-        count: '1 ст. л'
+        count: '1 ст. л',
       },
       {
         name: 'Хлеб зерновой',
-        count: '2 ломтика'
+        count: '2 ломтика',
       },
       {
         name: 'Сыр Arla Natura Сливочный Лёгкий',
-        count: '1 ломтик'
-      }
-    ]
+        count: '1 ломтик',
+      },
+    ],
   },
   promoSlider: {
-      title: 'Семга, запеченная в духовке',
-      images: [
-        PromoSlide1,
-        PromoSlide2,
-        PromoSlide3
-      ],
-      id: 1,
-      properties: {
-        complexity: 'Средняя',
-        timer: '10 мин',
-        kkal: '387 ккал'
-      }
+    title: 'Семга, запеченная в духовке',
+    images: [PromoSlide1, PromoSlide2, PromoSlide3],
+    id: 1,
+    properties: {
+      complexity: 'Средняя',
+      timer: '10 мин',
+      kkal: '387 ккал',
     },
+  },
   content: {
     contentVideos: [
       {
         id: 1,
         title: 'Video1',
-        url: 'https://www.youtube.com/watch?v=5qap5aO4i9A&ab_channel=ChilledCow'
+        url:
+          'https://www.youtube.com/watch?v=5qap5aO4i9A&ab_channel=ChilledCow',
       },
       {
         id: 2,
         title: 'Video2',
-        url: 'https://www.youtube.com/watch?v=5qap5aO4i9A&ab_channel=ChilledCow'
+        url:
+          'https://www.youtube.com/watch?v=5qap5aO4i9A&ab_channel=ChilledCow',
       },
       {
         id: 3,
         title: 'Video3',
-        url: 'https://www.youtube.com/watch?v=5qap5aO4i9A&ab_channel=ChilledCow'
-      }
-    ]
+        url:
+          'https://www.youtube.com/watch?v=5qap5aO4i9A&ab_channel=ChilledCow',
+      },
+    ],
   },
   recipeSteps: [
     {
       id: 1,
       title: 'Шаг 1',
       text: `Для начала приготовим смесь из пряных трав и соли. Помещаем их в чашку. 
-      Добавляем соль, 1 ст. ложку оливкового масла и перец. Перемешиваем.`
+      Добавляем соль, 1 ст. ложку оливкового масла и перец. Перемешиваем.`,
     },
     {
       id: 2,
       title: 'Шаг 2',
       text: `Разогреваем духовку до 180 °C. Готовим блюдо, в котором будем запекать нашу сёмгу. 
       Наливаем 1 ст. ложку оливкового масла, аккуратно распределяем по дну всей формы. 
-      Выкладываем рыбку.`
+      Выкладываем рыбку.`,
     },
     {
       id: 3,
       title: 'Шаг 3',
       text: `Наливаем 1 ст. ложку оливкового масла, аккуратно распределяем по дну всей формы. 
       Добавляем соль, 1 ст. ложку оливкового масла и перец. Перемешиваем. 
-      Выкладываем рыбку.`
+      Выкладываем рыбку.`,
     },
     {
       id: 4,
       title: 'Шаг 4',
       text: `Наливаем 1 ст. ложку оливкового масла, аккуратно распределяем по дну всей формы. 
       Добавляем соль, 1 ст. ложку оливкового масла и перец. Перемешиваем. 
-      Выкладываем рыбку.`
+      Выкладываем рыбку.`,
     },
     {
       id: 5,
       title: 'Шаг 5',
       text: `Отправляем в духовой шкаф на 30 минут. 
       И наслаждаемся прекрасным ароматом тимьяна или розмарина и нашей готовящейся в 
-      духовке сёмги. Через полчаса всё готово к подаче на стол.`
-    }
+      духовке сёмги. Через полчаса всё готово к подаче на стол.`,
+    },
   ],
   reviews: {
     overallRating: {
       text: 'Общий рейтинг',
       rate: 4,
-      commentsNumber: 12
+      commentsNumber: 12,
     },
     comments: [
       {
@@ -2146,7 +2142,7 @@ export const pageData = {
         comment: `Отличная модель в таком ценовом диапазоне! Заряд держит отлично, 
         при интенсивной нагрузке. Игры поддерживает просто на высоте, не вылетает. 
         Огромный по величине экран.`,
-        date: new Date().toLocaleDateString()
+        date: new Date().toLocaleDateString(),
       },
       {
         id: 2,
@@ -2156,7 +2152,7 @@ export const pageData = {
         Заряд держит отлично, при интенсивной нагрузке. 
         Игры поддерживает просто на высоте, не вылетает. Огромный по величине экран.`,
         date: new Date().toLocaleDateString(),
-        image: CommentImage
+        image: CommentImage,
       },
       {
         id: 3,
@@ -2165,9 +2161,9 @@ export const pageData = {
         comment: `Отличная модель в таком ценовом диапазоне! 
         Заряд держит отлично, при интенсивной нагрузке. 
         Игры поддерживает просто на высоте, не вылетает. Огромный по величине экран. `,
-        date: new Date().toLocaleDateString()
-      }
-    ]
+        date: new Date().toLocaleDateString(),
+      },
+    ],
   },
   similarRecipes: [
     {
@@ -2179,7 +2175,7 @@ export const pageData = {
       rate: 5,
       reviewsCount: 10,
       cookingTime: '30-40 мин',
-      calories: '384 ккал'
+      calories: '384 ккал',
     },
     {
       id: 2,
@@ -2190,7 +2186,7 @@ export const pageData = {
       rate: 5,
       reviewsCount: 6,
       cookingTime: '30-55 мин',
-      calories: '235 ккал'
+      calories: '235 ккал',
     },
     {
       id: 3,
@@ -2201,7 +2197,7 @@ export const pageData = {
       rate: 5,
       reviewsCount: 7,
       cookingTime: '30-66 мин',
-      calories: '325 ккал'
+      calories: '325 ккал',
     },
     {
       id: 4,
@@ -2212,7 +2208,7 @@ export const pageData = {
       rate: 5,
       reviewsCount: 2,
       cookingTime: '30-427 мин',
-      calories: '123 ккал'
+      calories: '123 ккал',
     },
     {
       id: 5,
@@ -2223,7 +2219,7 @@ export const pageData = {
       rate: 5,
       reviewsCount: 4,
       cookingTime: '12-30 мин',
-      calories: '323 ккал'
+      calories: '323 ккал',
     },
   ],
   footer: {
@@ -2231,44 +2227,44 @@ export const pageData = {
       {
         id: 1,
         text: 'Весь ассортимент',
-        href: '#'
+        href: '#',
       },
       {
         id: 2,
         text: 'Наши магазины',
-        href: '#'
+        href: '#',
       },
       {
         id: 3,
         text: 'О нас',
-        href: '#'
+        href: '#',
       },
       {
         id: 4,
         text: 'Программа лояльности',
-        href: '#'
+        href: '#',
       },
       {
         id: 5,
         text: 'Оплата',
-        href: '#'
+        href: '#',
       },
       {
         id: 6,
         text: 'Гарантии и возврат',
-        href: '#'
+        href: '#',
       },
       {
         id: 7,
         text: 'Условия доставки',
-        href: '#'
+        href: '#',
       },
       {
         id: 8,
         text: 'Отзывы',
-        href: '#'
+        href: '#',
       },
-    ]
+    ],
   },
   footerMobile: [
     {
@@ -2278,19 +2274,19 @@ export const pageData = {
         {
           id: 1,
           href: '#',
-          text: 'Tested link'
+          text: 'Tested link',
         },
         {
           id: 2,
           href: '#',
-          text: 'Tested link'
+          text: 'Tested link',
         },
         {
           id: 3,
           href: '#',
-          text: 'Tested link'
-        }
-      ]
+          text: 'Tested link',
+        },
+      ],
     },
     {
       id: 2,
@@ -2299,19 +2295,19 @@ export const pageData = {
         {
           id: 1,
           href: '#',
-          text: 'Весь ассортимент'
+          text: 'Весь ассортимент',
         },
         {
           id: 2,
           href: '#',
-          text: 'Условия доставки'
+          text: 'Условия доставки',
         },
         {
           id: 3,
           href: '#',
-          text: 'Программа лояльности'
-        }
-      ]
+          text: 'Программа лояльности',
+        },
+      ],
     },
     {
       id: 3,
@@ -2320,20 +2316,20 @@ export const pageData = {
         {
           id: 1,
           href: '#',
-          text: 'Tested link'
+          text: 'Tested link',
         },
         {
           id: 2,
           href: '#',
-          text: 'Tested link'
+          text: 'Tested link',
         },
         {
           id: 3,
           href: '#',
-          text: 'Tested link'
-        }
-      ]
-    }
+          text: 'Tested link',
+        },
+      ],
+    },
   ],
   nutritionalValue: [
     {
@@ -2341,46 +2337,46 @@ export const pageData = {
       image: <IconMeat />,
       title: 'белки',
       weight: '120',
-      weightUnit: 'грамм'
+      weightUnit: 'грамм',
     },
     {
       id: 2,
       image: <IconPizza />,
       title: 'жиры',
       weight: '12',
-      weightUnit: 'грамм'
+      weightUnit: 'грамм',
     },
     {
       id: 3,
       image: <IconRice />,
       title: 'углеводы',
       weight: '230',
-      weightUnit: 'грамм'
+      weightUnit: 'грамм',
     },
     {
       id: 4,
       image: <IconCalories />,
       title: 'калорийность',
       weight: '387',
-      weightUnit: 'ккал'
+      weightUnit: 'ккал',
     },
   ],
   faq: [
     {
       id: 1,
-      title: 'А у вас точно качественная продукция?'
+      title: 'А у вас точно качественная продукция?',
     },
     {
       id: 2,
-      title: 'А это дороже, чем покупать в магазине?'
+      title: 'А это дороже, чем покупать в магазине?',
     },
     {
       id: 3,
-      title: 'Как происходит доставка и оплата?'
+      title: 'Как происходит доставка и оплата?',
     },
     {
       id: 4,
-      title: 'Где и как собираются заказы?'
+      title: 'Где и как собираются заказы?',
     },
-  ]
-}
+  ],
+};
