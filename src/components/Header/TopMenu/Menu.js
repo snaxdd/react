@@ -8,6 +8,8 @@ export class Menu extends React.Component {
         {this.props.menu.map((item, index) => {
           return (
             <MenuItem
+              iconR={item.iconR}
+              iconL={item.iconL}
               key={item.id}
               text={item.title}
               href={item.href}

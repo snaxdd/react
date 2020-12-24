@@ -23,16 +23,24 @@ export class TopMenu extends React.Component {
     }
   };
 
+  checkMenuItemId = (element) => {
+    if (!element.closest('.header_menu-item')) {
+      this.setState({activeDropdownId: null});
+    }
+  };
+
   componentDidMount() {
     document.body.addEventListener('click', (e) => {
       const target = e.target;
+
+      this.checkMenuItemId(target);
     });
-  }
+  };
 
   componentWillUnmount() {
     document.body.removeEventListener('click', (e) => {
     });
-  }
+  };
 
   render() {
     return (
