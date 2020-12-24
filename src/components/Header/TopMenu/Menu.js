@@ -12,9 +12,9 @@ export class Menu extends React.Component {
               text={item.title}
               href={item.href}
               dropDown={item.dropDown}
-              dataAttr={`top-menu-index-${index}`}
+              dataAttrIndex={index}
+              activeDropdownId={this.props.activeDropdownId}
               handleDropdown={this.props.handleDropdown}
-              activeDropdown={this.props.activeDropdown}
             />
           );
         })}

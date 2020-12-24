@@ -1,36 +1,37 @@
 import React from 'react';
-import { Menu } from './Menu';
-import { ReactComponent as IconCallback } from '../../../assets/icons/Callback.svg';
-import { topMenu } from './../../../Pages/Recipe/constants/index';
+import {Menu} from './Menu';
+import {ReactComponent as IconCallback} from '../../../assets/icons/Callback.svg';
+import {topMenu} from './../../../Pages/Recipe/constants/index';
 
 export class TopMenu extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeDropdown: '',
+      activeDropdownId: null,
     };
   }
 
-  handleDropdown = (value) => {
-    this.setState({
-      activeDropdown: value,
-    });
+  handleDropdown = (index) => {
+    if (index === this.state.activeDropdownId) {
+      this.setState({
+        activeDropdownId: null
+      });
+    } else {
+      this.setState({
+        activeDropdownId: index
+      })
+    }
   };
 
   componentDidMount() {
     document.body.addEventListener('click', (e) => {
       const target = e.target;
-
-      if (!target.closest('.header_menu-list')) {
-        this.setState({
-          activeDropdown: '',
-        });
-      }
     });
   }
 
   componentWillUnmount() {
-    document.body.removeEventListener('click', (e) => {});
+    document.body.removeEventListener('click', (e) => {
+    });
   }
 
   render() {
@@ -39,7 +40,7 @@ export class TopMenu extends React.Component {
         <nav className='header_menu'>
           <Menu
             menu={topMenu}
-            activeDropdown={this.state.activeDropdown}
+            activeDropdownId={this.state.activeDropdownId}
             handleDropdown={this.handleDropdown}
           />
         </nav>
@@ -52,7 +53,7 @@ export class TopMenu extends React.Component {
             </li>
             <li className='header_contacts-callback'>
               <a href='/#' className='header_contacts-callback-link'>
-                <IconCallback className='header_contacts-icon' />
+                <IconCallback className='header_contacts-icon'/>
                 Обратный звонок
               </a>
             </li>
